@@ -117,6 +117,9 @@ dist
 *.scss.map
 
 ### Pug ###
+public/mixins
+public/layouts
+public/base
 public/mixins/_*.html
 public/layouts/_*.html
 public/base/_*.html
