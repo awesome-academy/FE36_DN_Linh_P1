@@ -1,0 +1,58 @@
+@import "../utilities/variables";
+@import "../base/typography";
+
+.header {
+  background-color: black;
+  &__wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 3.4rem;
+  }
+  &__top-nav {
+    background-color: rgba(255, 255, 255, 0.101961);
+    &__menu ul {
+      display: flex;
+      flex-direction: row;
+    }
+
+    &__item {
+      font-size: 1.2rem;
+      a {
+        color: $color-white;
+        @extend %hover-text;
+        @extend %transition;
+        &:hover {
+          text-decoration: underline;
+        }
+      }
+      &:not(:last-child)::after {
+        content: "-";
+        margin: 0 1.2rem;
+      }
+    }
+    &__search {
+      color: $color-primary;
+      border-left: 1px solid $color-white;
+      input {
+        border: none;
+        outline: none;
+        font-style: italic;
+        font-family: inherit;
+        width: 23rem;
+        color: $color-primary;
+        background-color: transparent;
+        padding: 0 1rem;
+      }
+    }
+
+    &__icon {
+      color: $color-white;
+      background: transparent;
+      border: none;
+      cursor: pointer;
+      @extend %hover-text;
+      @extend %transition;
+    }
+  }
+}
