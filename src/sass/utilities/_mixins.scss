@@ -3,3 +3,10 @@
   grid-template-columns: repeat($col, 1fr);
   grid-gap: $gap;
 }
+
+@mixin p-absolute($top, $left) {
+  position: absolute;
+  top: $top;
+  left: $left;
+  transform: translate(-50%, -50%);
+}
