@@ -1,0 +1,12 @@
+include ../../base/_header-main-nav-var
+.header__main-nav
+    .container
+        .header__main-nav__wrapper
+            .header__main-nav__brand
+                img(src="./img/brand.png", alt="brand")
+            .header__main-nav__menu
+                ul
+                    each item in headerMainNav
+                        li.header__main-nav__item
+                            a(href= item.link)= item.name
+

@@ -1,2 +1,6 @@
 mixin title(title)
     title= title
+
+mixin slide(number)
+    .slide(id= "slide-"+number)
+        img.slide__img(src="./img/header-slide-"+number+".jpg", alt="slide")
