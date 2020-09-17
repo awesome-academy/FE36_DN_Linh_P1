@@ -1,0 +1,10 @@
+@import "../utilities/variables";
+%hover-text {
+  &:hover {
+    color: $color-primary-light;
+  }
+}
+
+%transition {
+  transition: all 0.3s ease;
+}
