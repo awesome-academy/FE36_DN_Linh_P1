@@ -1,0 +1,7 @@
+.product-price {
+  & > p {
+    font-family: "utm-caviar";
+    font-size: 3.4rem;
+    color: $color-primary-light;
+  }
+}

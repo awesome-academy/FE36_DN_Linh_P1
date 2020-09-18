@@ -1,0 +1,27 @@
+@import "../utilities/variables";
+.lg-label {
+  &__text {
+    width: 17.2rem;
+    height: 17.2rem;
+    background-color: $color-primary-light;
+    transform: rotate(-45deg);
+    position: absolute;
+    top: -86px;
+    left: -86px;
+    & > h5 {
+      padding-top: 12.5rem;
+      color: #fff;
+      font-size: 3.2rem;
+      font-weight: normal;
+    }
+    &::after {
+      position: absolute;
+      content: "";
+      top: 17.8rem;
+      left: -2rem;
+      width: 25rem;
+      height: 1px;
+      background-color: $color-primary-light;
+    }
+  }
+}

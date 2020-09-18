@@ -1,3 +1,59 @@
 extends ./layouts/main-layout
+include ./mixins/_mixin
 block title
     +title(homePageTitle)
+block content
+    .home-page
+        .home-page__intro
+            .container
+                .home-page__intro__box
+                    .home-page__intro__title
+                        +main-title('Giới thiệu')
+                    .home-page__intro__content
+                        p= homePageIntroText
+                    .home-page__intro__btn
+                        a.btn Xem thêm
+        .home-page__sale
+            .container
+                .home-page__sale__box
+                    img.home-page__sale__img(src="./img/home-page-sale-bg.png")
+                    .home-page__sale__product
+                        .home-page__sale__contains
+                            .home-page__sale__item
+                                img(src="./img/home-page-sale-product.png", alt="sale product")
+                                +lg-label("Sale")
+                            .home-page__sale__detail
+                                .home-page__sale__detail__title
+                                    +product-title("RƯỢU NHO NĂM 1987")
+                                .home-page__sale__detail__price
+                                    +product-price('330.000')
+                                .home-page__sale__detail__btn
+                                    +btn-add-new
+                                .home-page__sale__detail__content
+                                    p= homePageSaleText
+                                .home-page__sale__detail__time
+                                    each item in timeInBox
+                                        +time-in-box(item.number, item.text)
+        .home-page__new-products
+            .container
+                .home-page__new-products__box
+                    .home-page__new-products__title
+                        +main-title('Sản phẩm mới')
+                    .products__slide
+                        input#product-list-1(type='radio' name='product-list', checked)
+                        input#product-list-2(type='radio' name='product-list')
+                        .products__slide__box
+                            .products__slide__list
+                                each item in listProducts
+                                    +product(item.link, item.title, item.price1, item.price2, item.label)
+                        .products__slide__arrow
+                            .products__slide__arrow__left
+                                label(for="product-list-1")
+                                    i.fa.fa-arrow-left
+                            .products__slide__arrow__right
+                                label(for="product-list-2")
+                                    i.fa.fa-arrow-right
+
+                    
+
+                

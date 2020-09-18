@@ -1,0 +1,21 @@
+.main-title {
+  &__text {
+    text-transform: uppercase;
+    margin-bottom: 1rem;
+    font-size: 2.1rem;
+    letter-spacing: 0.4rem;
+    color: $color-secondary;
+    font-weight: normal;
+  }
+}
+
+.product-title {
+  &__text {
+    font-size: 2.48rem;
+    font-weight: normal;
+    color: $color-secondary;
+  }
+  &__icon {
+    margin-top: 0.5rem;
+  }
+}
