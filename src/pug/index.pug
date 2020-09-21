@@ -39,21 +39,38 @@ block content
                 .home-page__new-products__box
                     .home-page__new-products__title
                         +main-title('Sản phẩm mới')
-                    .products__slide
-                        input#product-list-1(type='radio' name='product-list', checked)
-                        input#product-list-2(type='radio' name='product-list')
-                        .products__slide__box
-                            .products__slide__list
-                                each item in listProducts
-                                    +product(item.link, item.title, item.price1, item.price2, item.label)
-                        .products__slide__arrow
-                            .products__slide__arrow__left
-                                label(for="product-list-1")
-                                    i.fa.fa-arrow-left
-                            .products__slide__arrow__right
-                                label(for="product-list-2")
-                                    i.fa.fa-arrow-right
-
-                    
-
-                
+                    +new-products-slide
+        .home-page__gallery
+            - for (let val = 1; val < 9; val++)
+                +gallery-item(val)
+        .home-page__hot-products
+            .container
+                .home-page__hot-products__box
+                    .home-page__hot-products__title
+                        +main-title('Sản phẩm bán chạy')
+                    +hot-products-slide
+        .home-page__blog
+            .container
+                .home-page__blog__box
+                    .home-page__blog__left
+                        .home-page__blog__left__title
+                            +main-title('Tin tức & blog')
+                        .home-page__blog__left__item
+                            each blog in blogContent
+                                +blog-item(blog)
+                    .home-page__blog__right
+                        .home-page__blog__right__title
+                            +main-title('Khách hàng')
+                        .home-page__blog__right__content
+                            img(src="./img/customer-circle.png", alt="customer circle")
+                            .home-page__blog__right__comment
+                                p Vang nổ Thăng Long có hương vị đặc trưng của sản phẩm lên men tự nhiên từ hoa quả với độ rượu nhẹ, bọt ga đầy trắng mịn. Vang Nổ thăng long ...
+                                a(href='#') Read more
+                            .home-page__blog__right__profile
+                                img(src="./img/customer-avatar.png", alt="customer avatar")
+                                h5 GIANG LT
+                                p Graphic design
+                            .home-page__blog__right__dots
+                                span
+                                span
+                                span

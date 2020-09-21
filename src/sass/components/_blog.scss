@@ -1,0 +1,81 @@
+.blog-item {
+  &__img {
+    position: relative;
+    & > img {
+      width: 100%;
+    }
+    &:hover {
+      & > .blog-item__img__hover {
+        & > .blog-item__img__hover__bg,
+        & > .blog-item__img__hover__icon > i {
+          visibility: visible;
+          opacity: 1;
+        }
+      }
+    }
+    &__hover {
+      &__bg {
+        @include p-absolute(0, 0);
+        @extend %w100-h100;
+        background: linear-gradient(
+          to bottom right,
+          transparent 50%,
+          rgba(255, 255, 255, 0.2) 50%
+        );
+        visibility: hidden;
+        opacity: 0;
+        @extend %transition;
+      }
+      &__icon {
+        i {
+          @include p-absolute(50%, 50%);
+          transform: translate(-50%, -50%);
+          padding: 1rem;
+          border-radius: 50%;
+          background-color: $color-white;
+          color: $color-secondary;
+          font-size: 1.6rem;
+          visibility: hidden;
+          opacity: 0;
+          @extend %transition;
+        }
+      }
+      a {
+        @include p-absolute(0, 0);
+        @extend %w100-h100;
+      }
+    }
+  }
+  &__title {
+    margin-top: 2rem;
+    & > a {
+      text-transform: uppercase;
+      @extend %transition;
+      color: $color-secondary;
+      font-size: 1.8rem;
+      @extend %hover-text;
+    }
+  }
+  &__author {
+    margin-top: 1rem;
+    & > p {
+      opacity: 0.5;
+      font-size: 1.2rem;
+    }
+  }
+  &__desc {
+    margin-top: 1rem;
+    font-size: 1.4rem;
+  }
+  &__read-more {
+    margin-top: 0.5rem;
+    & > a:link,
+    & > a:visited {
+      opacity: 0.5;
+      font-size: 1.4rem;
+      @extend %transition;
+      @extend %hover-text;
+      color: inherit;
+    }
+  }
+}

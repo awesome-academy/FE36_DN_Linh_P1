@@ -5,7 +5,6 @@
   background: url("../img/home-page-bg-1.png") left top no-repeat,
     url("../img/home-page-bg-2.png") right top no-repeat;
   background-size: 25%, 10%;
-  height: 300rem;
   &__intro {
     padding-top: 10rem;
     &__box {
@@ -60,7 +59,7 @@
         margin-top: 3.8rem;
       }
       &__content {
-        margin-top: 2.5rem;
+        margin-top: 3.2rem;
         & > p {
           font-size: 1.3rem;
         }
@@ -90,6 +89,131 @@
     margin-top: 39.5rem;
     &__box {
       text-align: center;
+    }
+  }
+
+  &__gallery {
+    display: grid;
+    @include grid(4, 0);
+    margin-top: 10rem;
+    &__item {
+      overflow: hidden;
+      position: relative;
+      &__img {
+        width: 100%;
+        transform: scale(1);
+        @extend %transition;
+      }
+      &__hover {
+        @include p-absolute(0, 0);
+        width: 100%;
+        height: 100%;
+        text-align: center;
+        cursor: pointer;
+        &__year {
+          color: $color-white;
+          letter-spacing: 0.7rem;
+          text-transform: uppercase;
+          margin-top: 6rem;
+          font-size: 1.2rem;
+        }
+        &__text {
+          margin-top: 2rem;
+          font-size: 7.2rem;
+          text-transform: uppercase;
+          letter-spacing: 0.7rem;
+          color: $color-white;
+          display: block;
+          &::after {
+            width: 1000px;
+            height: 20px;
+            border-top: 2px solid red;
+            border-bottom: 2px solid red;
+          }
+        }
+      }
+    }
+  }
+
+  &__hot-products {
+    margin-top: 10rem;
+    &__box {
+      text-align: center;
+    }
+  }
+  &__blog {
+    margin: 10rem 0;
+    &__box {
+      @include grid(12, 3rem);
+    }
+    &__left {
+      grid-column: 1/9;
+      &__title {
+        text-align: center;
+      }
+      &__item {
+        @include grid(12, 3rem);
+        margin-top: 4.5rem;
+        .blog-item {
+          &:first-child {
+            grid-column: 1/7;
+          }
+          &:last-child {
+            grid-column: 7/13;
+          }
+        }
+      }
+    }
+    &__right {
+      grid-column: 9/13;
+      text-align: center;
+      &__content {
+        & > img {
+          margin-top: 4.5rem;
+        }
+      }
+
+      &__comment {
+        margin-top: 3rem;
+        p,
+        a {
+          color: $color-primary;
+          font-size: 1.4rem;
+        }
+        a {
+          opacity: 0.5;
+          @extend %transition;
+          @extend %hover-text;
+        }
+      }
+      &__profile {
+        margin-top: 3rem;
+        color: $color-primary;
+        & > h5 {
+          margin-top: 2.2rem;
+          font-size: 1.4rem;
+          font-weight: normal;
+        }
+        & > p {
+          opacity: 0.5;
+          font-size: 1.2rem;
+        }
+      }
+      &__dots {
+        display: flex;
+        justify-content: center;
+        margin-top: 4rem;
+        & > span {
+          width: 0.6rem;
+          height: 0.6rem;
+          border-radius: 50%;
+          cursor: pointer;
+          background-color: $color-primary;
+          margin-right: 0.7rem;
+          @extend %transition;
+          @extend %hover-bg;
+        }
+      }
     }
   }
 }
