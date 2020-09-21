@@ -4,7 +4,11 @@
     color: $color-primary-light;
   }
 }
-
+%hover-bg {
+  &:hover {
+    background-color: $color-primary-light;
+  }
+}
 %transition {
   transition: all 0.3s ease;
 }

@@ -8,7 +8,7 @@ include ../../base/_header-main-nav-var
                 ul
                     each item in headerMainNav
                         if item.name === "Rượu vang đỏ"
-                            li.header__main-nav__item.header__main-nav__item--drop-down.drop-down
+                            li.header__main-nav__item.drop-down
                                 a(href= item.link)= item.name
                                 .drop-down__wrapper
                                     each valSubNav in headerSubNav
