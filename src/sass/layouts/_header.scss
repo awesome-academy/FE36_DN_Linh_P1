@@ -79,6 +79,7 @@
     }
     &__jump-links {
       @include p-absolute(56rem, 50%);
+      transform: translate(-50%, -50%);
       @include grid(3, 1.1rem);
       &__item {
         display: block;
@@ -95,6 +96,7 @@
     &__content-img {
       width: 55%;
       @include p-absolute(26rem, 50%);
+      transform: translate(-50%, -50%);
     }
   }
 

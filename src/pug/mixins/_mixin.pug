@@ -14,8 +14,8 @@ mixin lg-label(text)
     .lg-label
         .lg-label__text
             h5= text
-mixin sm-label(text)
-    .sm-label
+mixin sm-label(text,color)
+    .sm-label(style="background-color:"+ color)
         .sm-label__text
             h5= text
 mixin product-title(text)
@@ -34,9 +34,9 @@ mixin time-in-box(number, text)
         p= number
         p= text
 
-mixin product(link, title, price, old, text)
+mixin product(link, title, price, old, label, color)
     .product
-        .product__image
+        .product__img
             img(src=link)
         .product__title
             p= title
@@ -46,10 +46,11 @@ mixin product(link, title, price, old, text)
             p -
             p= old
                 sup đ
+        .product__btn
             +btn-add-new
         if text !== ''
-            +sm-label(text)
-        .product__compare
+            +sm-label(label,color)
+        .product__favorite
             a(href='#')
                 i.fa.fa-heart
                 p Yêu thích
@@ -58,5 +59,61 @@ mixin product(link, title, price, old, text)
                 p So sánh
             a(href='#')
                 i.fa.fa-compress
+mixin new-products-slide
+    .products__slide
+        input#new-products-list-1(type='radio' name='product-list', checked)
+        input#new-products-list-2(type='radio' name='product-list')
+        .products__slide__box
+            .products__slide__list
+                each item in listProducts
+                    +product(item.link, item.title, item.price1, item.price2, item.label, item.color)
+        .products__slide__arrow
+            .products__slide__arrow__left
+                label(for="new-products-list-1")
+                    i.fa.fa-arrow-left
+            .products__slide__arrow__right
+                label(for="new-products-list-2")
+                    i.fa.fa-arrow-right
+mixin hot-products-slide
+    .products__slide
+        input#hot-products-list-1(type='radio' name='product-list', checked)
+        input#hot-products-list-2(type='radio' name='product-list')
+        .products__slide__box
+            .products__slide__list
+                each item in listProducts
+                    +product(item.link, item.title, item.price1, item.price2)
+        .products__slide__arrow
+            .products__slide__arrow__left
+                label(for="hot-products-list-1")
+                    i.fa.fa-arrow-left
+            .products__slide__arrow__right
+                label(for="hot-products-list-2")
+                    i.fa.fa-arrow-right
+mixin gallery-item(number)
+    .home-page__gallery__item
+        img.home-page__gallery__item__img(src="./img/gallery-img-"+number+".png", alt="gallery image")
+        a.home-page__gallery__item__hover
+            p.home-page__gallery__item__hover__year 1987
+            p.home-page__gallery__item__hover__text Rượu
+
+mixin blog-item(blog)
+    .blog-item
+        .blog-item__img
+            img(src= blog.link, alt="blog image")
+            .blog-item__img__hover
+                .blog-item__img__hover__bg
+                .blog-item__img__hover__icon
+                    i.fa.fa-link
+                a.blog-item__img__hover__link(href="#")
+        .blog-item__title
+            a(href="#")= blog.title
+        .blog-item__author
+            p= blog.author
+        .blog-item__desc
+            p= blog.desc
+        .blog-item__read-more
+            a(href="#") Read more
+
+
 
 
