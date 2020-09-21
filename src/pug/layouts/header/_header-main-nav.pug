@@ -1,0 +1,26 @@
+include ../../base/_header-main-nav-var
+.header__main-nav
+    .container
+        .header__main-nav__wrapper
+            .header__main-nav__brand
+                img(src="./img/brand.png", alt="brand")
+            .header__main-nav__menu
+                ul
+                    each item in headerMainNav
+                        if item.name === "Rượu vang đỏ"
+                            li.header__main-nav__item.header__main-nav__item--drop-down.drop-down
+                                a(href= item.link)= item.name
+                                .drop-down__wrapper
+                                    each valSubNav in headerSubNav
+                                        .drop-down__col
+                                            h3.drop-down__title= valSubNav
+                                            ul.drop-down__menu
+                                                each valSubNavItem in headerSubNavItems
+                                                    li.drop-down__menu__item
+                                                        a(href="#")= valSubNavItem
+                                    img.drop-down__img(src="./img/header-drop-down-img.png", alt="drop-down-img")
+
+                        else
+                            li.header__main-nav__item
+                                a(href= item.link)= item.name
+

@@ -1,24 +1,26 @@
 @import "../utilities/variables";
+@import "../utilities/mixins";
 @import "../base/typography";
 
 .header {
-  background-color: black;
-  &__wrapper {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    height: 3.4rem;
-  }
+  position: relative;
+
   &__top-nav {
+    width: 100%;
+    position: absolute;
     background-color: rgba(255, 255, 255, 0.101961);
-    &__menu ul {
+    &__wrapper {
+      @extend %flex-space-bw;
+      height: 3.4rem;
+    }
+    &__menu > ul {
       display: flex;
       flex-direction: row;
     }
 
     &__item {
-      font-size: 1.2rem;
-      a {
+      & > a {
+        font-size: 1.3rem;
         color: $color-white;
         @extend %hover-text;
         @extend %transition;
@@ -51,6 +53,73 @@
       background: transparent;
       border: none;
       cursor: pointer;
+      @extend %hover-text;
+      @extend %transition;
+    }
+  }
+
+  &__slider {
+    &__img {
+      width: 100%;
+      height: 60rem;
+      display: flex;
+      overflow-x: auto;
+      scroll-behavior: smooth;
+      -webkit-overflow-scrolling: touch;
+      scroll-snap-type: x mandatory;
+      .slide {
+        @extend %w100-h100;
+        flex-shrink: 0;
+        scroll-snap-align: start;
+        transition: transform 0.5s;
+        &__img {
+          @extend %w100-h100;
+        }
+      }
+    }
+    &__jump-links {
+      @include p-absolute(56rem, 50%);
+      @include grid(3, 1.1rem);
+      &__item {
+        display: block;
+        width: 3rem;
+        height: 0.4rem;
+        background-color: $color-white;
+        @extend %transition;
+        &:hover {
+          background-color: $color-primary-light;
+        }
+      }
+    }
+
+    &__content-img {
+      width: 55%;
+      @include p-absolute(26rem, 50%);
+    }
+  }
+
+  &__main-nav {
+    background-color: $color-secondary;
+    &__wrapper {
+      @extend %flex-space-bw;
+      padding: 1.2rem 0;
+    }
+
+    &__menu {
+      width: 80%;
+      & > ul {
+        @extend %flex-space-bw;
+        flex-wrap: wrap;
+        justify-content: space-around;
+      }
+    }
+
+    &__item > a:link,
+    &__item > a:visited {
+      color: $color-white;
+      font-size: 1.5rem;
+      text-transform: uppercase;
+      letter-spacing: 0.12rem;
       @extend %hover-text;
       @extend %transition;
     }
