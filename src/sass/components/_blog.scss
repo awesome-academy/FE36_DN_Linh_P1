@@ -4,6 +4,15 @@
     & > img {
       width: 100%;
     }
+    &:hover {
+      & > .blog-item__img__hover {
+        & > .blog-item__img__hover__bg,
+        & > .blog-item__img__hover__icon > i {
+          visibility: visible;
+          opacity: 1;
+        }
+      }
+    }
     &__hover {
       &__bg {
         @include p-absolute(0, 0);
@@ -13,6 +22,8 @@
           transparent 50%,
           rgba(255, 255, 255, 0.2) 50%
         );
+        visibility: hidden;
+        opacity: 0;
         @extend %transition;
       }
       &__icon {
@@ -24,6 +35,8 @@
           background-color: $color-white;
           color: $color-secondary;
           font-size: 1.6rem;
+          visibility: hidden;
+          opacity: 0;
           @extend %transition;
         }
       }
