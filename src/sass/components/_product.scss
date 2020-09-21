@@ -1,0 +1,91 @@
+@import "../base/typography";
+.product {
+  display: flex;
+  flex-direction: column;
+  margin: 0 1.5rem;
+  overflow: hidden;
+  justify-content: flex-end;
+  position: relative;
+  &__img > img {
+    width: 100%;
+    height: auto;
+  }
+  &__title {
+    margin-top: 2rem;
+    & > p {
+      color: $color-secondary;
+      font-size: 1.4rem;
+    }
+  }
+  &__price {
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    & > p {
+      font-family: utm-caviar;
+      font-size: 1.4rem;
+      &:last-child {
+        text-decoration: line-through;
+      }
+      &:first-child {
+        color: $color-primary-light;
+        font-size: 2.1rem;
+      }
+    }
+  }
+
+  &__btn {
+    margin: 2.8rem;
+  }
+  &__favorite {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    background-color: $color-secondary;
+    position: absolute;
+    top: 65%;
+    visibility: hidden;
+    opacity: 0;
+    @extend %transition;
+    & > a {
+      display: flex;
+      padding-top: 8px;
+      padding-bottom: 8px;
+      color: $color-primary;
+      font-size: 1.4rem;
+      @extend %transition;
+      &:first-child {
+        padding-left: 1.9rem;
+        padding-right: 1.5rem;
+        border-right: 0.1rem solid;
+      }
+      &:nth-child(2) {
+        padding-left: 1.5rem;
+        padding-right: 1.5rem;
+        border-right: 0.1rem solid;
+      }
+      &:last-child {
+        padding-left: 2rem;
+        padding-right: 0.9rem;
+      }
+      & > i {
+        padding-right: 6px;
+      }
+      &:hover {
+        color: $color-primary-light;
+      }
+    }
+  }
+  &:hover > &__favorite {
+    visibility: visible;
+    opacity: 1;
+  }
+  &:first-child,
+  &:nth-child(5) {
+    margin-left: 0;
+  }
+  &:last-child,
+  &:nth-child(4) {
+    margin-right: 0;
+  }
+}

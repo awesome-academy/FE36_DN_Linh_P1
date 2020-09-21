@@ -1,0 +1,43 @@
+@import "../base/typography";
+.products__slide {
+  margin-top: 4.5rem;
+  position: relative;
+  #new-products-list-1:checked ~ &__box &__list {
+    transform: translateX(0%);
+  }
+  #new-products-list-2:checked ~ &__box &__list {
+    transform: translateX(-50%);
+  }
+
+  #hot-products-list-1:checked ~ &__box &__list {
+    transform: translateX(0%);
+  }
+  #hot-products-list-2:checked ~ &__box &__list {
+    transform: translateX(-50%);
+  }
+
+  &__box {
+    overflow: hidden;
+  }
+  &__list {
+    display: flex;
+    width: 200%;
+    transform: translateX(0%);
+    @extend %transition;
+  }
+  &__arrow {
+    &__left {
+      @include p-absolute(47%, -1.5rem);
+      @extend %arrow;
+    }
+    &__right {
+      position: absolute;
+      top: 47%;
+      right: -1.5rem;
+      @extend %arrow;
+    }
+  }
+  & > input {
+    visibility: hidden;
+  }
+}
