@@ -1,6 +1,9 @@
-- let homePageTitle = "wine house | since 1980, a moments of true enjoy";
+- let homePageTitle = "Wine house | since 1980, a moments of true enjoy";
+- let productDetailTitle = "Vang đỏ | since 1980, a moments of true enjoy";
 - let homePageIntroText = "Mriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi.Nam liber tempor cum soluta nobis eleifend option congue nihil imperdiet doming id quod mazim placerat facer possim assum. Typi non habent claritatem insitam; est usus legentis in iis qui faciteorum claritatem. Investigtiones demonstraverunt lectores legere me lius quod ii legunt saepius.Claritas est etiam processus dynamicus, qui sequitur mutationem consuetudium lectorum. Mirum est notare quam littera gothica, quam nunc putam";
 - let homePageSaleText = "Một hợp chất có trong rượu vang được gọi là resveratro có khả năng làm tăng tối đa tuổi thọ. Resveratro còn có khả năng ngăn chặn mật độ ôxy hoá của protein béo.";
+- let detailContent1 = "Đừng nghĩ rằng chỉ vì đôi chân to mà bạn không thể mặc được món đồ nào khác ngoài quần dài. Sau đây là những item vừa trendy lại vừa có tác dụng rất hiệu quả trong việc điều chỉnh đôi chân to của bạn. Mùa hè là mùa của những bộ cánh thoải mái, thoáng mát và hẳn cô gái nào cũng muốn khoe chân tối đa. Tuy nhiên, điều này lại không hề dễ dàng đối với những cô nàng sở hữu đôi chân to. Đừng nghĩ rằng chỉ vì đôi chân to mà bạn không thể mặc được món đồ nào khác ngoài quần dài. Sau đây là những item vừa trendy lại vừa có tác dụng rất hiệu quả trong việc điều chỉnh đôi chân to của bạn.";
+- let detailContent2 = "Mùa hè là mùa của những bộ cánh thoải mái, thoáng mát và hẳn cô gái nào cũng muốn khoe chân tối đa. Tuy nhiên, điều này lại không hề dễ dàng đối với những cô nàng sở hữu đôi chân to. Vậy diện đồ thế nào để vừa tạo cảm giác nhẹ nhàng nhưng lại khéo léo giấu được nhược điểm ấy? Sau đây, chúng tôi xin đưa ra gợi ý về loạt item mà các cô nàng chân to nên gắn bó trong mùa hè này.";
 -
   let timeInBox = [
     {number: '334', text: 'NGÀY'}, 
@@ -10,30 +13,83 @@
   ]
 -
   let listProducts = [
-    {link:'./img/product-1.jpg', title: 'RƯỢU VANG ĐÀ LẠT', price1: '350.000', price2: '450.000', label: 'Sale', color: '#dfa949'}, 
-    {link:'./img/product-2.jpg', title: 'RƯỢU VANG ĐÀ LẠT', price1: '350.000', price2: '450.000', label: 'Mới', color: 'green'}, 
-    {link:'./img/product-3.jpg', title: 'RƯỢU VANG ĐÀ LẠT', price1: '350.000', price2: '450.000', label: 'Hot', color: 'red'}, 
-    {link:'./img/product-4.jpg', title: 'RƯỢU VANG ĐÀ LẠT', price1: '350.000', price2: '450.000', label: '', color: ''}, 
-    {link:'./img/product-5.jpg', title: 'RƯỢU VANG ĐÀ LẠT', price1: '350.000', price2: '450.000', label: 'Sale', color: 'red'}, 
-    {link:'./img/product-6.jpg', title: 'RƯỢU VANG ĐÀ LẠT', price1: '350.000', price2: '450.000', label: '', color: ''}, 
-    {link:'./img/product-7.jpg', title: 'RƯỢU VANG ĐÀ LẠT', price1: '350.000', price2: '450.000', label: 'Hot', color: 'green'}, 
-    {link:'./img/product-8.jpg', title: 'RƯỢU VANG ĐÀ LẠT', price1: '350.000', price2: '450.000', label: 'Mới', color: '#dfa949'}, 
+    {link:'../img/product-1.jpg', title: 'RƯỢU VANG ĐÀ LẠT', price1: '350.000', price2: '450.000', label: 'Sale', color: '#dfa949'}, 
+    {link:'../img/product-2.jpg', title: 'RƯỢU VANG ĐÀ LẠT', price1: '350.000', price2: '450.000', label: 'Mới', color: 'green'}, 
+    {link:'../img/product-3.jpg', title: 'RƯỢU VANG ĐÀ LẠT', price1: '350.000', price2: '450.000', label: 'Hot', color: 'red'}, 
+    {link:'../img/product-4.jpg', title: 'RƯỢU VANG ĐÀ LẠT', price1: '350.000', price2: '450.000', label: '', color: ''}, 
+    {link:'../img/product-5.jpg', title: 'RƯỢU VANG ĐÀ LẠT', price1: '350.000', price2: '450.000', label: 'Sale', color: 'red'}, 
+    {link:'../img/product-6.jpg', title: 'RƯỢU VANG ĐÀ LẠT', price1: '350.000', price2: '450.000', label: '', color: ''}, 
+    {link:'../img/product-7.jpg', title: 'RƯỢU VANG ĐÀ LẠT', price1: '350.000', price2: '450.000', label: 'Hot', color: 'green'}, 
+    {link:'../img/product-8.jpg', title: 'RƯỢU VANG ĐÀ LẠT', price1: '350.000', price2: '450.000', label: 'Mới', color: '#dfa949'}, 
   ]
 
 -
   let galleryImg = [
-    './img/gallery-img-1.png', 
-    './img/gallery-img-2.png', 
-    './img/gallery-img-3.png', 
-    './img/gallery-img-4.png', 
-    './img/gallery-img-5.png', 
-    './img/gallery-img-6.png', 
-    './img/gallery-img-7.png', 
-    './img/gallery-img-8.png'
+    '../img/gallery-img-1.png', 
+    '../img/gallery-img-2.png', 
+    '../img/gallery-img-3.png', 
+    '../img/gallery-img-4.png', 
+    '../img/gallery-img-5.png', 
+    '../img/gallery-img-6.png', 
+    '../img/gallery-img-7.png', 
+    '../img/gallery-img-8.png'
+  ]
+-
+  let detailTitles = [
+    'Đặt điểm nổi bật', 
+    'Thông tin sản phẩm', 
+    'Đánh giá'
   ]
 
 -
   let blogContent = [
-    {link:'./img/blog-1.png', title:'Vang Thăng Long Classic', author:'Đăng bởi Giangle | 30/06/2015 | 60 bình luận', desc:'Vang nổ Thăng Long có hương vị đặc trưng của sản phẩm lên men tự nhiên từ hoa quả với độ rượu nhẹ, bọt ga đầy trắng mịn. Vang Nổ thăng long tạo cảm giác hương phấn, êm dịu, vui tươi, sản phẩm được đóng chai dung tích 750ml...'}, 
-    {link:'./img/blog-2.png', title:'Vang Thăng Long Classic', author:'Đăng bởi Giangle | 30/06/2015 | 60 bình luận', desc:'Vang nổ Thăng Long có hương vị đặc trưng của sản phẩm lên men tự nhiên từ hoa quả với độ rượu nhẹ, bọt ga đầy trắng mịn. Vang Nổ thăng long ...'}  
+    {link:'../img/blog-1.png', title:'Vang Thăng Long Classic', author:'Đăng bởi Giangle | 30/06/2015 | 60 bình luận', desc:'Vang nổ Thăng Long có hương vị đặc trưng của sản phẩm lên men tự nhiên từ hoa quả với độ rượu nhẹ, bọt ga đầy trắng mịn. Vang Nổ thăng long tạo cảm giác hương phấn, êm dịu, vui tươi, sản phẩm được đóng chai dung tích 750ml...'}, 
+    {link:'../img/blog-2.png', title:'Vang Thăng Long Classic', author:'Đăng bởi Giangle | 30/06/2015 | 60 bình luận', desc:'Vang nổ Thăng Long có hương vị đặc trưng của sản phẩm lên men tự nhiên từ hoa quả với độ rượu nhẹ, bọt ga đầy trắng mịn. Vang Nổ thăng long ...'}  
+  ]
+
+-
+  let detailDirections = [
+    {name: 'Trang chủ', link: './index.html'}, 
+    {name: 'Sản phẩm', link: '#'}, 
+    {name: 'Rượu vang đỏ', link: '#'}, 
+  ]
+
+-
+  let productDetailImgs = [
+    '../img/product-detail-img-2.jpg', 
+    '../img/product-detail-img-1.jpg', 
+    '../img/product-detail-img-3.jpg', 
+    '../img/product-detail-img-1.jpg', 
+    '../img/product-detail-img-1.jpg', 
+    '../img/product-detail-img-2.jpg', 
+    '../img/product-detail-img-1.jpg', 
+    '../img/product-detail-img-2.jpg', 
+    '../img/product-detail-img-3.jpg', 
+    '../img/product-detail-img-1.jpg', 
+  ]
+-
+  let productDetailReview = [
+    'fa fa-star', 
+    'fa fa-star', 
+    'fa fa-star', 
+    'fa fa-star-half-o', 
+    'fa fa-star-o'
+  ]
+-
+  let productDetailColor = [
+    '#e6ae48', 
+    '#030102', 
+    '#9c0001', 
+  ]
+-
+  let productDetailSize = [
+    'Loại lớn', 
+    'Loại vừa', 
+    'Loại nhỏ',
+  ]
+-
+  let productDetailFavorite = [
+    {class: 'fa fa-heart', text: 'Yêu thích'},
+    {class: 'fa fa-signal', text: 'So sánh'},
+    {class: 'fa fa-envelope', text: 'Email'}, 
   ]

@@ -3,7 +3,7 @@ include ../../base/_header-main-nav-var
     .container
         .header__main-nav__wrapper
             .header__main-nav__brand
-                img(src="./img/brand.png", alt="brand")
+                img(src="../img/brand.png", alt="brand")
             .header__main-nav__menu
                 ul
                     each item in headerMainNav
@@ -18,7 +18,7 @@ include ../../base/_header-main-nav-var
                                                 each valSubNavItem in headerSubNavItems
                                                     li.drop-down__menu__item
                                                         a(href="#")= valSubNavItem
-                                    img.drop-down__img(src="./img/header-drop-down-img.png", alt="drop-down-img")
+                                    img.drop-down__img(src="../img/header-drop-down-img.png", alt="drop-down-img")
 
                         else
                             li.header__main-nav__item

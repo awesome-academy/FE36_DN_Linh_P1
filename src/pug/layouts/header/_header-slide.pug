@@ -3,7 +3,7 @@ include ../../mixins/_mixin
     .header__slider__img
         each val in [1, 2, 3]
             +slide(val)
-    img.header__slider__content-img(src="./img/header-text.png", alt="header-text")
+    img.header__slider__content-img(src="../img/header-text.png", alt="header-text")
     .header__slider__jump-links
         each val in [1, 2, 3]
             a.header__slider__jump-links__item(href="#slide-"+val)

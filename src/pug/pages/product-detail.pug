@@ -1,0 +1,109 @@
+extends ../layouts/main-layout
+include ../mixins/_mixin
+block title
+    +title(productDetailTitle)
+block content
+    .product-detail
+        +directions(detailDirections)
+        .product-detail__main
+            .container
+                .product-detail__main__box
+                    .product-detail__main__img
+                        .product-detail__main__img__list
+                            input(id='product-detail-slide-1' type='radio' name='product-detail-slide')
+                            input(id='product-detail-slide-2' type='radio' name='product-detail-slide')
+                            .product-detail__main__img__box
+                                .product-detail__main__img__full
+                                    each item in productDetailImgs
+                                        .product-detail__main__img__item
+                                            img(src= item, alt="product detail slide")
+                            .product-detail__main__img__arrow
+                                .product-detail__main__img__arrow--up
+                                    label(for="product-detail-slide-1")
+                                        i.fa.fa-arrow-up
+                                .product-detail__main__img__arrow--down
+                                    label(for="product-detail-slide-2")
+                                        i.fa.fa-arrow-down
+                        .product-detail__main__img__product
+                            img(src="../img/product-detail-main-img.png", alt="product main image")
+                    .product-detail__main__content
+                        .product-detail__main__content__title
+                            +product-title("RƯỢU NHO NĂM 1987")
+                        .product-detail__main__content__price
+                            +product-price('330.000')
+                        .product-detail__main__content__review
+                            ul
+                                each item in productDetailReview
+                                    li
+                                        i(class= item)
+                            p 1 Review(S) | Add Your Review
+                        .product-detail__main__content__color
+                            +sm-title('MÀU SẮC')
+                            each item in productDetailColor
+                                button(style=`background-color: ${item}`)
+                        .product-detail__main__content__size
+                            +sm-title("KÍCH CỠ")
+                            .product-detail__main__content__size--option
+                                select
+                                    each item in productDetailSize
+                                        option(value=item)= item
+                                i.fa.fa-caret-down
+                        .product-detail__main__content__quantity
+                            +sm-title("SỐ LƯỢNG")
+                            form.product-detail__main__content__quantity--form
+                                .product-detail__main__content__quantity--input
+                                    input(type="number" value=3)
+                                    i.fa.fa-minus
+                                    i.fa.fa-plus
+                                +btn-add-new
+                        .product-detail__main__content__favorite
+                            ul
+                                each item in productDetailFavorite
+                                    li
+                                        a(href="#")
+                                            i(class=item.class)
+                                            p= item.text
+                        .product-detail__main__content__desc
+                            +sm-title("MÔ TẢ")
+                            p Một hợp chất có trong rượu vang được gọi là resveratro có khả năng làm tăng tối đa tuổi thọ. Resveratro còn có khả năng ngăn chặn mật độ ôxy hoá của protein béo.
+                        .product-detail__main__content__social
+                            .product-detail__main__content__social--fb.social__item
+                                button
+                                    i.fa.fa-facebook-official
+                                    span Like
+                                p.social__number 0
+                            .product-detail__main__content__social--tw.social__item
+                                button
+                                    i.fa.fa-twitter
+                                    span Tweet
+                                p.social__number 0
+                            .product-detail__main__content__social--gg.social__item
+                                button
+                                    i.fa.fa-google-plus
+                                p.social__number 0
+                            .product-detail__main__content__social--in.social__item
+                                button
+                                    i.fa.fa-linkedin
+                                    span Share
+                            .product-detail__main__content__social--pi.social__item
+                                button
+                                    i.fa.fa-pinterest-square
+        .product-detail__content
+            .container
+                .product-detail__content__box
+                    .product-detail__content__left
+                        .product-detail__content__left__title
+                            each title in detailTitles
+                                +detail-title(title)
+                        .product-detail__content__left__text
+                            p= detailContent1
+                            p= detailContent2
+                    .product-detail__content__right
+                        img(src="../img/product-detail-content-img.png", alt="detail content image")
+                        p Rượu nho
+        .product-detail__related
+            .container
+                .product-detail__related__box
+                    .product-detail__related__title
+                        +main-title("Sản phẩm liên quan")
+                    +hot-products-slide

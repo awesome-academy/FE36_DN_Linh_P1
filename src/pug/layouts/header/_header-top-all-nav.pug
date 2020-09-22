@@ -1,0 +1,14 @@
+include ../../base/_header-top-nav-var
+.header__top-nav.all-page
+    .container
+        .header__top-nav__wrapper
+            .header__top-nav__menu
+                ul
+                    each item in headerTopNav
+                        li.header__top-nav__item.all-page
+                            a(href= item.link)= item.name
+            .header__top-nav__search
+                form
+                    input(placeholder="Tìm kiếm ở đây ...")
+                    button.header__top-nav__icon.all-page
+                        i.fa.fa-search
