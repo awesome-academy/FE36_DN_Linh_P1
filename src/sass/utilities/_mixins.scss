@@ -9,3 +9,18 @@
   top: $top;
   left: $left;
 }
+
+@mixin social-btn($bg-color, $color) {
+  & > button {
+    padding: 0.2rem 0.4rem;
+    background-color: $bg-color;
+    color: $color;
+    border-radius: 0.2rem;
+    border: none;
+    margin-right: 0.6rem;
+    cursor: pointer;
+    & > i {
+      margin-right: 0.4rem;
+    }
+  }
+}

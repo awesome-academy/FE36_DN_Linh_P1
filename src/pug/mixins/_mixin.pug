@@ -3,12 +3,12 @@ mixin title(title)
 
 mixin slide(number)
     .slide(id= "slide-"+number)
-        img.slide__img(src="./img/header-slide-"+number+".jpg", alt="slide")
+        img.slide__img(src="../img/header-slide-"+number+".jpg", alt="slide")
 
 mixin main-title(text)
     .main-title
         h2.main-title__text= text
-        img(src='./img/title-icon.png')
+        img(src='../img/title-icon.png')
 
 mixin lg-label(text)
     .lg-label
@@ -21,7 +21,7 @@ mixin sm-label(text,color)
 mixin product-title(text)
     .product-title
         h2.product-title__text= text
-        img.product-title__icon(src="./img/arrow.png", alt="product title")
+        img.product-title__icon(src="../img/arrow.png", alt="product title")
 mixin product-price(number)
     .product-price
         p= number
@@ -91,7 +91,7 @@ mixin hot-products-slide
                     i.fa.fa-arrow-right
 mixin gallery-item(number)
     .home-page__gallery__item
-        img.home-page__gallery__item__img(src="./img/gallery-img-"+number+".png", alt="gallery image")
+        img.home-page__gallery__item__img(src="../img/gallery-img-"+number+".png", alt="gallery image")
         .home-page__gallery__item__hover
             p.home-page__gallery__item__hover__year 1987
             p.home-page__gallery__item__hover__text Rượu
@@ -114,6 +114,20 @@ mixin blog-item(blog)
             p= blog.desc
         .blog-item__read-more
             a(href="#") Read more
+mixin directions(items)
+    .directions
+        .container
+            ul.directions__list
+                each item in items
+                    li.directions__item
+                        a(href= item.link)= item.name
+mixin detail-title(title)
+    .detail-title
+        h6.detail-title__text= title
+mixin sm-title(text)
+    .sm-title
+        h6= text
+
 
 
 

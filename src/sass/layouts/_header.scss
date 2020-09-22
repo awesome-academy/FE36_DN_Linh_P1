@@ -33,6 +33,11 @@
         margin: 0 1.2rem;
       }
     }
+    &__item.all-page {
+      & > a {
+        color: inherit;
+      }
+    }
     &__search {
       color: $color-primary;
       border-left: 1px solid $color-white;
@@ -56,6 +61,12 @@
       @extend %hover-text;
       @extend %transition;
     }
+    &__icon.all-page {
+      color: inherit;
+    }
+  }
+  &__top-nav.all-page {
+    position: unset;
   }
 
   &__slider {

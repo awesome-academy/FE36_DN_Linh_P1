@@ -1,7 +1,11 @@
-extends ./layouts/main-layout
-include ./mixins/_mixin
+extends ../layouts/main-layout
+include ../mixins/_mixin
 block title
     +title(homePageTitle)
+block header-top-navigation
+    include ../layouts/header/_header-top-nav
+block header-slide
+    include ../layouts/header/_header-slide
 block content
     .home-page
         .home-page__intro
@@ -16,11 +20,11 @@ block content
         .home-page__sale
             .container
                 .home-page__sale__box
-                    img.home-page__sale__img(src="./img/home-page-sale-bg.png")
+                    img.home-page__sale__img(src="../img/home-page-sale-bg.png")
                     .home-page__sale__product
                         .home-page__sale__contains
                             .home-page__sale__item
-                                img(src="./img/home-page-sale-product.png", alt="sale product")
+                                img(src="../img/home-page-sale-product.png", alt="sale product")
                                 +lg-label("Sale")
                             .home-page__sale__detail
                                 .home-page__sale__detail__title
@@ -62,12 +66,12 @@ block content
                         .home-page__blog__right__title
                             +main-title('Khách hàng')
                         .home-page__blog__right__content
-                            img(src="./img/customer-circle.png", alt="customer circle")
+                            img(src="../img/customer-circle.png", alt="customer circle")
                             .home-page__blog__right__comment
                                 p Vang nổ Thăng Long có hương vị đặc trưng của sản phẩm lên men tự nhiên từ hoa quả với độ rượu nhẹ, bọt ga đầy trắng mịn. Vang Nổ thăng long ...
                                 a(href='#') Read more
                             .home-page__blog__right__profile
-                                img(src="./img/customer-avatar.png", alt="customer avatar")
+                                img(src="../img/customer-avatar.png", alt="customer avatar")
                                 h5 GIANG LT
                                 p Graphic design
                             .home-page__blog__right__dots

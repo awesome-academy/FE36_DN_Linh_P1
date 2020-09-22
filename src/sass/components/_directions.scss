@@ -1,0 +1,17 @@
+.directions {
+  margin: 3rem 0 3.5rem;
+  &__list {
+    display: flex;
+  }
+  &__item > a {
+    color: inherit;
+    font-size: 1.5rem;
+    @extend %hover-text;
+    @extend %transition;
+  }
+  &__item:not(:last-child)::after {
+    content: "/";
+    font-size: 1.6rem;
+    margin: 0 0.4rem;
+  }
+}
