@@ -92,9 +92,10 @@ mixin hot-products-slide
 mixin gallery-item(number)
     .home-page__gallery__item
         img.home-page__gallery__item__img(src="./img/gallery-img-"+number+".png", alt="gallery image")
-        a.home-page__gallery__item__hover
+        .home-page__gallery__item__hover
             p.home-page__gallery__item__hover__year 1987
             p.home-page__gallery__item__hover__text Rượu
+            a(href="#")
 
 mixin blog-item(blog)
     .blog-item

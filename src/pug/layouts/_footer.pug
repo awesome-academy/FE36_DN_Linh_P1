@@ -1,0 +1,48 @@
+include ../base/_footer-var
+footer.footer
+    .footer__img
+        .container
+            img(src="./img/footer-img.png", alt="footer image")
+    .footer__content
+        .container
+            .footer__content__box
+                .footer__content__info
+                    h6.footer-title Thông tin
+                    ul
+                        each item in footerInfo
+                            li= item
+                .footer__content__buy
+                    h6.footer-title Mua hàng
+                    ul
+                        each item in footerBuy
+                            li= item
+                .footer__content__email
+                    h6.footer-title Gửi email
+                    p Gửi email cho chúng tôi để được hỗ trợ
+                    form
+                        input(placeholder="Enter your email")
+                        .footer__content__email__btn
+                            button GỬI
+                            .footer__content__email__btn--triangle
+                    .footer__content__email__social
+                        ul
+                            each item in footerSocialIcon
+                                li
+                                    a(href='#')
+                                        i(class= item)
+                .footer__content__contact
+                    h6.footer-title Liên hệ
+                    ul
+                        each item in footerContact
+                            li
+                                i(class= item.icon)
+                                a(href="#")= item.text
+                
+    hr
+    .footer__copyright
+        .container
+            .footer__copyright__box
+                .footer__copyright__text
+                    p © Copyright 2008-2014 DKT Technology JSC
+                .footer__copyright__logo
+                    img(src="./img/footer-payment.png", alt="footer payment")

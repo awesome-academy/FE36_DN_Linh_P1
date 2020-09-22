@@ -28,16 +28,16 @@ a {
   font-family: "utm-caviar";
   src: url(../fonts/utm-caviar.ttf); }
 
-.header__top-nav__item > a:hover, .header__top-nav__icon:hover, .header__main-nav__item > a:hover:link,
-.header__main-nav__item > a:hover:visited, .drop-down__menu__item > a:hover:link, .drop-down__menu__item > a:hover:visited, .blog-item__title > a:hover, .blog-item__read-more > a:hover:link,
+.footer__content__info > ul > li:hover, .footer__content__buy > ul > li:hover, .header__top-nav__item > a:hover, .header__top-nav__icon:hover, .header__main-nav__item > a:hover:link,
+.header__main-nav__item > a:hover:visited, .footer__content__email__social > ul > li > a:hover, .footer__content__contact > ul > li > a:hover, .drop-down__menu__item > a:hover:link, .drop-down__menu__item > a:hover:visited, .blog-item__title > a:hover, .blog-item__read-more > a:hover:link,
 .blog-item__read-more > a:hover:visited, .home-page__blog__right__comment a:hover {
   color: #dfa949; }
 
 .btn:hover, .home-page__blog__right__dots > span:hover {
   background-color: #dfa949; }
 
-.header__top-nav__item > a, .header__top-nav__icon, .header__slider__jump-links__item, .header__main-nav__item > a:link,
-.header__main-nav__item > a:visited, .products__slide__list, .btn, .drop-down__menu__item > a:link, .drop-down__menu__item > a:visited, .product__favorite, .product__favorite > a, .blog-item__img__hover__bg, .blog-item__img__hover__icon i, .blog-item__title > a, .blog-item__read-more > a:link,
+.footer__content__info > ul > li, .footer__content__buy > ul > li, .header__top-nav__item > a, .header__top-nav__icon, .header__slider__jump-links__item, .header__main-nav__item > a:link,
+.header__main-nav__item > a:visited, .footer__content__email__social > ul > li > a, .footer__content__contact > ul > li > a, .products__slide__list, .btn, .drop-down__menu__item > a:link, .drop-down__menu__item > a:visited, .product__favorite, .product__favorite > a, .blog-item__img__hover__bg, .blog-item__img__hover__icon i, .blog-item__title > a, .blog-item__read-more > a:link,
 .blog-item__read-more > a:visited, .home-page__gallery__item__img, .home-page__blog__right__comment a, .home-page__blog__right__dots > span {
   transition: all 0.3s ease; }
 
@@ -58,16 +58,22 @@ a {
   font-size: 1.5rem;
   cursor: pointer; }
 
-.header__top-nav__item > a:hover, .header__top-nav__icon:hover, .header__main-nav__item > a:hover:link,
-.header__main-nav__item > a:hover:visited, .drop-down__menu__item > a:hover:link, .drop-down__menu__item > a:hover:visited, .blog-item__title > a:hover, .blog-item__read-more > a:hover:link,
+.footer__content__info > ul > li, .footer__content__buy > ul > li {
+  margin-bottom: 0.7rem;
+  text-transform: uppercase;
+  font-size: 1.2rem;
+  cursor: pointer; }
+
+.footer__content__info > ul > li:hover, .footer__content__buy > ul > li:hover, .header__top-nav__item > a:hover, .header__top-nav__icon:hover, .header__main-nav__item > a:hover:link,
+.header__main-nav__item > a:hover:visited, .footer__content__email__social > ul > li > a:hover, .footer__content__contact > ul > li > a:hover, .drop-down__menu__item > a:hover:link, .drop-down__menu__item > a:hover:visited, .blog-item__title > a:hover, .blog-item__read-more > a:hover:link,
 .blog-item__read-more > a:hover:visited, .home-page__blog__right__comment a:hover {
   color: #dfa949; }
 
 .btn:hover, .home-page__blog__right__dots > span:hover {
   background-color: #dfa949; }
 
-.header__top-nav__item > a, .header__top-nav__icon, .header__slider__jump-links__item, .header__main-nav__item > a:link,
-.header__main-nav__item > a:visited, .products__slide__list, .btn, .drop-down__menu__item > a:link, .drop-down__menu__item > a:visited, .product__favorite, .product__favorite > a, .blog-item__img__hover__bg, .blog-item__img__hover__icon i, .blog-item__title > a, .blog-item__read-more > a:link,
+.footer__content__info > ul > li, .footer__content__buy > ul > li, .header__top-nav__item > a, .header__top-nav__icon, .header__slider__jump-links__item, .header__main-nav__item > a:link,
+.header__main-nav__item > a:visited, .footer__content__email__social > ul > li > a, .footer__content__contact > ul > li > a, .products__slide__list, .btn, .drop-down__menu__item > a:link, .drop-down__menu__item > a:visited, .product__favorite, .product__favorite > a, .blog-item__img__hover__bg, .blog-item__img__hover__icon i, .blog-item__title > a, .blog-item__read-more > a:link,
 .blog-item__read-more > a:visited, .home-page__gallery__item__img, .home-page__blog__right__comment a, .home-page__blog__right__dots > span {
   transition: all 0.3s ease; }
 
@@ -86,6 +92,12 @@ a {
 .products__slide__arrow__left > label > i, .products__slide__arrow__right > label > i {
   color: #dfa949;
   font-size: 1.5rem;
+  cursor: pointer; }
+
+.footer__content__info > ul > li, .footer__content__buy > ul > li {
+  margin-bottom: 0.7rem;
+  text-transform: uppercase;
+  font-size: 1.2rem;
   cursor: pointer; }
 
 .header {
@@ -173,16 +185,121 @@ a {
       text-transform: uppercase;
       letter-spacing: 0.12rem; }
 
-.header__top-nav__item > a:hover, .header__top-nav__icon:hover, .header__main-nav__item > a:hover:link,
-.header__main-nav__item > a:hover:visited, .drop-down__menu__item > a:hover:link, .drop-down__menu__item > a:hover:visited, .blog-item__title > a:hover, .blog-item__read-more > a:hover:link,
+.footer__img {
+  margin-bottom: 5.5rem; }
+  .footer__img img {
+    width: auto;
+    display: block;
+    margin: 0 auto; }
+
+.footer__content__box {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  grid-gap: 3rem; }
+
+.footer__content__info {
+  grid-column: 1/3; }
+
+.footer__content__buy {
+  grid-column: 3/5; }
+
+.footer__content__email {
+  grid-column: 5/9; }
+  .footer__content__email > p {
+    font-size: 1.4rem;
+    margin-bottom: 1.5rem; }
+  .footer__content__email > form {
+    display: flex;
+    align-items: stretch;
+    height: 2.8rem; }
+    .footer__content__email > form > input {
+      width: 70%;
+      font-style: italic;
+      font-family: inherit;
+      font-size: 1.2rem;
+      outline: none;
+      padding: 0 1.5rem; }
+  .footer__content__email__btn {
+    display: flex; }
+    .footer__content__email__btn button {
+      background-color: #000;
+      font-size: inherit;
+      color: #fff;
+      border: none;
+      cursor: pointer;
+      outline: none;
+      padding: 0 1.3rem 0 1.6rem;
+      font-family: inherit;
+      font-size: 1.4rem; }
+    .footer__content__email__btn--triangle {
+      border-top: 1.4rem solid transparent;
+      border-left: 1.8rem solid #000;
+      border-bottom: 1.4rem solid transparent;
+      cursor: pointer; }
+  .footer__content__email__social {
+    margin-top: 2.2rem; }
+    .footer__content__email__social > ul {
+      display: flex; }
+      .footer__content__email__social > ul > li {
+        margin-right: 1rem;
+        font-size: 1.2rem; }
+        .footer__content__email__social > ul > li > a {
+          color: inherit; }
+
+.footer__content__contact {
+  grid-column: 9/12; }
+  .footer__content__contact > ul > li {
+    display: flex;
+    float: left;
+    margin-bottom: 1.5rem;
+    font-size: 1.4rem; }
+    .footer__content__contact > ul > li > i {
+      margin-right: 0.6rem;
+      color: #000; }
+    .footer__content__contact > ul > li > a {
+      color: inherit;
+      margin-right: 0.6rem; }
+
+.footer__copyright {
+  margin-bottom: 1.5rem; }
+  .footer__copyright__box {
+    display: grid;
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-gap: 3rem; }
+  .footer__copyright__text {
+    grid-column: 1/9;
+    display: flex;
+    align-items: center; }
+    .footer__copyright__text > p {
+      font-family: "Roboto";
+      font-size: 1.2rem; }
+  .footer__copyright__logo {
+    grid-column: 9/13;
+    cursor: pointer; }
+
+.footer-title {
+  margin-bottom: 1.5rem;
+  font-size: 1.8rem;
+  color: #000;
+  font-weight: normal;
+  text-transform: uppercase;
+  letter-spacing: 0.3rem; }
+
+.footer hr {
+  margin: 1.5rem 0 1rem;
+  opacity: 0.4; }
+
+.footer__content__info > ul > li:hover, .footer__content__buy > ul > li:hover, .header__top-nav__item > a:hover, .header__top-nav__icon:hover, .header__main-nav__item > a:hover:link,
+.header__main-nav__item > a:hover:visited, .footer__content__email__social > ul > li > a:hover, .footer__content__contact > ul > li > a:hover, .drop-down__menu__item > a:hover:link, .drop-down__menu__item > a:hover:visited, .blog-item__title > a:hover, .blog-item__read-more > a:hover:link,
 .blog-item__read-more > a:hover:visited, .home-page__blog__right__comment a:hover {
   color: #dfa949; }
 
 .btn:hover, .home-page__blog__right__dots > span:hover {
   background-color: #dfa949; }
 
-.header__top-nav__item > a, .header__top-nav__icon, .header__slider__jump-links__item, .header__main-nav__item > a:link,
-.header__main-nav__item > a:visited, .products__slide__list, .btn, .drop-down__menu__item > a:link, .drop-down__menu__item > a:visited, .product__favorite, .product__favorite > a, .blog-item__img__hover__bg, .blog-item__img__hover__icon i, .blog-item__title > a, .blog-item__read-more > a:link,
+.footer__content__info > ul > li, .footer__content__buy > ul > li, .header__top-nav__item > a, .header__top-nav__icon, .header__slider__jump-links__item, .header__main-nav__item > a:link,
+.header__main-nav__item > a:visited, .footer__content__email__social > ul > li > a, .footer__content__contact > ul > li > a, .products__slide__list, .btn, .drop-down__menu__item > a:link, .drop-down__menu__item > a:visited, .product__favorite, .product__favorite > a, .blog-item__img__hover__bg, .blog-item__img__hover__icon i, .blog-item__title > a, .blog-item__read-more > a:link,
 .blog-item__read-more > a:visited, .home-page__gallery__item__img, .home-page__blog__right__comment a, .home-page__blog__right__dots > span {
   transition: all 0.3s ease; }
 
@@ -201,6 +318,12 @@ a {
 .products__slide__arrow__left > label > i, .products__slide__arrow__right > label > i {
   color: #dfa949;
   font-size: 1.5rem;
+  cursor: pointer; }
+
+.footer__content__info > ul > li, .footer__content__buy > ul > li {
+  margin-bottom: 0.7rem;
+  text-transform: uppercase;
+  font-size: 1.2rem;
   cursor: pointer; }
 
 .products__slide {
@@ -231,16 +354,16 @@ a {
   .products__slide > input {
     visibility: hidden; }
 
-.header__top-nav__item > a:hover, .header__top-nav__icon:hover, .header__main-nav__item > a:hover:link,
-.header__main-nav__item > a:hover:visited, .drop-down__menu__item > a:hover:link, .drop-down__menu__item > a:hover:visited, .blog-item__title > a:hover, .blog-item__read-more > a:hover:link,
+.footer__content__info > ul > li:hover, .footer__content__buy > ul > li:hover, .header__top-nav__item > a:hover, .header__top-nav__icon:hover, .header__main-nav__item > a:hover:link,
+.header__main-nav__item > a:hover:visited, .footer__content__email__social > ul > li > a:hover, .footer__content__contact > ul > li > a:hover, .drop-down__menu__item > a:hover:link, .drop-down__menu__item > a:hover:visited, .blog-item__title > a:hover, .blog-item__read-more > a:hover:link,
 .blog-item__read-more > a:hover:visited, .home-page__blog__right__comment a:hover {
   color: #dfa949; }
 
 .btn:hover, .home-page__blog__right__dots > span:hover {
   background-color: #dfa949; }
 
-.header__top-nav__item > a, .header__top-nav__icon, .header__slider__jump-links__item, .header__main-nav__item > a:link,
-.header__main-nav__item > a:visited, .products__slide__list, .btn, .drop-down__menu__item > a:link, .drop-down__menu__item > a:visited, .product__favorite, .product__favorite > a, .blog-item__img__hover__bg, .blog-item__img__hover__icon i, .blog-item__title > a, .blog-item__read-more > a:link,
+.footer__content__info > ul > li, .footer__content__buy > ul > li, .header__top-nav__item > a, .header__top-nav__icon, .header__slider__jump-links__item, .header__main-nav__item > a:link,
+.header__main-nav__item > a:visited, .footer__content__email__social > ul > li > a, .footer__content__contact > ul > li > a, .products__slide__list, .btn, .drop-down__menu__item > a:link, .drop-down__menu__item > a:visited, .product__favorite, .product__favorite > a, .blog-item__img__hover__bg, .blog-item__img__hover__icon i, .blog-item__title > a, .blog-item__read-more > a:link,
 .blog-item__read-more > a:visited, .home-page__gallery__item__img, .home-page__blog__right__comment a, .home-page__blog__right__dots > span {
   transition: all 0.3s ease; }
 
@@ -259,6 +382,12 @@ a {
 .products__slide__arrow__left > label > i, .products__slide__arrow__right > label > i {
   color: #dfa949;
   font-size: 1.5rem;
+  cursor: pointer; }
+
+.footer__content__info > ul > li, .footer__content__buy > ul > li {
+  margin-bottom: 0.7rem;
+  text-transform: uppercase;
+  font-size: 1.2rem;
   cursor: pointer; }
 
 .btn {
@@ -269,16 +398,16 @@ a {
   font-size: 1.3rem;
   cursor: pointer; }
 
-.header__top-nav__item > a:hover, .header__top-nav__icon:hover, .header__main-nav__item > a:hover:link,
-.header__main-nav__item > a:hover:visited, .drop-down__menu__item > a:hover:link, .drop-down__menu__item > a:hover:visited, .blog-item__title > a:hover, .blog-item__read-more > a:hover:link,
+.footer__content__info > ul > li:hover, .footer__content__buy > ul > li:hover, .header__top-nav__item > a:hover, .header__top-nav__icon:hover, .header__main-nav__item > a:hover:link,
+.header__main-nav__item > a:hover:visited, .footer__content__email__social > ul > li > a:hover, .footer__content__contact > ul > li > a:hover, .drop-down__menu__item > a:hover:link, .drop-down__menu__item > a:hover:visited, .blog-item__title > a:hover, .blog-item__read-more > a:hover:link,
 .blog-item__read-more > a:hover:visited, .home-page__blog__right__comment a:hover {
   color: #dfa949; }
 
 .btn:hover, .home-page__blog__right__dots > span:hover {
   background-color: #dfa949; }
 
-.header__top-nav__item > a, .header__top-nav__icon, .header__slider__jump-links__item, .header__main-nav__item > a:link,
-.header__main-nav__item > a:visited, .products__slide__list, .btn, .drop-down__menu__item > a:link, .drop-down__menu__item > a:visited, .product__favorite, .product__favorite > a, .blog-item__img__hover__bg, .blog-item__img__hover__icon i, .blog-item__title > a, .blog-item__read-more > a:link,
+.footer__content__info > ul > li, .footer__content__buy > ul > li, .header__top-nav__item > a, .header__top-nav__icon, .header__slider__jump-links__item, .header__main-nav__item > a:link,
+.header__main-nav__item > a:visited, .footer__content__email__social > ul > li > a, .footer__content__contact > ul > li > a, .products__slide__list, .btn, .drop-down__menu__item > a:link, .drop-down__menu__item > a:visited, .product__favorite, .product__favorite > a, .blog-item__img__hover__bg, .blog-item__img__hover__icon i, .blog-item__title > a, .blog-item__read-more > a:link,
 .blog-item__read-more > a:visited, .home-page__gallery__item__img, .home-page__blog__right__comment a, .home-page__blog__right__dots > span {
   transition: all 0.3s ease; }
 
@@ -297,6 +426,12 @@ a {
 .products__slide__arrow__left > label > i, .products__slide__arrow__right > label > i {
   color: #dfa949;
   font-size: 1.5rem;
+  cursor: pointer; }
+
+.footer__content__info > ul > li, .footer__content__buy > ul > li {
+  margin-bottom: 0.7rem;
+  text-transform: uppercase;
+  font-size: 1.2rem;
   cursor: pointer; }
 
 .drop-down {
@@ -411,16 +546,16 @@ a {
   font-size: 3.4rem;
   color: #dfa949; }
 
-.header__top-nav__item > a:hover, .header__top-nav__icon:hover, .header__main-nav__item > a:hover:link,
-.header__main-nav__item > a:hover:visited, .drop-down__menu__item > a:hover:link, .drop-down__menu__item > a:hover:visited, .blog-item__title > a:hover, .blog-item__read-more > a:hover:link,
+.footer__content__info > ul > li:hover, .footer__content__buy > ul > li:hover, .header__top-nav__item > a:hover, .header__top-nav__icon:hover, .header__main-nav__item > a:hover:link,
+.header__main-nav__item > a:hover:visited, .footer__content__email__social > ul > li > a:hover, .footer__content__contact > ul > li > a:hover, .drop-down__menu__item > a:hover:link, .drop-down__menu__item > a:hover:visited, .blog-item__title > a:hover, .blog-item__read-more > a:hover:link,
 .blog-item__read-more > a:hover:visited, .home-page__blog__right__comment a:hover {
   color: #dfa949; }
 
 .btn:hover, .home-page__blog__right__dots > span:hover {
   background-color: #dfa949; }
 
-.header__top-nav__item > a, .header__top-nav__icon, .header__slider__jump-links__item, .header__main-nav__item > a:link,
-.header__main-nav__item > a:visited, .products__slide__list, .btn, .drop-down__menu__item > a:link, .drop-down__menu__item > a:visited, .product__favorite, .product__favorite > a, .blog-item__img__hover__bg, .blog-item__img__hover__icon i, .blog-item__title > a, .blog-item__read-more > a:link,
+.footer__content__info > ul > li, .footer__content__buy > ul > li, .header__top-nav__item > a, .header__top-nav__icon, .header__slider__jump-links__item, .header__main-nav__item > a:link,
+.header__main-nav__item > a:visited, .footer__content__email__social > ul > li > a, .footer__content__contact > ul > li > a, .products__slide__list, .btn, .drop-down__menu__item > a:link, .drop-down__menu__item > a:visited, .product__favorite, .product__favorite > a, .blog-item__img__hover__bg, .blog-item__img__hover__icon i, .blog-item__title > a, .blog-item__read-more > a:link,
 .blog-item__read-more > a:visited, .home-page__gallery__item__img, .home-page__blog__right__comment a, .home-page__blog__right__dots > span {
   transition: all 0.3s ease; }
 
@@ -439,6 +574,12 @@ a {
 .products__slide__arrow__left > label > i, .products__slide__arrow__right > label > i {
   color: #dfa949;
   font-size: 1.5rem;
+  cursor: pointer; }
+
+.footer__content__info > ul > li, .footer__content__buy > ul > li {
+  margin-bottom: 0.7rem;
+  text-transform: uppercase;
+  font-size: 1.2rem;
   cursor: pointer; }
 
 .product {
@@ -512,11 +653,17 @@ a {
   position: relative; }
   .blog-item__img > img {
     width: 100%; }
+  .blog-item__img:hover > .blog-item__img__hover > .blog-item__img__hover__bg,
+  .blog-item__img:hover > .blog-item__img__hover > .blog-item__img__hover__icon > i {
+    visibility: visible;
+    opacity: 1; }
   .blog-item__img__hover__bg {
     position: absolute;
     top: 0;
     left: 0;
-    background: linear-gradient(to bottom right, transparent 50%, rgba(255, 255, 255, 0.2) 50%); }
+    background: linear-gradient(to bottom right, transparent 50%, rgba(255, 255, 255, 0.2) 50%);
+    visibility: hidden;
+    opacity: 0; }
   .blog-item__img__hover__icon i {
     position: absolute;
     top: 50%;
@@ -526,7 +673,9 @@ a {
     border-radius: 50%;
     background-color: #fff;
     color: #000;
-    font-size: 1.6rem; }
+    font-size: 1.6rem;
+    visibility: hidden;
+    opacity: 0; }
   .blog-item__img__hover a {
     position: absolute;
     top: 0;
@@ -557,16 +706,16 @@ a {
     font-size: 1.4rem;
     color: inherit; }
 
-.header__top-nav__item > a:hover, .header__top-nav__icon:hover, .header__main-nav__item > a:hover:link,
-.header__main-nav__item > a:hover:visited, .drop-down__menu__item > a:hover:link, .drop-down__menu__item > a:hover:visited, .blog-item__title > a:hover, .blog-item__read-more > a:hover:link,
+.footer__content__info > ul > li:hover, .footer__content__buy > ul > li:hover, .header__top-nav__item > a:hover, .header__top-nav__icon:hover, .header__main-nav__item > a:hover:link,
+.header__main-nav__item > a:hover:visited, .footer__content__email__social > ul > li > a:hover, .footer__content__contact > ul > li > a:hover, .drop-down__menu__item > a:hover:link, .drop-down__menu__item > a:hover:visited, .blog-item__title > a:hover, .blog-item__read-more > a:hover:link,
 .blog-item__read-more > a:hover:visited, .home-page__blog__right__comment a:hover {
   color: #dfa949; }
 
 .btn:hover, .home-page__blog__right__dots > span:hover {
   background-color: #dfa949; }
 
-.header__top-nav__item > a, .header__top-nav__icon, .header__slider__jump-links__item, .header__main-nav__item > a:link,
-.header__main-nav__item > a:visited, .products__slide__list, .btn, .drop-down__menu__item > a:link, .drop-down__menu__item > a:visited, .product__favorite, .product__favorite > a, .blog-item__img__hover__bg, .blog-item__img__hover__icon i, .blog-item__title > a, .blog-item__read-more > a:link,
+.footer__content__info > ul > li, .footer__content__buy > ul > li, .header__top-nav__item > a, .header__top-nav__icon, .header__slider__jump-links__item, .header__main-nav__item > a:link,
+.header__main-nav__item > a:visited, .footer__content__email__social > ul > li > a, .footer__content__contact > ul > li > a, .products__slide__list, .btn, .drop-down__menu__item > a:link, .drop-down__menu__item > a:visited, .product__favorite, .product__favorite > a, .blog-item__img__hover__bg, .blog-item__img__hover__icon i, .blog-item__title > a, .blog-item__read-more > a:link,
 .blog-item__read-more > a:visited, .home-page__gallery__item__img, .home-page__blog__right__comment a, .home-page__blog__right__dots > span {
   transition: all 0.3s ease; }
 
@@ -587,10 +736,15 @@ a {
   font-size: 1.5rem;
   cursor: pointer; }
 
+.footer__content__info > ul > li, .footer__content__buy > ul > li {
+  margin-bottom: 0.7rem;
+  text-transform: uppercase;
+  font-size: 1.2rem;
+  cursor: pointer; }
+
 .home-page {
   background: url("../img/home-page-bg-1.png") left top no-repeat, url("../img/home-page-bg-2.png") right top no-repeat;
-  background-size: 25%, 10%;
-  height: 500rem; }
+  background-size: 25%, 10%; }
   .home-page__intro {
     padding-top: 10rem; }
     .home-page__intro__box {
