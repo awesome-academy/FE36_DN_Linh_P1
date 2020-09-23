@@ -1,0 +1,75 @@
+.products {
+  &__banner {
+    & > .container img {
+      width: 100%;
+      height: auto;
+    }
+  }
+  &__content {
+    margin: 4.2rem 0 13rem;
+    &__box {
+      @include grid(12, 3rem);
+    }
+    &__category {
+      grid-column: 1/4;
+      &__list {
+        & > ul {
+          margin: 2.2rem 0 3rem;
+          & > li {
+            font-size: 1.4rem;
+            margin-top: 0.5rem;
+            cursor: pointer;
+            &:first-child,
+            &:nth-child(18) {
+              margin-bottom: 0.8rem;
+            }
+            @extend %transition;
+            @extend %hover-text;
+            &:hover {
+              list-style-type: disc;
+              margin-left: 1.2rem;
+            }
+          }
+        }
+      }
+      &__compare {
+        & > p {
+          margin: 2.2rem 0;
+          font-size: 1.4rem;
+        }
+      }
+      &__tag {
+        & > ul {
+          margin: 2.2rem 0;
+          display: flex;
+          flex-wrap: wrap;
+          & > li {
+            margin: 0 0.5rem 1.1rem;
+            padding: 0.4rem 0.8rem;
+            font-size: 1.2rem;
+            border: 0.1rem solid $color-grey;
+            cursor: pointer;
+            font-family: "Open Sans";
+            @extend %transition;
+            &:hover {
+              background-color: $color-primary-light;
+              color: $color-white;
+            }
+          }
+        }
+      }
+      &__banner {
+        height: 53.8rem;
+        overflow: hidden;
+        position: relative;
+        & > img {
+          position: absolute;
+          left: -25%;
+        }
+      }
+    }
+    &__grid {
+      grid-column: 4/13;
+    }
+  }
+}

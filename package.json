@@ -6,7 +6,7 @@
   "scripts": {
     "watch:sass": "node-sass src/sass/main.scss public/css/style.css -w",
     "watch:pug": "pug -w ./src/pug/ -o ./public/ -P",
-    "devserver": "live-server --open=public/pages/",
+    "devserver": "live-server --open=public/pages/ --browser=firefox",
     "start": "npm-run-all --parallel devserver watch:pug watch:sass"
   },
   "repository": {

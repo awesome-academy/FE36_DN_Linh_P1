@@ -18,10 +18,17 @@ mixin sm-label(text,color)
     .sm-label(style="background-color:"+ color)
         .sm-label__text
             h5= text
+
 mixin product-title(text)
     .product-title
         h2.product-title__text= text
         img.product-title__icon(src="../img/arrow.png", alt="product title")
+
+mixin product-title-sm(text)
+    .product-title
+        h2.product-title__text.sm-text= text
+        img.product-title__icon(src="../img/arrow.png", alt="product title")
+
 mixin product-price(number)
     .product-price
         p= number
@@ -96,6 +103,10 @@ mixin gallery-item(number)
             p.home-page__gallery__item__hover__year 1987
             p.home-page__gallery__item__hover__text Rượu
             a(href="#")
+            .line-top
+            .line-left
+            .line-bottom
+            .line-right
 
 mixin blog-item(blog)
     .blog-item
@@ -127,8 +138,49 @@ mixin detail-title(title)
 mixin sm-title(text)
     .sm-title
         h6= text
-
-
-
-
-
+mixin products-pag(boolean)
+    .products-pag
+        .products-pag__type
+            if boolean == true
+                a.active(href="./products.html")
+                    i.fa.fa-th
+                a(href="./products-list.html")
+                    i.fa.fa-th-list
+            else
+                a(href="./products.html")
+                    i.fa.fa-th
+                a.active(href="./products-list.html")
+                    i.fa.fa-th-list
+        .products-pag__num
+            a(href="#")
+                i.fa.fa-caret-left
+            - for (let i = 1; i < 6; i++)
+                if i == 2
+                    a.active(href="#")= i
+                else
+                    a(href="#")= i
+            a(href="#")
+                i.fa.fa-caret-right
+mixin products-list-item(link, title, price, content)
+    .products-list__item
+        .products-list__item__img
+            img(src=link, alt="product image")
+        .products-list__item__content
+            .products-list__item__content__title
+                h3= title
+            .products-list__item__content__price
+                +product-price(price)
+            .products-list__item__content__content
+                p= content
+            .products-list__item__content__btn
+                +btn-add-new
+                a(href='#')
+                    i.fa.fa-heart
+                    p Yêu thích
+                a(href='#')
+                    i.fa.fa-signal
+                    p So sánh
+mixin input-text(text, value)
+    .input-text
+        label(for=text)= text
+        input(type='text' name=text id=text value=value)

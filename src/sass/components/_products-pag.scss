@@ -1,0 +1,28 @@
+.products-pag {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border: 0.1rem solid $color-grey;
+  padding: 1rem 1.3rem;
+  margin-bottom: 2.5rem;
+  &__type {
+    & > a {
+      margin-right: 1.5rem;
+      font-size: 1.4rem;
+      outline: none;
+      color: inherit;
+    }
+  }
+  &__num {
+    & > a {
+      margin-right: 1.1rem;
+      font-size: 1.2rem;
+      color: inherit;
+      @extend %transition;
+      @extend %hover-text;
+    }
+  }
+}
+.active {
+  color: $color-primary-light !important;
+}

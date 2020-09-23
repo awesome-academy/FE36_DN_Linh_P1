@@ -32,19 +32,19 @@ input {
   src: url(../fonts/utm-caviar.ttf); }
 
 .footer__content__info > ul > li:hover, .footer__content__buy > ul > li:hover, .header__top-nav__item > a:hover, .header__top-nav__icon:hover, .header__main-nav__item > a:hover:link,
-.header__main-nav__item > a:hover:visited, .footer__content__email__social > ul > li > a:hover, .footer__content__contact > ul > li > a:hover, .drop-down__menu__item > a:hover:link, .drop-down__menu__item > a:hover:visited, .blog-item__title > a:hover, .blog-item__read-more > a:hover:link,
-.blog-item__read-more > a:hover:visited, .directions__item > a:hover, .home-page__blog__right__comment a:hover, .product-detail__main__content__favorite > ul > li > a:hover {
+.header__main-nav__item > a:hover:visited, .footer__content__email__social > ul > li > a:hover, .footer__content__contact > ul > li > a:hover, .products__content__category__list > ul > li:hover, .drop-down__menu__item > a:hover:link, .drop-down__menu__item > a:hover:visited, .product__favorite > a:hover, .blog-item__title > a:hover, .blog-item__read-more > a:hover:link,
+.blog-item__read-more > a:hover:visited, .directions__item > a:hover, .products-pag__num > a:hover, .home-page__blog__right__comment a:hover, .product-detail__main__content__favorite > ul > li > a:hover, .products-list__item__content__btn > a:hover, .contact__content__address__social > ul > li > a:hover {
   color: #dfa949; }
 
 .btn:hover, .home-page__blog__right__dots > span:hover {
   background-color: #dfa949; }
 
 .footer__content__info > ul > li, .footer__content__buy > ul > li, .header__top-nav__item > a, .header__top-nav__icon, .header__slider__jump-links__item, .header__main-nav__item > a:link,
-.header__main-nav__item > a:visited, .footer__content__email__social > ul > li > a, .footer__content__contact > ul > li > a, .products__slide__list, .btn, .drop-down__menu__item > a:link, .drop-down__menu__item > a:visited, .product__favorite, .product__favorite > a, .blog-item__img__hover__bg, .blog-item__img__hover__icon i, .blog-item__title > a, .blog-item__read-more > a:link,
-.blog-item__read-more > a:visited, .directions__item > a, .home-page__gallery__item__img, .home-page__blog__right__comment a, .home-page__blog__right__dots > span, .product-detail__main__img__full, .product-detail__main__content__favorite > ul > li > a, .product-detail__content__left__title .detail-title {
+.header__main-nav__item > a:visited, .footer__content__email__social > ul > li > a, .footer__content__contact > ul > li > a, .products__slide__list, .products__content__category__list > ul > li, .products__content__category__tag > ul > li, .btn, .drop-down__menu__item > a:link, .drop-down__menu__item > a:visited, .product__favorite, .product__favorite > a, .blog-item__img__hover__bg, .blog-item__img__hover__icon i, .blog-item__title > a, .blog-item__read-more > a:link,
+.blog-item__read-more > a:visited, .directions__item > a, .products-pag__num > a, .home-page__gallery__item__img, .home-page__gallery__item__hover .line-top, .home-page__gallery__item__hover .line-left, .home-page__gallery__item__hover .line-bottom, .home-page__gallery__item__hover .line-right, .home-page__blog__right__comment a, .home-page__blog__right__dots > span, .product-detail__main__img__full, .product-detail__main__content__favorite > ul > li > a, .product-detail__content__left__title .detail-title, .products-list__item__content__btn > a, .contact__content__address__social > ul > li > a {
   transition: all 0.3s ease; }
 
-.header__slider__img .slide, .header__slider__img .slide__img, .blog-item__img__hover__bg, .blog-item__img__hover a {
+.header__slider__img .slide, .header__slider__img .slide__img, .blog-item__img__hover__bg, .blog-item__img__hover a, .home-page__gallery__item__hover, .home-page__gallery__item__hover > a {
   width: 100%;
   height: 100%; }
 
@@ -68,19 +68,19 @@ input {
   cursor: pointer; }
 
 .footer__content__info > ul > li:hover, .footer__content__buy > ul > li:hover, .header__top-nav__item > a:hover, .header__top-nav__icon:hover, .header__main-nav__item > a:hover:link,
-.header__main-nav__item > a:hover:visited, .footer__content__email__social > ul > li > a:hover, .footer__content__contact > ul > li > a:hover, .drop-down__menu__item > a:hover:link, .drop-down__menu__item > a:hover:visited, .blog-item__title > a:hover, .blog-item__read-more > a:hover:link,
-.blog-item__read-more > a:hover:visited, .directions__item > a:hover, .home-page__blog__right__comment a:hover, .product-detail__main__content__favorite > ul > li > a:hover {
+.header__main-nav__item > a:hover:visited, .footer__content__email__social > ul > li > a:hover, .footer__content__contact > ul > li > a:hover, .products__content__category__list > ul > li:hover, .drop-down__menu__item > a:hover:link, .drop-down__menu__item > a:hover:visited, .product__favorite > a:hover, .blog-item__title > a:hover, .blog-item__read-more > a:hover:link,
+.blog-item__read-more > a:hover:visited, .directions__item > a:hover, .products-pag__num > a:hover, .home-page__blog__right__comment a:hover, .product-detail__main__content__favorite > ul > li > a:hover, .products-list__item__content__btn > a:hover, .contact__content__address__social > ul > li > a:hover {
   color: #dfa949; }
 
 .btn:hover, .home-page__blog__right__dots > span:hover {
   background-color: #dfa949; }
 
 .footer__content__info > ul > li, .footer__content__buy > ul > li, .header__top-nav__item > a, .header__top-nav__icon, .header__slider__jump-links__item, .header__main-nav__item > a:link,
-.header__main-nav__item > a:visited, .footer__content__email__social > ul > li > a, .footer__content__contact > ul > li > a, .products__slide__list, .btn, .drop-down__menu__item > a:link, .drop-down__menu__item > a:visited, .product__favorite, .product__favorite > a, .blog-item__img__hover__bg, .blog-item__img__hover__icon i, .blog-item__title > a, .blog-item__read-more > a:link,
-.blog-item__read-more > a:visited, .directions__item > a, .home-page__gallery__item__img, .home-page__blog__right__comment a, .home-page__blog__right__dots > span, .product-detail__main__img__full, .product-detail__main__content__favorite > ul > li > a, .product-detail__content__left__title .detail-title {
+.header__main-nav__item > a:visited, .footer__content__email__social > ul > li > a, .footer__content__contact > ul > li > a, .products__slide__list, .products__content__category__list > ul > li, .products__content__category__tag > ul > li, .btn, .drop-down__menu__item > a:link, .drop-down__menu__item > a:visited, .product__favorite, .product__favorite > a, .blog-item__img__hover__bg, .blog-item__img__hover__icon i, .blog-item__title > a, .blog-item__read-more > a:link,
+.blog-item__read-more > a:visited, .directions__item > a, .products-pag__num > a, .home-page__gallery__item__img, .home-page__gallery__item__hover .line-top, .home-page__gallery__item__hover .line-left, .home-page__gallery__item__hover .line-bottom, .home-page__gallery__item__hover .line-right, .home-page__blog__right__comment a, .home-page__blog__right__dots > span, .product-detail__main__img__full, .product-detail__main__content__favorite > ul > li > a, .product-detail__content__left__title .detail-title, .products-list__item__content__btn > a, .contact__content__address__social > ul > li > a {
   transition: all 0.3s ease; }
 
-.header__slider__img .slide, .header__slider__img .slide__img, .blog-item__img__hover__bg, .blog-item__img__hover a {
+.header__slider__img .slide, .header__slider__img .slide__img, .blog-item__img__hover__bg, .blog-item__img__hover a, .home-page__gallery__item__hover, .home-page__gallery__item__hover > a {
   width: 100%;
   height: 100%; }
 
@@ -300,19 +300,19 @@ input {
   opacity: 0.4; }
 
 .footer__content__info > ul > li:hover, .footer__content__buy > ul > li:hover, .header__top-nav__item > a:hover, .header__top-nav__icon:hover, .header__main-nav__item > a:hover:link,
-.header__main-nav__item > a:hover:visited, .footer__content__email__social > ul > li > a:hover, .footer__content__contact > ul > li > a:hover, .drop-down__menu__item > a:hover:link, .drop-down__menu__item > a:hover:visited, .blog-item__title > a:hover, .blog-item__read-more > a:hover:link,
-.blog-item__read-more > a:hover:visited, .directions__item > a:hover, .home-page__blog__right__comment a:hover, .product-detail__main__content__favorite > ul > li > a:hover {
+.header__main-nav__item > a:hover:visited, .footer__content__email__social > ul > li > a:hover, .footer__content__contact > ul > li > a:hover, .products__content__category__list > ul > li:hover, .drop-down__menu__item > a:hover:link, .drop-down__menu__item > a:hover:visited, .product__favorite > a:hover, .blog-item__title > a:hover, .blog-item__read-more > a:hover:link,
+.blog-item__read-more > a:hover:visited, .directions__item > a:hover, .products-pag__num > a:hover, .home-page__blog__right__comment a:hover, .product-detail__main__content__favorite > ul > li > a:hover, .products-list__item__content__btn > a:hover, .contact__content__address__social > ul > li > a:hover {
   color: #dfa949; }
 
 .btn:hover, .home-page__blog__right__dots > span:hover {
   background-color: #dfa949; }
 
 .footer__content__info > ul > li, .footer__content__buy > ul > li, .header__top-nav__item > a, .header__top-nav__icon, .header__slider__jump-links__item, .header__main-nav__item > a:link,
-.header__main-nav__item > a:visited, .footer__content__email__social > ul > li > a, .footer__content__contact > ul > li > a, .products__slide__list, .btn, .drop-down__menu__item > a:link, .drop-down__menu__item > a:visited, .product__favorite, .product__favorite > a, .blog-item__img__hover__bg, .blog-item__img__hover__icon i, .blog-item__title > a, .blog-item__read-more > a:link,
-.blog-item__read-more > a:visited, .directions__item > a, .home-page__gallery__item__img, .home-page__blog__right__comment a, .home-page__blog__right__dots > span, .product-detail__main__img__full, .product-detail__main__content__favorite > ul > li > a, .product-detail__content__left__title .detail-title {
+.header__main-nav__item > a:visited, .footer__content__email__social > ul > li > a, .footer__content__contact > ul > li > a, .products__slide__list, .products__content__category__list > ul > li, .products__content__category__tag > ul > li, .btn, .drop-down__menu__item > a:link, .drop-down__menu__item > a:visited, .product__favorite, .product__favorite > a, .blog-item__img__hover__bg, .blog-item__img__hover__icon i, .blog-item__title > a, .blog-item__read-more > a:link,
+.blog-item__read-more > a:visited, .directions__item > a, .products-pag__num > a, .home-page__gallery__item__img, .home-page__gallery__item__hover .line-top, .home-page__gallery__item__hover .line-left, .home-page__gallery__item__hover .line-bottom, .home-page__gallery__item__hover .line-right, .home-page__blog__right__comment a, .home-page__blog__right__dots > span, .product-detail__main__img__full, .product-detail__main__content__favorite > ul > li > a, .product-detail__content__left__title .detail-title, .products-list__item__content__btn > a, .contact__content__address__social > ul > li > a {
   transition: all 0.3s ease; }
 
-.header__slider__img .slide, .header__slider__img .slide__img, .blog-item__img__hover__bg, .blog-item__img__hover a {
+.header__slider__img .slide, .header__slider__img .slide__img, .blog-item__img__hover__bg, .blog-item__img__hover a, .home-page__gallery__item__hover, .home-page__gallery__item__hover > a {
   width: 100%;
   height: 100%; }
 
@@ -363,20 +363,70 @@ input {
   .products__slide > input {
     visibility: hidden; }
 
+.products__banner > .container img {
+  width: 100%;
+  height: auto; }
+
+.products__content {
+  margin: 4.2rem 0 13rem; }
+  .products__content__box {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-gap: 3rem; }
+  .products__content__category {
+    grid-column: 1/4; }
+    .products__content__category__list > ul {
+      margin: 2.2rem 0 3rem; }
+      .products__content__category__list > ul > li {
+        font-size: 1.4rem;
+        margin-top: 0.5rem;
+        cursor: pointer; }
+        .products__content__category__list > ul > li:first-child, .products__content__category__list > ul > li:nth-child(18) {
+          margin-bottom: 0.8rem; }
+        .products__content__category__list > ul > li:hover {
+          list-style-type: disc;
+          margin-left: 1.2rem; }
+    .products__content__category__compare > p {
+      margin: 2.2rem 0;
+      font-size: 1.4rem; }
+    .products__content__category__tag > ul {
+      margin: 2.2rem 0;
+      display: flex;
+      flex-wrap: wrap; }
+      .products__content__category__tag > ul > li {
+        margin: 0 0.5rem 1.1rem;
+        padding: 0.4rem 0.8rem;
+        font-size: 1.2rem;
+        border: 0.1rem solid #e6e6e6;
+        cursor: pointer;
+        font-family: "Open Sans"; }
+        .products__content__category__tag > ul > li:hover {
+          background-color: #dfa949;
+          color: #fff; }
+    .products__content__category__banner {
+      height: 53.8rem;
+      overflow: hidden;
+      position: relative; }
+      .products__content__category__banner > img {
+        position: absolute;
+        left: -25%; }
+  .products__content__grid {
+    grid-column: 4/13; }
+
 .footer__content__info > ul > li:hover, .footer__content__buy > ul > li:hover, .header__top-nav__item > a:hover, .header__top-nav__icon:hover, .header__main-nav__item > a:hover:link,
-.header__main-nav__item > a:hover:visited, .footer__content__email__social > ul > li > a:hover, .footer__content__contact > ul > li > a:hover, .drop-down__menu__item > a:hover:link, .drop-down__menu__item > a:hover:visited, .blog-item__title > a:hover, .blog-item__read-more > a:hover:link,
-.blog-item__read-more > a:hover:visited, .directions__item > a:hover, .home-page__blog__right__comment a:hover, .product-detail__main__content__favorite > ul > li > a:hover {
+.header__main-nav__item > a:hover:visited, .footer__content__email__social > ul > li > a:hover, .footer__content__contact > ul > li > a:hover, .products__content__category__list > ul > li:hover, .drop-down__menu__item > a:hover:link, .drop-down__menu__item > a:hover:visited, .product__favorite > a:hover, .blog-item__title > a:hover, .blog-item__read-more > a:hover:link,
+.blog-item__read-more > a:hover:visited, .directions__item > a:hover, .products-pag__num > a:hover, .home-page__blog__right__comment a:hover, .product-detail__main__content__favorite > ul > li > a:hover, .products-list__item__content__btn > a:hover, .contact__content__address__social > ul > li > a:hover {
   color: #dfa949; }
 
 .btn:hover, .home-page__blog__right__dots > span:hover {
   background-color: #dfa949; }
 
 .footer__content__info > ul > li, .footer__content__buy > ul > li, .header__top-nav__item > a, .header__top-nav__icon, .header__slider__jump-links__item, .header__main-nav__item > a:link,
-.header__main-nav__item > a:visited, .footer__content__email__social > ul > li > a, .footer__content__contact > ul > li > a, .products__slide__list, .btn, .drop-down__menu__item > a:link, .drop-down__menu__item > a:visited, .product__favorite, .product__favorite > a, .blog-item__img__hover__bg, .blog-item__img__hover__icon i, .blog-item__title > a, .blog-item__read-more > a:link,
-.blog-item__read-more > a:visited, .directions__item > a, .home-page__gallery__item__img, .home-page__blog__right__comment a, .home-page__blog__right__dots > span, .product-detail__main__img__full, .product-detail__main__content__favorite > ul > li > a, .product-detail__content__left__title .detail-title {
+.header__main-nav__item > a:visited, .footer__content__email__social > ul > li > a, .footer__content__contact > ul > li > a, .products__slide__list, .products__content__category__list > ul > li, .products__content__category__tag > ul > li, .btn, .drop-down__menu__item > a:link, .drop-down__menu__item > a:visited, .product__favorite, .product__favorite > a, .blog-item__img__hover__bg, .blog-item__img__hover__icon i, .blog-item__title > a, .blog-item__read-more > a:link,
+.blog-item__read-more > a:visited, .directions__item > a, .products-pag__num > a, .home-page__gallery__item__img, .home-page__gallery__item__hover .line-top, .home-page__gallery__item__hover .line-left, .home-page__gallery__item__hover .line-bottom, .home-page__gallery__item__hover .line-right, .home-page__blog__right__comment a, .home-page__blog__right__dots > span, .product-detail__main__img__full, .product-detail__main__content__favorite > ul > li > a, .product-detail__content__left__title .detail-title, .products-list__item__content__btn > a, .contact__content__address__social > ul > li > a {
   transition: all 0.3s ease; }
 
-.header__slider__img .slide, .header__slider__img .slide__img, .blog-item__img__hover__bg, .blog-item__img__hover a {
+.header__slider__img .slide, .header__slider__img .slide__img, .blog-item__img__hover__bg, .blog-item__img__hover a, .home-page__gallery__item__hover, .home-page__gallery__item__hover > a {
   width: 100%;
   height: 100%; }
 
@@ -408,19 +458,19 @@ input {
   cursor: pointer; }
 
 .footer__content__info > ul > li:hover, .footer__content__buy > ul > li:hover, .header__top-nav__item > a:hover, .header__top-nav__icon:hover, .header__main-nav__item > a:hover:link,
-.header__main-nav__item > a:hover:visited, .footer__content__email__social > ul > li > a:hover, .footer__content__contact > ul > li > a:hover, .drop-down__menu__item > a:hover:link, .drop-down__menu__item > a:hover:visited, .blog-item__title > a:hover, .blog-item__read-more > a:hover:link,
-.blog-item__read-more > a:hover:visited, .directions__item > a:hover, .home-page__blog__right__comment a:hover, .product-detail__main__content__favorite > ul > li > a:hover {
+.header__main-nav__item > a:hover:visited, .footer__content__email__social > ul > li > a:hover, .footer__content__contact > ul > li > a:hover, .products__content__category__list > ul > li:hover, .drop-down__menu__item > a:hover:link, .drop-down__menu__item > a:hover:visited, .product__favorite > a:hover, .blog-item__title > a:hover, .blog-item__read-more > a:hover:link,
+.blog-item__read-more > a:hover:visited, .directions__item > a:hover, .products-pag__num > a:hover, .home-page__blog__right__comment a:hover, .product-detail__main__content__favorite > ul > li > a:hover, .products-list__item__content__btn > a:hover, .contact__content__address__social > ul > li > a:hover {
   color: #dfa949; }
 
 .btn:hover, .home-page__blog__right__dots > span:hover {
   background-color: #dfa949; }
 
 .footer__content__info > ul > li, .footer__content__buy > ul > li, .header__top-nav__item > a, .header__top-nav__icon, .header__slider__jump-links__item, .header__main-nav__item > a:link,
-.header__main-nav__item > a:visited, .footer__content__email__social > ul > li > a, .footer__content__contact > ul > li > a, .products__slide__list, .btn, .drop-down__menu__item > a:link, .drop-down__menu__item > a:visited, .product__favorite, .product__favorite > a, .blog-item__img__hover__bg, .blog-item__img__hover__icon i, .blog-item__title > a, .blog-item__read-more > a:link,
-.blog-item__read-more > a:visited, .directions__item > a, .home-page__gallery__item__img, .home-page__blog__right__comment a, .home-page__blog__right__dots > span, .product-detail__main__img__full, .product-detail__main__content__favorite > ul > li > a, .product-detail__content__left__title .detail-title {
+.header__main-nav__item > a:visited, .footer__content__email__social > ul > li > a, .footer__content__contact > ul > li > a, .products__slide__list, .products__content__category__list > ul > li, .products__content__category__tag > ul > li, .btn, .drop-down__menu__item > a:link, .drop-down__menu__item > a:visited, .product__favorite, .product__favorite > a, .blog-item__img__hover__bg, .blog-item__img__hover__icon i, .blog-item__title > a, .blog-item__read-more > a:link,
+.blog-item__read-more > a:visited, .directions__item > a, .products-pag__num > a, .home-page__gallery__item__img, .home-page__gallery__item__hover .line-top, .home-page__gallery__item__hover .line-left, .home-page__gallery__item__hover .line-bottom, .home-page__gallery__item__hover .line-right, .home-page__blog__right__comment a, .home-page__blog__right__dots > span, .product-detail__main__img__full, .product-detail__main__content__favorite > ul > li > a, .product-detail__content__left__title .detail-title, .products-list__item__content__btn > a, .contact__content__address__social > ul > li > a {
   transition: all 0.3s ease; }
 
-.header__slider__img .slide, .header__slider__img .slide__img, .blog-item__img__hover__bg, .blog-item__img__hover a {
+.header__slider__img .slide, .header__slider__img .slide__img, .blog-item__img__hover__bg, .blog-item__img__hover a, .home-page__gallery__item__hover, .home-page__gallery__item__hover > a {
   width: 100%;
   height: 100%; }
 
@@ -500,7 +550,12 @@ input {
 .product-title__text {
   font-size: 2.48rem;
   font-weight: normal;
-  color: #000; }
+  color: #000;
+  text-transform: uppercase; }
+
+.product-title__text.sm-text {
+  font-size: 1.6rem;
+  letter-spacing: 0.3rem; }
 
 .product-title__icon {
   margin-top: 0.5rem; }
@@ -556,19 +611,19 @@ input {
   color: #dfa949; }
 
 .footer__content__info > ul > li:hover, .footer__content__buy > ul > li:hover, .header__top-nav__item > a:hover, .header__top-nav__icon:hover, .header__main-nav__item > a:hover:link,
-.header__main-nav__item > a:hover:visited, .footer__content__email__social > ul > li > a:hover, .footer__content__contact > ul > li > a:hover, .drop-down__menu__item > a:hover:link, .drop-down__menu__item > a:hover:visited, .blog-item__title > a:hover, .blog-item__read-more > a:hover:link,
-.blog-item__read-more > a:hover:visited, .directions__item > a:hover, .home-page__blog__right__comment a:hover, .product-detail__main__content__favorite > ul > li > a:hover {
+.header__main-nav__item > a:hover:visited, .footer__content__email__social > ul > li > a:hover, .footer__content__contact > ul > li > a:hover, .products__content__category__list > ul > li:hover, .drop-down__menu__item > a:hover:link, .drop-down__menu__item > a:hover:visited, .product__favorite > a:hover, .blog-item__title > a:hover, .blog-item__read-more > a:hover:link,
+.blog-item__read-more > a:hover:visited, .directions__item > a:hover, .products-pag__num > a:hover, .home-page__blog__right__comment a:hover, .product-detail__main__content__favorite > ul > li > a:hover, .products-list__item__content__btn > a:hover, .contact__content__address__social > ul > li > a:hover {
   color: #dfa949; }
 
 .btn:hover, .home-page__blog__right__dots > span:hover {
   background-color: #dfa949; }
 
 .footer__content__info > ul > li, .footer__content__buy > ul > li, .header__top-nav__item > a, .header__top-nav__icon, .header__slider__jump-links__item, .header__main-nav__item > a:link,
-.header__main-nav__item > a:visited, .footer__content__email__social > ul > li > a, .footer__content__contact > ul > li > a, .products__slide__list, .btn, .drop-down__menu__item > a:link, .drop-down__menu__item > a:visited, .product__favorite, .product__favorite > a, .blog-item__img__hover__bg, .blog-item__img__hover__icon i, .blog-item__title > a, .blog-item__read-more > a:link,
-.blog-item__read-more > a:visited, .directions__item > a, .home-page__gallery__item__img, .home-page__blog__right__comment a, .home-page__blog__right__dots > span, .product-detail__main__img__full, .product-detail__main__content__favorite > ul > li > a, .product-detail__content__left__title .detail-title {
+.header__main-nav__item > a:visited, .footer__content__email__social > ul > li > a, .footer__content__contact > ul > li > a, .products__slide__list, .products__content__category__list > ul > li, .products__content__category__tag > ul > li, .btn, .drop-down__menu__item > a:link, .drop-down__menu__item > a:visited, .product__favorite, .product__favorite > a, .blog-item__img__hover__bg, .blog-item__img__hover__icon i, .blog-item__title > a, .blog-item__read-more > a:link,
+.blog-item__read-more > a:visited, .directions__item > a, .products-pag__num > a, .home-page__gallery__item__img, .home-page__gallery__item__hover .line-top, .home-page__gallery__item__hover .line-left, .home-page__gallery__item__hover .line-bottom, .home-page__gallery__item__hover .line-right, .home-page__blog__right__comment a, .home-page__blog__right__dots > span, .product-detail__main__img__full, .product-detail__main__content__favorite > ul > li > a, .product-detail__content__left__title .detail-title, .products-list__item__content__btn > a, .contact__content__address__social > ul > li > a {
   transition: all 0.3s ease; }
 
-.header__slider__img .slide, .header__slider__img .slide__img, .blog-item__img__hover__bg, .blog-item__img__hover a {
+.header__slider__img .slide, .header__slider__img .slide__img, .blog-item__img__hover__bg, .blog-item__img__hover a, .home-page__gallery__item__hover, .home-page__gallery__item__hover > a {
   width: 100%;
   height: 100%; }
 
@@ -621,35 +676,32 @@ input {
   .product__btn {
     margin: 2.8rem; }
   .product__favorite {
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
+    width: 100%;
     background-color: #000;
     position: absolute;
-    top: 65%;
+    top: 62%;
     visibility: hidden;
-    opacity: 0; }
+    opacity: 0;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-gap: 0; }
     .product__favorite > a {
       display: flex;
-      padding-top: 8px;
-      padding-bottom: 8px;
       color: #818181;
-      font-size: 1.4rem; }
+      font-size: 1.4rem;
+      padding: 0.9rem 0.7rem;
+      justify-content: center;
+      align-items: center; }
       .product__favorite > a:first-child {
-        padding-left: 1.9rem;
-        padding-right: 1.5rem;
-        border-right: 0.1rem solid; }
+        border-right: 0.1rem solid;
+        grid-column: 1/3; }
+        .product__favorite > a:first-child > i {
+          padding-right: 0.5rem; }
       .product__favorite > a:nth-child(2) {
-        padding-left: 1.5rem;
-        padding-right: 1.5rem;
+        grid-column: 3/5;
         border-right: 0.1rem solid; }
-      .product__favorite > a:last-child {
-        padding-left: 2rem;
-        padding-right: 0.9rem; }
-      .product__favorite > a > i {
-        padding-right: 6px; }
-      .product__favorite > a:hover {
-        color: #dfa949; }
+        .product__favorite > a:nth-child(2) > i {
+          padding-right: 0.5rem; }
   .product:hover > .product__favorite {
     visibility: visible;
     opacity: 1; }
@@ -727,20 +779,57 @@ input {
     font-size: 1.6rem;
     margin: 0 0.4rem; }
 
+.products-pag {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border: 0.1rem solid #e6e6e6;
+  padding: 1rem 1.3rem;
+  margin-bottom: 2.5rem; }
+  .products-pag__type > a {
+    margin-right: 1.5rem;
+    font-size: 1.4rem;
+    outline: none;
+    color: inherit; }
+  .products-pag__num > a {
+    margin-right: 1.1rem;
+    font-size: 1.2rem;
+    color: inherit; }
+
+.active {
+  color: #dfa949 !important; }
+
+.input-text {
+  display: flex;
+  font-size: 1.4rem;
+  align-items: center; }
+  .input-text:not(:first-child) {
+    margin-top: 2rem; }
+  .input-text > label {
+    display: flex;
+    flex-basis: 16%; }
+  .input-text > input {
+    flex-grow: 1;
+    padding: 0.8rem;
+    border: 0.1rem solid #e6e6e6;
+    background-color: #fafafa;
+    font-family: inherit;
+    font-size: 1.4rem; }
+
 .footer__content__info > ul > li:hover, .footer__content__buy > ul > li:hover, .header__top-nav__item > a:hover, .header__top-nav__icon:hover, .header__main-nav__item > a:hover:link,
-.header__main-nav__item > a:hover:visited, .footer__content__email__social > ul > li > a:hover, .footer__content__contact > ul > li > a:hover, .drop-down__menu__item > a:hover:link, .drop-down__menu__item > a:hover:visited, .blog-item__title > a:hover, .blog-item__read-more > a:hover:link,
-.blog-item__read-more > a:hover:visited, .directions__item > a:hover, .home-page__blog__right__comment a:hover, .product-detail__main__content__favorite > ul > li > a:hover {
+.header__main-nav__item > a:hover:visited, .footer__content__email__social > ul > li > a:hover, .footer__content__contact > ul > li > a:hover, .products__content__category__list > ul > li:hover, .drop-down__menu__item > a:hover:link, .drop-down__menu__item > a:hover:visited, .product__favorite > a:hover, .blog-item__title > a:hover, .blog-item__read-more > a:hover:link,
+.blog-item__read-more > a:hover:visited, .directions__item > a:hover, .products-pag__num > a:hover, .home-page__blog__right__comment a:hover, .product-detail__main__content__favorite > ul > li > a:hover, .products-list__item__content__btn > a:hover, .contact__content__address__social > ul > li > a:hover {
   color: #dfa949; }
 
 .btn:hover, .home-page__blog__right__dots > span:hover {
   background-color: #dfa949; }
 
 .footer__content__info > ul > li, .footer__content__buy > ul > li, .header__top-nav__item > a, .header__top-nav__icon, .header__slider__jump-links__item, .header__main-nav__item > a:link,
-.header__main-nav__item > a:visited, .footer__content__email__social > ul > li > a, .footer__content__contact > ul > li > a, .products__slide__list, .btn, .drop-down__menu__item > a:link, .drop-down__menu__item > a:visited, .product__favorite, .product__favorite > a, .blog-item__img__hover__bg, .blog-item__img__hover__icon i, .blog-item__title > a, .blog-item__read-more > a:link,
-.blog-item__read-more > a:visited, .directions__item > a, .home-page__gallery__item__img, .home-page__blog__right__comment a, .home-page__blog__right__dots > span, .product-detail__main__img__full, .product-detail__main__content__favorite > ul > li > a, .product-detail__content__left__title .detail-title {
+.header__main-nav__item > a:visited, .footer__content__email__social > ul > li > a, .footer__content__contact > ul > li > a, .products__slide__list, .products__content__category__list > ul > li, .products__content__category__tag > ul > li, .btn, .drop-down__menu__item > a:link, .drop-down__menu__item > a:visited, .product__favorite, .product__favorite > a, .blog-item__img__hover__bg, .blog-item__img__hover__icon i, .blog-item__title > a, .blog-item__read-more > a:link,
+.blog-item__read-more > a:visited, .directions__item > a, .products-pag__num > a, .home-page__gallery__item__img, .home-page__gallery__item__hover .line-top, .home-page__gallery__item__hover .line-left, .home-page__gallery__item__hover .line-bottom, .home-page__gallery__item__hover .line-right, .home-page__blog__right__comment a, .home-page__blog__right__dots > span, .product-detail__main__img__full, .product-detail__main__content__favorite > ul > li > a, .product-detail__content__left__title .detail-title, .products-list__item__content__btn > a, .contact__content__address__social > ul > li > a {
   transition: all 0.3s ease; }
 
-.header__slider__img .slide, .header__slider__img .slide__img, .blog-item__img__hover__bg, .blog-item__img__hover a {
+.header__slider__img .slide, .header__slider__img .slide__img, .blog-item__img__hover__bg, .blog-item__img__hover a, .home-page__gallery__item__hover, .home-page__gallery__item__hover > a {
   width: 100%;
   height: 100%; }
 
@@ -841,6 +930,19 @@ input {
     .home-page__gallery__item {
       overflow: hidden;
       position: relative; }
+      .home-page__gallery__item:hover > img {
+        opacity: 0.9; }
+      .home-page__gallery__item:hover .line-top {
+        left: 23%; }
+      .home-page__gallery__item:hover .line-left {
+        top: 31%; }
+      .home-page__gallery__item:hover .line-bottom {
+        right: 23%; }
+      .home-page__gallery__item:hover .line-right {
+        bottom: 31%; }
+      .home-page__gallery__item:hover p {
+        visibility: visible;
+        opacity: 1; }
       .home-page__gallery__item__img {
         width: 100%;
         transform: scale(1); }
@@ -848,8 +950,6 @@ input {
         position: absolute;
         top: 0;
         left: 0;
-        width: 100%;
-        height: 100%;
         text-align: center;
         cursor: pointer; }
         .home-page__gallery__item__hover__year {
@@ -857,19 +957,51 @@ input {
           letter-spacing: 0.7rem;
           text-transform: uppercase;
           margin-top: 6rem;
-          font-size: 1.2rem; }
+          font-size: 1.2rem;
+          visibility: hidden;
+          opacity: 0; }
         .home-page__gallery__item__hover__text {
           margin-top: 2rem;
           font-size: 7.2rem;
           text-transform: uppercase;
           letter-spacing: 0.7rem;
           color: #fff;
-          display: block; }
-          .home-page__gallery__item__hover__text::after {
-            width: 1000px;
-            height: 20px;
-            border-top: 2px solid red;
-            border-bottom: 2px solid red; }
+          visibility: hidden;
+          opacity: 0; }
+        .home-page__gallery__item__hover > a {
+          position: absolute;
+          top: 0;
+          left: 0; }
+          .home-page__gallery__item__hover > a:hover {
+            border: 4px solid #dfa949; }
+        .home-page__gallery__item__hover .line-top {
+          position: absolute;
+          top: 20%;
+          width: 70%;
+          left: -70%;
+          height: 1px;
+          background-color: #fff; }
+        .home-page__gallery__item__hover .line-left {
+          position: absolute;
+          left: 16%;
+          width: 1px;
+          top: -60%;
+          height: 60%;
+          background-color: #fff; }
+        .home-page__gallery__item__hover .line-bottom {
+          position: absolute;
+          bottom: 20%;
+          width: 70%;
+          right: -70%;
+          height: 1px;
+          background-color: #fff; }
+        .home-page__gallery__item__hover .line-right {
+          position: absolute;
+          right: 16%;
+          width: 1px;
+          bottom: -60%;
+          height: 60%;
+          background-color: #fff; }
   .home-page__hot-products {
     margin-top: 10rem; }
     .home-page__hot-products__box {
@@ -1233,3 +1365,139 @@ input {
     content: "";
     border-top: 0.5rem solid transparent;
     border-bottom: 0.5rem solid transparent; }
+
+.products__grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 3rem; }
+  .products__grid > .product {
+    margin-bottom: 2.5rem;
+    text-align: center; }
+
+.products-list__item {
+  display: grid;
+  grid-template-columns: repeat(9, 1fr);
+  grid-gap: 3rem;
+  padding-top: 2.5rem;
+  padding-bottom: 1.8rem; }
+  .products-list__item__img {
+    grid-column: 1/4;
+    text-align: center; }
+    .products-list__item__img > img {
+      height: 29rem; }
+  .products-list__item__content {
+    grid-column: 4/9; }
+    .products-list__item__content__title > h3 {
+      color: #000;
+      font-size: 2.5rem;
+      text-transform: uppercase;
+      font-weight: normal; }
+    .products-list__item__content__content {
+      margin-top: 1.5rem;
+      margin-bottom: 2.7rem;
+      font-size: 1.3rem; }
+    .products-list__item__content__btn {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      grid-gap: 0;
+      align-items: center; }
+      .products-list__item__content__btn > a {
+        display: flex;
+        align-items: center;
+        font-size: 1.4rem;
+        color: #818181; }
+        .products-list__item__content__btn > a > i {
+          margin-right: 0.6rem; }
+        .products-list__item__content__btn > a:last-of-type {
+          transform: translateX(-4rem); }
+
+.products-list__item:not(:first-child) {
+  margin-top: 1.9rem; }
+
+.products-list__item:not(:last-child) {
+  border-bottom: 2px solid #e6e6e6; }
+
+.blog__grid {
+  margin-top: 3rem;
+  margin-bottom: 6rem; }
+  .blog__grid__box {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 3rem; }
+
+.intro__content {
+  margin: 3rem 0 10rem; }
+  .intro__content__box {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-gap: 3rem; }
+  .intro__content__img {
+    grid-column: 1/6; }
+    .intro__content__img > img {
+      width: 100%; }
+  .intro__content__text {
+    grid-column: 6/12; }
+    .intro__content__text > h2 {
+      text-transform: uppercase;
+      color: #000;
+      font-size: 2.4rem;
+      letter-spacing: 0.3rem;
+      font-weight: normal; }
+    .intro__content__text > p {
+      margin-top: 1.5rem;
+      font-size: 1.4rem;
+      line-height: 2rem; }
+
+.contact__content {
+  margin: 3rem 0 10rem; }
+  .contact__content__box {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-gap: 3rem; }
+  .contact__content__map {
+    grid-column: 1/9; }
+    .contact__content__map__form {
+      margin-top: 5.5rem; }
+      .contact__content__map__form .textarea-text {
+        margin-top: 2rem;
+        display: flex;
+        align-items: start;
+        font-size: 1.4rem; }
+        .contact__content__map__form .textarea-text > label {
+          display: flex;
+          flex-basis: 16%; }
+        .contact__content__map__form .textarea-text > textarea {
+          flex-grow: 1;
+          height: 16rem;
+          padding: 0.8rem;
+          border: 0.1rem solid #e6e6e6;
+          background-color: #fafafa;
+          font-size: 1.4rem; }
+      .contact__content__map__form .form-btn {
+        margin-top: 2.4rem;
+        margin-left: 16%; }
+  .contact__content__address {
+    grid-column: 9/13; }
+    .contact__content__address > ul {
+      margin: 3.3rem 0; }
+      .contact__content__address > ul > li {
+        display: flex;
+        font-size: 1.4rem; }
+        .contact__content__address > ul > li > i {
+          flex-basis: 7%; }
+        .contact__content__address > ul > li > p {
+          flex-basis: 70%; }
+        .contact__content__address > ul > li:not(:first-child) {
+          margin-top: 1.5rem; }
+    .contact__content__address > p {
+      font-size: 1.8rem;
+      text-transform: uppercase; }
+    .contact__content__address__social {
+      margin-top: 2rem; }
+      .contact__content__address__social > ul {
+        display: flex; }
+        .contact__content__address__social > ul > li {
+          margin-right: 2rem;
+          font-size: 2rem; }
+          .contact__content__address__social > ul > li > a {
+            color: inherit; }

@@ -5,9 +5,9 @@
 @import "layouts/grid";
 @import "layouts/header";
 @import "layouts/footer";
-@import "layouts/sidebar";
 @import "layouts/forms";
 @import "layouts/products_slide";
+@import "layouts/products-layout";
 
 @import "components/buttons";
 @import "components/slider";
@@ -18,6 +18,8 @@
 @import "components/product";
 @import "components/blog";
 @import "components/directions";
+@import "components/products-pag";
+@import "components/input-text";
 
 @import "utilities/variables";
 @import "utilities/functions";
@@ -25,3 +27,8 @@
 
 @import "pages/home";
 @import "pages/product-detail";
+@import "pages/products";
+@import "pages/products-list";
+@import "pages/blog";
+@import "pages/intro";
+@import "pages/contact";

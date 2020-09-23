@@ -1,0 +1,37 @@
+extends ../layouts/main-layout
+include ../mixins/_mixin
+block title
+    +title(contactTitle)
+block content
+    .contact
+        +directions(contactDirections)
+        .container
+            +product-title("Liên hệ")
+        .contact__content
+            .container
+                .contact__content__box
+                    .contact__content__map
+                        iframe(width='100%',height="400", src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7668.230198141358!2d108.2225459383351!3d16.059515944045952!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31421961666eff35%3A0xdba86f2bcebf5afc!2zQ-G6p3UgUuG7k25nIMSQw6AgTuG6tW5n!5e0!3m2!1svi!2s!4v1600911728845!5m2!1svi!2s", frameborder="0", style="border:0;", allowfullscreen="", aria-hidden="false", tabindex="0")
+                        .contact__content__map__form
+                            +input-text("Your Name")
+                            +input-text("Your Email")
+                            +input-text("Subject")
+                            .textarea-text
+                                label(for="message") Your Message
+                                textarea(name="message")
+                            .form-btn
+                                a.btn Gửi
+                    .contact__content__address
+                        img(src="../img/brand.png", alt="logo")
+                        ul
+                            each item in contactAddress
+                                li
+                                    i(class=item.icon)
+                                    p= item.content
+                        p FOLLOW US:
+                        .contact__content__address__social
+                            ul
+                                each item in contactSocial
+                                    li
+                                        a(href="#")
+                                            i(class=item)
