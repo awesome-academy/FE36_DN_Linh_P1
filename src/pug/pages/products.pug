@@ -1,0 +1,6 @@
+extends ../layouts/products-layout
+block products
+    +products-pag(true)
+    .products__grid
+        each item in productsGrid
+            +product(item.link, item.title, item.price1, item.price2, item.label, item.color)
