@@ -1,0 +1,18 @@
+extends ../layouts/main-layout
+include ../mixins/_mixin
+block title
+    +title(introTitle)
+block content
+    .intro
+        +directions(blogDirections)
+        .container
+            +product-title("Giới thiệu")
+        .intro__content
+            .container
+                .intro__content__box
+                    .intro__content__img
+                        img(src="../img/intro-img.png", alt="introduction image")
+                    .intro__content__text
+                        h2 Chào mừng đến với wine hourse
+                        p= introText
+        

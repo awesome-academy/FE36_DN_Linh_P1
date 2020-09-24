@@ -1,0 +1,14 @@
+extends ../layouts/main-layout
+include ../mixins/_mixin
+block title
+    +title(blogTitle)
+block content
+    .blog
+        +directions(blogDirections)
+        .container
+            +product-title("Blog")
+        .blog__grid
+            .container
+                .blog__grid__box
+                    each blog in blogList
+                        +blog-item(blog)

@@ -99,6 +99,23 @@
     &__item {
       overflow: hidden;
       position: relative;
+      &:hover {
+        & > img {
+          opacity: 0.9;
+        }
+        @each $val, $pos in ("top": "left", "bottom": "right") {
+          .line-#{$val} {
+            #{$pos}: 23%;
+          }
+          .line-#{$pos} {
+            #{$val}: 31%;
+          }
+        }
+        & p {
+          visibility: visible;
+          opacity: 1;
+        }
+      }
       &__img {
         width: 100%;
         transform: scale(1);
@@ -106,8 +123,7 @@
       }
       &__hover {
         @include p-absolute(0, 0);
-        width: 100%;
-        height: 100%;
+        @extend %w100-h100;
         text-align: center;
         cursor: pointer;
         &__year {
@@ -116,6 +132,8 @@
           text-transform: uppercase;
           margin-top: 6rem;
           font-size: 1.2rem;
+          visibility: hidden;
+          opacity: 0;
         }
         &__text {
           margin-top: 2rem;
@@ -123,12 +141,34 @@
           text-transform: uppercase;
           letter-spacing: 0.7rem;
           color: $color-white;
-          display: block;
-          &::after {
-            width: 1000px;
-            height: 20px;
-            border-top: 2px solid red;
-            border-bottom: 2px solid red;
+          visibility: hidden;
+          opacity: 0;
+        }
+        & > a {
+          @include p-absolute(0, 0);
+          @extend %w100-h100;
+          &:hover {
+            border: 4px solid $color-primary-light;
+          }
+        }
+        @each $val, $pos in ("top": "left", "bottom": "right") {
+          .line-#{$val} {
+            position: absolute;
+            #{$val}: 20%;
+            width: 70%;
+            #{$pos}: -70%;
+            height: 1px;
+            background-color: $color-white;
+            @extend %transition;
+          }
+          .line-#{$pos} {
+            position: absolute;
+            #{$pos}: 16%;
+            width: 1px;
+            #{$val}: -60%;
+            height: 60%;
+            background-color: $color-white;
+            @extend %transition;
           }
         }
       }

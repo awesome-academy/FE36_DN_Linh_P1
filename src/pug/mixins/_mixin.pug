@@ -103,6 +103,10 @@ mixin gallery-item(number)
             p.home-page__gallery__item__hover__year 1987
             p.home-page__gallery__item__hover__text Rượu
             a(href="#")
+            .line-top
+            .line-left
+            .line-bottom
+            .line-right
 
 mixin blog-item(blog)
     .blog-item
@@ -176,16 +180,7 @@ mixin products-list-item(link, title, price, content)
                 a(href='#')
                     i.fa.fa-signal
                     p So sánh
-
-            
-            
-            
-
-
-
-
-
-
-
-
-
+mixin input-text(text, value)
+    .input-text
+        label(for=text)= text
+        input(type='text' name=text id=text value=value)
