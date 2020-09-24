@@ -1,0 +1,9 @@
+.products {
+  &__grid {
+    @include grid(3, 3rem);
+    & > .product {
+      margin-bottom: 2.5rem;
+      text-align: center;
+    }
+  }
+}

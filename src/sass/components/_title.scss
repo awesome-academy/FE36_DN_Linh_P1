@@ -14,6 +14,11 @@
     font-size: 2.48rem;
     font-weight: normal;
     color: $color-secondary;
+    text-transform: uppercase;
+  }
+  &__text.sm-text {
+    font-size: 1.6rem;
+    letter-spacing: 0.3rem;
   }
   &__icon {
     margin-top: 0.5rem;

@@ -1,0 +1,6 @@
+extends ../layouts/products-layout
+block products
+    +products-pag(false)
+    .products-list
+        each item in productsList
+            +products-list-item(item.link, item.title, item.price, item.content)

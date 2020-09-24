@@ -1,0 +1,31 @@
+extends ./main-layout
+include ../mixins/_mixin
+block title
+    +title(productsTitle)
+block content
+    .products
+        +directions(productsDirections)
+        .products__banner
+            .container
+                img(src="../img/products-banner.png", alt="products banner")
+        .products__content
+            .container
+                .products__content__box
+                    .products__content__category
+                        .products__content__category__list
+                            +product-title-sm("Danh mục sản phẩm")
+                            ul
+                                each item in productsCategory
+                                    li= item
+                        .products__content__category__compare
+                            +product-title-sm("So sánh sản phẩm")
+                            p Bạn chưa có sản phẩm nào để so sánh
+                        .products__content__category__tag
+                            +product-title-sm("Tag sản phẩm")
+                            ul
+                                each item in productsTag
+                                    li= item
+                        .products__content__category__banner
+                            img(src="../img/products-banner-2.png", alt="products banner")
+                    .products__content__grid
+                        block products
