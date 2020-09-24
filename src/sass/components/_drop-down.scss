@@ -10,6 +10,10 @@
     background-color: transparent;
     left: -0.9rem;
     cursor: pointer;
+    @include lg {
+      width: 0;
+      height: 0;
+    }
   }
   &:hover &__wrapper {
     display: grid;
@@ -17,7 +21,7 @@
   &__wrapper {
     @include p-absolute(8.5rem, -20rem);
     background-color: $color-white;
-    border: 1px solid $color-primary-light;
+    border: 0.1rem solid $color-primary-light;
     display: none;
     grid-template-columns: repeat(3, minmax(15rem, max-content)) 1fr;
     grid-gap: 4.6rem;

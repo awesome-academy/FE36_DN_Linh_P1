@@ -39,6 +39,9 @@
     }
     &__contains {
       padding-top: 9.5rem;
+      @include lg {
+        padding-top: 0rem;
+      }
       grid-column: 2/12;
       @include grid(10, 3rem);
       background-color: $color-white;
@@ -48,9 +51,15 @@
       text-align: center;
       position: relative;
       overflow: hidden;
+      @include lg {
+        grid-column: 1/-1;
+      }
     }
     &__detail {
       grid-column: 7/10;
+      @include lg {
+        grid-column: 1/-1;
+      }
       &__price {
         margin-top: 1.5rem;
       }
@@ -87,6 +96,9 @@
   }
   &__new-products {
     margin-top: 39.5rem;
+    @include lg {
+      margin-top: 110rem;
+    }
     &__box {
       text-align: center;
     }
@@ -99,6 +111,23 @@
     &__item {
       overflow: hidden;
       position: relative;
+      &:hover {
+        & > img {
+          opacity: 0.9;
+        }
+        @each $val, $pos in ("top": "left", "bottom": "right") {
+          .line-#{$val} {
+            #{$pos}: 23%;
+          }
+          .line-#{$pos} {
+            #{$val}: 31%;
+          }
+        }
+        & p {
+          visibility: visible;
+          opacity: 1;
+        }
+      }
       &__img {
         width: 100%;
         transform: scale(1);
@@ -106,8 +135,7 @@
       }
       &__hover {
         @include p-absolute(0, 0);
-        width: 100%;
-        height: 100%;
+        @extend %w100-h100;
         text-align: center;
         cursor: pointer;
         &__year {
@@ -116,6 +144,8 @@
           text-transform: uppercase;
           margin-top: 6rem;
           font-size: 1.2rem;
+          visibility: hidden;
+          opacity: 0;
         }
         &__text {
           margin-top: 2rem;
@@ -123,12 +153,34 @@
           text-transform: uppercase;
           letter-spacing: 0.7rem;
           color: $color-white;
-          display: block;
-          &::after {
-            width: 1000px;
-            height: 20px;
-            border-top: 2px solid red;
-            border-bottom: 2px solid red;
+          visibility: hidden;
+          opacity: 0;
+        }
+        & > a {
+          @include p-absolute(0, 0);
+          @extend %w100-h100;
+          &:hover {
+            border: 0.4rem solid $color-primary-light;
+          }
+        }
+        @each $val, $pos in ("top": "left", "bottom": "right") {
+          .line-#{$val} {
+            position: absolute;
+            #{$val}: 20%;
+            width: 70%;
+            #{$pos}: -70%;
+            height: 0.1rem;
+            background-color: $color-white;
+            @extend %transition;
+          }
+          .line-#{$pos} {
+            position: absolute;
+            #{$pos}: 16%;
+            width: 0.1rem;
+            #{$val}: -60%;
+            height: 60%;
+            background-color: $color-white;
+            @extend %transition;
           }
         }
       }
@@ -148,6 +200,9 @@
     }
     &__left {
       grid-column: 1/9;
+      @include lg {
+        grid-column: 1/-1;
+      }
       &__title {
         text-align: center;
       }
@@ -166,6 +221,9 @@
     }
     &__right {
       grid-column: 9/13;
+      @include lg {
+        grid-column: 1/-1;
+      }
       text-align: center;
       &__content {
         & > img {
@@ -175,15 +233,27 @@
 
       &__comment {
         margin-top: 3rem;
+        @include lg {
+          text-align: center;
+        }
         p,
         a {
           color: $color-primary;
           font-size: 1.4rem;
         }
+        p {
+          @include lg {
+            width: 50%;
+            display: inline-block;
+          }
+        }
         a {
           opacity: 0.5;
           @extend %transition;
           @extend %hover-text;
+          @include lg {
+            display: none;
+          }
         }
       }
       &__profile {

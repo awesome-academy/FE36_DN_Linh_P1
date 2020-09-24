@@ -1,0 +1,70 @@
+extends ../layouts/main-layout
+include ../mixins/_mixin
+block title
+    +title(blogDetailTitle)
+block content
+    .blog-detail
+        +directions(blogDirections)
+        .container
+            +product-title("Blog")
+        .blog-detail__content
+            .container
+                .blog-detail__content__box
+                    .blog-detail__content__left
+                        .blog-detail__content__left__newest
+                            +blog-detail-title-roboto('BÀI VIẾT MỚI NHẤT')
+                            each item in blogDetailNewests
+                                +blog-detail-newest-item(item.img,item.title,item.time)
+                        .blog-detail__content__left__tag
+                            +blog-detail-title-roboto('BLOG TAGS')
+                            ul
+                                each item in blogDetailTags
+                                    li
+                                        a= item
+                        .blog-detail__content__left__video
+                            +blog-detail-title-roboto('LATEST VIDEO')
+                            .blog-detail__content__left__video__item
+                                img(src='../img/blog-detail-video.png')
+                                i.fa.fa-play
+                    .blog-detail__content__right
+                        .blog-detail__content__right__item
+                            .blog-detail__content__right__item__img
+                                img(src= blogList[0].link, alt="blog image")
+                            .blog-detail__content__right__item__title
+                                h6= blogList[0].title
+                            .blog-detail__content__right__item__author
+                                p= blogList[0].author
+                            .blog-detail__content__right__item__desc
+                                p= blogList[0].desc
+                        .blog-detail__content__right__opinion
+                            .blog-detail__content__right__opinion__title
+                                h6 Đóng góp ý kiến
+                            .blog-detail__content__right__opinion__form
+                                form
+                                    +input-text("Tên","",true)
+                                    +input-text("Email","",true)
+                                    .textarea-text
+                                        label(for="message") ý kiến
+                                            span *
+                                        textarea(name="message")
+                                    a.form__btn GỬi Ý KIẾN
+                        .blog-detail__content__right__comment
+                            .blog-detail__content__right__comment__title
+                                h6 BÌNH LUẬN(3)
+                            .blog-detail__content__right__comment__item
+                                each item in comments
+                                    +comment(item.author,item.time,item.content)
+                            .blog-detail__content__right__comment__pag
+                                each item in commentPag
+                                    if item == '1'
+                                        a.active(href='#')= item
+                                    else
+                                        a(href='#')= item
+
+                            
+                            
+
+                            
+                            
+
+

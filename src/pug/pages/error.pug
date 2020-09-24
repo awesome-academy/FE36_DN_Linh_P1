@@ -1,0 +1,20 @@
+extends ../layouts/main-layout
+include ../mixins/_mixin
+block title
+    +title(errorTitle)
+block header
+block footer
+
+block content
+    .error
+        img(src="../img/error-img.png", alt="error img")
+        .error__content
+            img(src="../img/error-logo.png", alt="error logo")
+            ul
+                each item in errorDirections
+                    li
+                        a(href=item.link)= item.name
+                        i.fa.fa-caret-right
+            .error__content__input
+                input(type="text")
+                i.fa.fa-search

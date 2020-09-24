@@ -3,5 +3,8 @@
     font-family: "utm-caviar";
     font-size: 3.4rem;
     color: $color-primary-light;
+    @include xl {
+      font-size: 2rem;
+    }
   }
 }

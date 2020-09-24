@@ -9,5 +9,8 @@
   cursor: pointer;
   @extend %hover-bg;
   @extend %transition;
-  // @extend %box-shadow;
+  @include lg {
+    font-size: 0.8rem;
+    padding: 0.6rem 0.4rem;
+  }
 }

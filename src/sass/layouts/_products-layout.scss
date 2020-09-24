@@ -12,6 +12,9 @@
     }
     &__category {
       grid-column: 1/4;
+      @include lg {
+        grid-column: 1/-1;
+      }
       &__list {
         & > ul {
           margin: 2.2rem 0 3rem;
@@ -47,7 +50,7 @@
             margin: 0 0.5rem 1.1rem;
             padding: 0.4rem 0.8rem;
             font-size: 1.2rem;
-            border: 0.1rem solid #e6e6e6;
+            border: 0.1rem solid $color-grey;
             cursor: pointer;
             font-family: "Open Sans";
             @extend %transition;
@@ -62,6 +65,9 @@
         height: 53.8rem;
         overflow: hidden;
         position: relative;
+        @include lg {
+          display: none;
+        }
         & > img {
           position: absolute;
           left: -25%;
@@ -70,6 +76,9 @@
     }
     &__grid {
       grid-column: 4/13;
+      @include lg {
+        grid-column: 1/-1;
+      }
     }
   }
 }

@@ -17,15 +17,31 @@
       <div class="header__top-nav all-page">
         <div class="container">
           <div class="header__top-nav__wrapper">
-            <div class="header__top-nav__menu">
+            <div class="header__top-nav__menu"><i class="fa fa-bars"></i>
               <ul>
-                <li class="header__top-nav__item all-page"><a href="">Tài khoản của tôi</a></li>
-                <li class="header__top-nav__item all-page"><a href="">Trạng thái đơn hàng</a></li>
-                <li class="header__top-nav__item all-page"><a href="">Danh sách ưa thích</a></li>
-                <li class="header__top-nav__item all-page"><a href="">Giỏ hàng</a></li>
-                <li class="header__top-nav__item all-page"><a href="">Đặng nhập</a></li>
-                <li class="header__top-nav__item all-page"><a href="">Đăng ký</a></li>
+                <li class="header__top-nav__item all-page"><a href="./address.html">Tài khoản của tôi</a></li>
+                <li class="header__top-nav__item all-page"><a href="./order.html">Trạng thái đơn hàng</a></li>
+                <li class="header__top-nav__item all-page"><a onclick="document.querySelector('.popup').style.display='block'">Danh sách ưa thích</a></li>
+                <li class="header__top-nav__item all-page"><a href="./cart.html">Giỏ hàng</a></li>
+                <li class="header__top-nav__item all-page"><a href="./sign-in.html">Đặng nhập</a></li>
+                <li class="header__top-nav__item all-page"><a href="./sign-up.html">Đăng ký</a></li>
               </ul>
+                    <div class="popup">
+                      <div class="popup__content"><img src="../img/popup.png" alt="popup image"><i class="fa fa-times" onclick="document.querySelector('.popup').style.display='none'"></i>
+                        <div class="popup__content__text">
+                          <p>Gửi Email</p>
+                          <p>Đăng ký Email ngay hôm nay để nhận được thông tin về các sự kiện, các chương trình giảm giá của chúng tôi sớm nhất!</p>
+                          <form>
+                            <input type="text">
+                            <button>GỬI EMAIL</button>
+                          </form>
+                                <div class="input-checkbox">
+                                  <input type="checkbox" id="Không hiển thị lại thông báo này" value="">
+                                  <label for="Không hiển thị lại thông báo này">Không hiển thị lại thông báo này</label>
+                                </div>
+                        </div>
+                      </div>
+                    </div>
             </div>
             <div class="header__top-nav__search">
               <form>
@@ -43,7 +59,7 @@
             <div class="header__main-nav__menu">
               <ul>
                 <li class="header__main-nav__item"><a href="/public/pages/">Trang chủ</a></li>
-                <li class="header__main-nav__item drop-down"><a href="">Rượu vang đỏ</a>
+                <li class="header__main-nav__item drop-down"><a href="/public/pages/error.html">Rượu vang đỏ</a>
                   <div class="drop-down__wrapper">
                     <div class="drop-down__col">
                       <h3 class="drop-down__title">Rượu ngoại</h3>
@@ -82,25 +98,25 @@
                 </li>
                 <li class="header__main-nav__item"><a href="/public/pages/product-detail.html">Rượu vang trắng</a></li>
                 <li class="header__main-nav__item"><a href="/public/pages/products.html">Champagne</a></li>
-                <li class="header__main-nav__item"><a href="">Thông tin</a></li>
-                <li class="header__main-nav__item"><a href="">Blog</a></li>
-                <li class="header__main-nav__item"><a href="">Liên hệ</a></li>
-              </ul>
+                <li class="header__main-nav__item"><a href="/public/pages/intro.html">Thông tin</a></li>
+                <li class="header__main-nav__item"><a href="/public/pages/blog.html">Blog</a></li>
+                <li class="header__main-nav__item"><a href="/public/pages/contact.html">Liên hệ</a></li>
+              </ul><i class="fa fa-bars header__main-nav__menu__icon"></i>
             </div>
           </div>
         </div>
       </div>
     </header>
     <div class="product-detail">
-      <div class="directions">
-        <div class="container">
-          <ul class="directions__list">
-            <li class="directions__item"><a href="./index.html">Trang chủ</a></li>
-            <li class="directions__item"><a href="#">Sản phẩm</a></li>
-            <li class="directions__item"><a href="#">Rượu vang đỏ</a></li>
-          </ul>
-        </div>
-      </div>
+            <div class="directions">
+              <div class="container">
+                <ul class="directions__list">
+                  <li class="directions__item"><a href="./index.html">Trang chủ</a></li>
+                  <li class="directions__item"><a href="#">Sản phẩm</a></li>
+                  <li class="directions__item"><a href="#">Rượu vang đỏ</a></li>
+                </ul>
+              </div>
+            </div>
       <div class="product-detail__main">
         <div class="container">
           <div class="product-detail__main__box">
@@ -135,14 +151,14 @@
             </div>
             <div class="product-detail__main__content">
               <div class="product-detail__main__content__title">
-                <div class="product-title">
-                  <h2 class="product-title__text">RƯỢU NHO NĂM 1987</h2><img class="product-title__icon" src="../img/arrow.png" alt="product title"/>
-                </div>
+                      <div class="product-title">
+                        <h2 class="product-title__text">RƯỢU NHO NĂM 1987</h2><img class="product-title__icon" src="../img/arrow.png" alt="product title">
+                      </div>
               </div>
               <div class="product-detail__main__content__price">
-                <div class="product-price">
-                  <p>330.000<sup>đ</sup></p>
-                </div>
+                      <div class="product-price">
+                        <p>330.000<sup>đ</sup></p>
+                      </div>
               </div>
               <div class="product-detail__main__content__review">
                 <ul>
@@ -155,17 +171,17 @@
                 <p>1 Review(S) | Add Your Review</p>
               </div>
               <div class="product-detail__main__content__color">
-                <div class="sm-title">
-                  <h6>MÀU SẮC</h6>
-                </div>
+                      <div class="sm-title">
+                        <h6>MÀU SẮC</h6>
+                      </div>
                 <button style="background-color: #e6ae48"></button>
                 <button style="background-color: #030102"></button>
                 <button style="background-color: #9c0001"></button>
               </div>
               <div class="product-detail__main__content__size">
-                <div class="sm-title">
-                  <h6>KÍCH CỠ</h6>
-                </div>
+                      <div class="sm-title">
+                        <h6>KÍCH CỠ</h6>
+                      </div>
                 <div class="product-detail__main__content__size--option">
                   <select>
                     <option value="Loại lớn">Loại lớn</option>
@@ -175,14 +191,14 @@
                 </div>
               </div>
               <div class="product-detail__main__content__quantity">
-                <div class="sm-title">
-                  <h6>SỐ LƯỢNG</h6>
-                </div>
+                      <div class="sm-title">
+                        <h6>SỐ LƯỢNG</h6>
+                      </div>
                 <form class="product-detail__main__content__quantity--form">
                   <div class="product-detail__main__content__quantity--input">
                     <input type="number" value="3"><i class="fa fa-minus"></i><i class="fa fa-plus"></i>
                   </div>
-                  <div class="btn-add-new"><a class="btn btn--add-new">Add to cart</a></div>
+                        <div class="btn-add-new"><a class="btn btn--add-new">Add to cart</a></div>
                 </form>
               </div>
               <div class="product-detail__main__content__favorite">
@@ -196,9 +212,9 @@
                 </ul>
               </div>
               <div class="product-detail__main__content__desc">
-                <div class="sm-title">
-                  <h6>MÔ TẢ</h6>
-                </div>
+                      <div class="sm-title">
+                        <h6>MÔ TẢ</h6>
+                      </div>
                 <p>Một hợp chất có trong rượu vang được gọi là resveratro có khả năng làm tăng tối đa tuổi thọ. Resveratro còn có khả năng ngăn chặn mật độ ôxy hoá của protein béo.</p>
               </div>
               <div class="product-detail__main__content__social">
@@ -230,15 +246,15 @@
           <div class="product-detail__content__box">
             <div class="product-detail__content__left">
               <div class="product-detail__content__left__title">
-                <div class="detail-title">
-                  <h6 class="detail-title__text">Đặt điểm nổi bật</h6>
-                </div>
-                <div class="detail-title">
-                  <h6 class="detail-title__text">Thông tin sản phẩm</h6>
-                </div>
-                <div class="detail-title">
-                  <h6 class="detail-title__text">Đánh giá</h6>
-                </div>
+                      <div class="detail-title">
+                        <h6 class="detail-title__text">Đặt điểm nổi bật</h6>
+                      </div>
+                      <div class="detail-title">
+                        <h6 class="detail-title__text">Thông tin sản phẩm</h6>
+                      </div>
+                      <div class="detail-title">
+                        <h6 class="detail-title__text">Đánh giá</h6>
+                      </div>
               </div>
               <div class="product-detail__content__left__text">
                 <p>Đừng nghĩ rằng chỉ vì đôi chân to mà bạn không thể mặc được món đồ nào khác ngoài quần dài. Sau đây là những item vừa trendy lại vừa có tác dụng rất hiệu quả trong việc điều chỉnh đôi chân to của bạn. Mùa hè là mùa của những bộ cánh thoải mái, thoáng mát và hẳn cô gái nào cũng muốn khoe chân tối đa. Tuy nhiên, điều này lại không hề dễ dàng đối với những cô nàng sở hữu đôi chân to. Đừng nghĩ rằng chỉ vì đôi chân to mà bạn không thể mặc được món đồ nào khác ngoài quần dài. Sau đây là những item vừa trendy lại vừa có tác dụng rất hiệu quả trong việc điều chỉnh đôi chân to của bạn.</p>
@@ -255,202 +271,202 @@
         <div class="container">
           <div class="product-detail__related__box">
             <div class="product-detail__related__title">
-              <div class="main-title">
-                <h2 class="main-title__text">Sản phẩm liên quan</h2><img src="../img/title-icon.png"/>
-              </div>
+                    <div class="main-title">
+                      <h2 class="main-title__text">Sản phẩm liên quan</h2><img src="../img/title-icon.png">
+                    </div>
             </div>
-            <div class="products__slide">
-              <input id="hot-products-list-1" type="radio" name="product-list" checked="checked"/>
-              <input id="hot-products-list-2" type="radio" name="product-list"/>
-              <div class="products__slide__box">
-                <div class="products__slide__list">
-                  <div class="product">
-                    <div class="product__img"><img src="../img/product-1.jpg"/></div>
-                    <div class="product__title">
-                      <p>RƯỢU VANG ĐÀ LẠT</p>
-                    </div>
-                    <div class="product__price">
-                      <p>350.000<sup>đ</sup></p>
-                      <p>-</p>
-                      <p>450.000<sup>đ</sup></p>
-                    </div>
-                    <div class="product__btn">
-                      <div class="btn-add-new"><a class="btn btn--add-new">Add to cart</a></div>
-                    </div>
-                    <div class="sm-label" style="background-color:undefined">
-                      <div class="sm-label__text">
-                        <h5></h5>
+                  <div class="products__slide">
+                    <input id="hot-products-list-1" type="radio" name="product-list" checked>
+                    <input id="hot-products-list-2" type="radio" name="product-list">
+                    <div class="products__slide__box">
+                      <div class="products__slide__list">
+                              <div class="product">
+                                <div class="product__img"><img src="../img/product-1.jpg"></div>
+                                <div class="product__title">
+                                  <p>RƯỢU VANG ĐÀ LẠT</p>
+                                </div>
+                                <div class="product__price">
+                                  <p>350.000<sup>đ</sup></p>
+                                  <p>-</p>
+                                  <p>450.000<sup>đ</sup></p>
+                                </div>
+                                <div class="product__btn">
+                                        <div class="btn-add-new"><a class="btn btn--add-new">Add to cart</a></div>
+                                </div>
+                                      <div class="sm-label" style="background-color:undefined">
+                                        <div class="sm-label__text">
+                                          <h5></h5>
+                                        </div>
+                                      </div>
+                                <div class="product__favorite"><a href="#"><i class="fa fa-heart"></i>
+                                    <p>Yêu thích</p></a><a href="#"><i class="fa fa-signal"></i>
+                                    <p>So sánh</p></a><a href="#"><i class="fa fa-compress"></i></a></div>
+                              </div>
+                              <div class="product">
+                                <div class="product__img"><img src="../img/product-2.jpg"></div>
+                                <div class="product__title">
+                                  <p>RƯỢU VANG ĐÀ LẠT</p>
+                                </div>
+                                <div class="product__price">
+                                  <p>350.000<sup>đ</sup></p>
+                                  <p>-</p>
+                                  <p>450.000<sup>đ</sup></p>
+                                </div>
+                                <div class="product__btn">
+                                        <div class="btn-add-new"><a class="btn btn--add-new">Add to cart</a></div>
+                                </div>
+                                      <div class="sm-label" style="background-color:undefined">
+                                        <div class="sm-label__text">
+                                          <h5></h5>
+                                        </div>
+                                      </div>
+                                <div class="product__favorite"><a href="#"><i class="fa fa-heart"></i>
+                                    <p>Yêu thích</p></a><a href="#"><i class="fa fa-signal"></i>
+                                    <p>So sánh</p></a><a href="#"><i class="fa fa-compress"></i></a></div>
+                              </div>
+                              <div class="product">
+                                <div class="product__img"><img src="../img/product-3.jpg"></div>
+                                <div class="product__title">
+                                  <p>RƯỢU VANG ĐÀ LẠT</p>
+                                </div>
+                                <div class="product__price">
+                                  <p>350.000<sup>đ</sup></p>
+                                  <p>-</p>
+                                  <p>450.000<sup>đ</sup></p>
+                                </div>
+                                <div class="product__btn">
+                                        <div class="btn-add-new"><a class="btn btn--add-new">Add to cart</a></div>
+                                </div>
+                                      <div class="sm-label" style="background-color:undefined">
+                                        <div class="sm-label__text">
+                                          <h5></h5>
+                                        </div>
+                                      </div>
+                                <div class="product__favorite"><a href="#"><i class="fa fa-heart"></i>
+                                    <p>Yêu thích</p></a><a href="#"><i class="fa fa-signal"></i>
+                                    <p>So sánh</p></a><a href="#"><i class="fa fa-compress"></i></a></div>
+                              </div>
+                              <div class="product">
+                                <div class="product__img"><img src="../img/product-4.jpg"></div>
+                                <div class="product__title">
+                                  <p>RƯỢU VANG ĐÀ LẠT</p>
+                                </div>
+                                <div class="product__price">
+                                  <p>350.000<sup>đ</sup></p>
+                                  <p>-</p>
+                                  <p>450.000<sup>đ</sup></p>
+                                </div>
+                                <div class="product__btn">
+                                        <div class="btn-add-new"><a class="btn btn--add-new">Add to cart</a></div>
+                                </div>
+                                      <div class="sm-label" style="background-color:undefined">
+                                        <div class="sm-label__text">
+                                          <h5></h5>
+                                        </div>
+                                      </div>
+                                <div class="product__favorite"><a href="#"><i class="fa fa-heart"></i>
+                                    <p>Yêu thích</p></a><a href="#"><i class="fa fa-signal"></i>
+                                    <p>So sánh</p></a><a href="#"><i class="fa fa-compress"></i></a></div>
+                              </div>
+                              <div class="product">
+                                <div class="product__img"><img src="../img/product-5.jpg"></div>
+                                <div class="product__title">
+                                  <p>RƯỢU VANG ĐÀ LẠT</p>
+                                </div>
+                                <div class="product__price">
+                                  <p>350.000<sup>đ</sup></p>
+                                  <p>-</p>
+                                  <p>450.000<sup>đ</sup></p>
+                                </div>
+                                <div class="product__btn">
+                                        <div class="btn-add-new"><a class="btn btn--add-new">Add to cart</a></div>
+                                </div>
+                                      <div class="sm-label" style="background-color:undefined">
+                                        <div class="sm-label__text">
+                                          <h5></h5>
+                                        </div>
+                                      </div>
+                                <div class="product__favorite"><a href="#"><i class="fa fa-heart"></i>
+                                    <p>Yêu thích</p></a><a href="#"><i class="fa fa-signal"></i>
+                                    <p>So sánh</p></a><a href="#"><i class="fa fa-compress"></i></a></div>
+                              </div>
+                              <div class="product">
+                                <div class="product__img"><img src="../img/product-6.jpg"></div>
+                                <div class="product__title">
+                                  <p>RƯỢU VANG ĐÀ LẠT</p>
+                                </div>
+                                <div class="product__price">
+                                  <p>350.000<sup>đ</sup></p>
+                                  <p>-</p>
+                                  <p>450.000<sup>đ</sup></p>
+                                </div>
+                                <div class="product__btn">
+                                        <div class="btn-add-new"><a class="btn btn--add-new">Add to cart</a></div>
+                                </div>
+                                      <div class="sm-label" style="background-color:undefined">
+                                        <div class="sm-label__text">
+                                          <h5></h5>
+                                        </div>
+                                      </div>
+                                <div class="product__favorite"><a href="#"><i class="fa fa-heart"></i>
+                                    <p>Yêu thích</p></a><a href="#"><i class="fa fa-signal"></i>
+                                    <p>So sánh</p></a><a href="#"><i class="fa fa-compress"></i></a></div>
+                              </div>
+                              <div class="product">
+                                <div class="product__img"><img src="../img/product-7.jpg"></div>
+                                <div class="product__title">
+                                  <p>RƯỢU VANG ĐÀ LẠT</p>
+                                </div>
+                                <div class="product__price">
+                                  <p>350.000<sup>đ</sup></p>
+                                  <p>-</p>
+                                  <p>450.000<sup>đ</sup></p>
+                                </div>
+                                <div class="product__btn">
+                                        <div class="btn-add-new"><a class="btn btn--add-new">Add to cart</a></div>
+                                </div>
+                                      <div class="sm-label" style="background-color:undefined">
+                                        <div class="sm-label__text">
+                                          <h5></h5>
+                                        </div>
+                                      </div>
+                                <div class="product__favorite"><a href="#"><i class="fa fa-heart"></i>
+                                    <p>Yêu thích</p></a><a href="#"><i class="fa fa-signal"></i>
+                                    <p>So sánh</p></a><a href="#"><i class="fa fa-compress"></i></a></div>
+                              </div>
+                              <div class="product">
+                                <div class="product__img"><img src="../img/product-8.jpg"></div>
+                                <div class="product__title">
+                                  <p>RƯỢU VANG ĐÀ LẠT</p>
+                                </div>
+                                <div class="product__price">
+                                  <p>350.000<sup>đ</sup></p>
+                                  <p>-</p>
+                                  <p>450.000<sup>đ</sup></p>
+                                </div>
+                                <div class="product__btn">
+                                        <div class="btn-add-new"><a class="btn btn--add-new">Add to cart</a></div>
+                                </div>
+                                      <div class="sm-label" style="background-color:undefined">
+                                        <div class="sm-label__text">
+                                          <h5></h5>
+                                        </div>
+                                      </div>
+                                <div class="product__favorite"><a href="#"><i class="fa fa-heart"></i>
+                                    <p>Yêu thích</p></a><a href="#"><i class="fa fa-signal"></i>
+                                    <p>So sánh</p></a><a href="#"><i class="fa fa-compress"></i></a></div>
+                              </div>
                       </div>
                     </div>
-                    <div class="product__favorite"><a href="#"><i class="fa fa-heart"></i>
-                        <p>Yêu thích</p></a><a href="#"><i class="fa fa-signal"></i>
-                        <p>So sánh</p></a><a href="#"><i class="fa fa-compress"></i></a></div>
-                  </div>
-                  <div class="product">
-                    <div class="product__img"><img src="../img/product-2.jpg"/></div>
-                    <div class="product__title">
-                      <p>RƯỢU VANG ĐÀ LẠT</p>
-                    </div>
-                    <div class="product__price">
-                      <p>350.000<sup>đ</sup></p>
-                      <p>-</p>
-                      <p>450.000<sup>đ</sup></p>
-                    </div>
-                    <div class="product__btn">
-                      <div class="btn-add-new"><a class="btn btn--add-new">Add to cart</a></div>
-                    </div>
-                    <div class="sm-label" style="background-color:undefined">
-                      <div class="sm-label__text">
-                        <h5></h5>
+                    <div class="products__slide__arrow">
+                      <div class="products__slide__arrow__left">
+                        <label for="hot-products-list-1"><i class="fa fa-arrow-left"></i></label>
+                      </div>
+                      <div class="products__slide__arrow__right">
+                        <label for="hot-products-list-2"><i class="fa fa-arrow-right"></i></label>
                       </div>
                     </div>
-                    <div class="product__favorite"><a href="#"><i class="fa fa-heart"></i>
-                        <p>Yêu thích</p></a><a href="#"><i class="fa fa-signal"></i>
-                        <p>So sánh</p></a><a href="#"><i class="fa fa-compress"></i></a></div>
                   </div>
-                  <div class="product">
-                    <div class="product__img"><img src="../img/product-3.jpg"/></div>
-                    <div class="product__title">
-                      <p>RƯỢU VANG ĐÀ LẠT</p>
-                    </div>
-                    <div class="product__price">
-                      <p>350.000<sup>đ</sup></p>
-                      <p>-</p>
-                      <p>450.000<sup>đ</sup></p>
-                    </div>
-                    <div class="product__btn">
-                      <div class="btn-add-new"><a class="btn btn--add-new">Add to cart</a></div>
-                    </div>
-                    <div class="sm-label" style="background-color:undefined">
-                      <div class="sm-label__text">
-                        <h5></h5>
-                      </div>
-                    </div>
-                    <div class="product__favorite"><a href="#"><i class="fa fa-heart"></i>
-                        <p>Yêu thích</p></a><a href="#"><i class="fa fa-signal"></i>
-                        <p>So sánh</p></a><a href="#"><i class="fa fa-compress"></i></a></div>
-                  </div>
-                  <div class="product">
-                    <div class="product__img"><img src="../img/product-4.jpg"/></div>
-                    <div class="product__title">
-                      <p>RƯỢU VANG ĐÀ LẠT</p>
-                    </div>
-                    <div class="product__price">
-                      <p>350.000<sup>đ</sup></p>
-                      <p>-</p>
-                      <p>450.000<sup>đ</sup></p>
-                    </div>
-                    <div class="product__btn">
-                      <div class="btn-add-new"><a class="btn btn--add-new">Add to cart</a></div>
-                    </div>
-                    <div class="sm-label" style="background-color:undefined">
-                      <div class="sm-label__text">
-                        <h5></h5>
-                      </div>
-                    </div>
-                    <div class="product__favorite"><a href="#"><i class="fa fa-heart"></i>
-                        <p>Yêu thích</p></a><a href="#"><i class="fa fa-signal"></i>
-                        <p>So sánh</p></a><a href="#"><i class="fa fa-compress"></i></a></div>
-                  </div>
-                  <div class="product">
-                    <div class="product__img"><img src="../img/product-5.jpg"/></div>
-                    <div class="product__title">
-                      <p>RƯỢU VANG ĐÀ LẠT</p>
-                    </div>
-                    <div class="product__price">
-                      <p>350.000<sup>đ</sup></p>
-                      <p>-</p>
-                      <p>450.000<sup>đ</sup></p>
-                    </div>
-                    <div class="product__btn">
-                      <div class="btn-add-new"><a class="btn btn--add-new">Add to cart</a></div>
-                    </div>
-                    <div class="sm-label" style="background-color:undefined">
-                      <div class="sm-label__text">
-                        <h5></h5>
-                      </div>
-                    </div>
-                    <div class="product__favorite"><a href="#"><i class="fa fa-heart"></i>
-                        <p>Yêu thích</p></a><a href="#"><i class="fa fa-signal"></i>
-                        <p>So sánh</p></a><a href="#"><i class="fa fa-compress"></i></a></div>
-                  </div>
-                  <div class="product">
-                    <div class="product__img"><img src="../img/product-6.jpg"/></div>
-                    <div class="product__title">
-                      <p>RƯỢU VANG ĐÀ LẠT</p>
-                    </div>
-                    <div class="product__price">
-                      <p>350.000<sup>đ</sup></p>
-                      <p>-</p>
-                      <p>450.000<sup>đ</sup></p>
-                    </div>
-                    <div class="product__btn">
-                      <div class="btn-add-new"><a class="btn btn--add-new">Add to cart</a></div>
-                    </div>
-                    <div class="sm-label" style="background-color:undefined">
-                      <div class="sm-label__text">
-                        <h5></h5>
-                      </div>
-                    </div>
-                    <div class="product__favorite"><a href="#"><i class="fa fa-heart"></i>
-                        <p>Yêu thích</p></a><a href="#"><i class="fa fa-signal"></i>
-                        <p>So sánh</p></a><a href="#"><i class="fa fa-compress"></i></a></div>
-                  </div>
-                  <div class="product">
-                    <div class="product__img"><img src="../img/product-7.jpg"/></div>
-                    <div class="product__title">
-                      <p>RƯỢU VANG ĐÀ LẠT</p>
-                    </div>
-                    <div class="product__price">
-                      <p>350.000<sup>đ</sup></p>
-                      <p>-</p>
-                      <p>450.000<sup>đ</sup></p>
-                    </div>
-                    <div class="product__btn">
-                      <div class="btn-add-new"><a class="btn btn--add-new">Add to cart</a></div>
-                    </div>
-                    <div class="sm-label" style="background-color:undefined">
-                      <div class="sm-label__text">
-                        <h5></h5>
-                      </div>
-                    </div>
-                    <div class="product__favorite"><a href="#"><i class="fa fa-heart"></i>
-                        <p>Yêu thích</p></a><a href="#"><i class="fa fa-signal"></i>
-                        <p>So sánh</p></a><a href="#"><i class="fa fa-compress"></i></a></div>
-                  </div>
-                  <div class="product">
-                    <div class="product__img"><img src="../img/product-8.jpg"/></div>
-                    <div class="product__title">
-                      <p>RƯỢU VANG ĐÀ LẠT</p>
-                    </div>
-                    <div class="product__price">
-                      <p>350.000<sup>đ</sup></p>
-                      <p>-</p>
-                      <p>450.000<sup>đ</sup></p>
-                    </div>
-                    <div class="product__btn">
-                      <div class="btn-add-new"><a class="btn btn--add-new">Add to cart</a></div>
-                    </div>
-                    <div class="sm-label" style="background-color:undefined">
-                      <div class="sm-label__text">
-                        <h5></h5>
-                      </div>
-                    </div>
-                    <div class="product__favorite"><a href="#"><i class="fa fa-heart"></i>
-                        <p>Yêu thích</p></a><a href="#"><i class="fa fa-signal"></i>
-                        <p>So sánh</p></a><a href="#"><i class="fa fa-compress"></i></a></div>
-                  </div>
-                </div>
-              </div>
-              <div class="products__slide__arrow">
-                <div class="products__slide__arrow__left">
-                  <label for="hot-products-list-1"><i class="fa fa-arrow-left"></i></label>
-                </div>
-                <div class="products__slide__arrow__right">
-                  <label for="hot-products-list-2"><i class="fa fa-arrow-right"></i></label>
-                </div>
-              </div>
-            </div>
           </div>
         </div>
       </div>

@@ -1,0 +1,37 @@
+.sign-up {
+  margin-bottom: 8rem;
+  &__header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    & > .btn {
+      padding: 1.4rem 4rem;
+    }
+  }
+  &__content {
+    padding: 4.5rem 6rem;
+    border: 0.1rem solid $color-grey;
+    margin-top: 2rem;
+    @include grid(1, 0);
+    grid-template-rows: repeat(3, min-content);
+    grid-row-gap: 3.5rem;
+    & input {
+      background-color: $color-white;
+    }
+    &__info {
+      & > .input-checkbox {
+        margin-left: 16%;
+        margin-top: 2rem;
+      }
+    }
+    &__btn {
+      display: flex;
+      justify-content: end;
+      & > .btn {
+        margin-left: 2rem;
+        border: none;
+        font-family: inherit;
+      }
+    }
+  }
+}

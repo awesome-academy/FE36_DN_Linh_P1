@@ -1,0 +1,22 @@
+extends ../layouts/main-layout
+include ../mixins/_mixin
+block title
+    +title(addressTitle)
+block content
+    .address
+        +directions(addressDirections)
+        .container
+            +product-title("Địa chỉ")
+        .address__content
+            .container
+                .address__content__box
+                    .address__content__form
+                        .address__content__form__left
+                            +form-title("Địa chỉ của bạn")
+                            +address-form
+                        .address__content__form__right
+                            a(href='#') Thêm địa chỉ
+                            +address-form
+                    .address__content__info
+                        +address-info
+                        +address-info

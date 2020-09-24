@@ -16,7 +16,7 @@
       @include p-absolute(17.8rem, -2rem);
       content: "";
       width: 25rem;
-      height: 1px;
+      height: 0.1rem;
       background-color: $color-primary-light;
     }
   }
@@ -29,18 +29,25 @@
     background-color: inherit;
     transform: rotate(-45deg);
     @include p-absolute(-4.1rem, -4.1rem);
+    @include lg {
+      width: 8rem;
+      height: 8rem;
+    }
     & > h5 {
       padding-top: 6rem;
       color: $color-white;
       font-size: 1.6rem;
       font-weight: normal;
       display: block;
+      @include lg {
+        padding-top: 5.6rem;
+      }
     }
     &::after {
       content: "";
       @include p-absolute(8.47rem, -4.4rem);
       width: 14rem;
-      height: 1px;
+      height: 0.1rem;
       background-color: inherit;
     }
   }

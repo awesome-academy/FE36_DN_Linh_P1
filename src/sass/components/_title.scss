@@ -24,3 +24,11 @@
     margin-top: 0.5rem;
   }
 }
+.form-title {
+  & > h6 {
+    font-size: 1.8rem;
+    color: $color-secondary;
+    text-transform: uppercase;
+    font-weight: 300;
+  }
+}

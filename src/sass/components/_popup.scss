@@ -1,0 +1,81 @@
+.popup {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  @extend %w100-h100;
+  z-index: 999;
+  background-color: rgba(255, 255, 255, 0.5);
+  &__content {
+    display: flex;
+    position: relative;
+    background-color: $color-white;
+    top: 25%;
+    left: 25%;
+    width: 76rem;
+    height: 36rem;
+    animation: transfertop 1s;
+    & > img {
+      height: 100%;
+      width: auto;
+    }
+    & > i {
+      position: absolute;
+      left: 100%;
+      bottom: 96%;
+      font-size: 4rem;
+      cursor: pointer;
+      @extend %transition;
+      @extend %hover-text;
+    }
+    &__text {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      margin-right: 10%;
+      & > p:first-child {
+        font-size: 3.6rem;
+        color: $color-secondary;
+        margin-bottom: 2rem;
+      }
+      & > p {
+        font-size: 1.6rem;
+        margin-bottom: 2rem;
+      }
+      & > form {
+        display: flex;
+        margin-bottom: 2rem;
+        & > input {
+          padding: 0.7rem 0.5rem;
+          width: 100%;
+          font-size: 1.2rem;
+        }
+        & > button {
+          color: $color-white;
+          background-color: $color-primary-light;
+          border: none;
+          cursor: pointer;
+          width: 100%;
+          padding: 0 1rem;
+        }
+      }
+      .input-checkbox {
+        & > label {
+          color: $color-secondary;
+          font-size: 1.5rem;
+        }
+      }
+    }
+    @keyframes transfertop {
+      from {
+        top: -100%;
+        opacity: 0;
+      }
+      to {
+        top: 25%;
+        opacity: 1;
+      }
+    }
+  }
+}

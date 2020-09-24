@@ -1,0 +1,44 @@
+extends ../layouts/main-layout
+include ../mixins/_mixin
+block title
+    +title(orderTitle)
+block content
+    .order
+        +directions(orderDirections)
+        .container
+            +product-title("Đơn hàng")
+        .order__content
+            .container
+                .order__content__box
+                    .order__content__left
+                        .order__content__left__header
+                            +form-title("Danh sách đơn hàng")
+                            ul
+                                each item in orderStatus
+                                    li
+                                        a(href="#")= item
+                        .order__content__left__table
+                            table
+                                tr
+                                    each item in orderMenu
+                                        th= item
+                                each item in orderList
+                                    tr
+                                        td= item.num
+                                        td
+                                            p= item.name
+                                            p= item.time
+                                        td= item.store
+                                        td= item.quantity
+                                        td
+                                            p= item.sum
+                                        td= item.status
+                                        td= item.action
+                    .order__content__right
+                        +form-title("Thông tin khách hàng")
+                        ul
+                            each item in orderInfo
+                                li
+                                    i(class=item.class)
+                                    p= item.content
+                        a(href="#") Địa chỉ chi tiết
