@@ -1,0 +1,9 @@
+.blog {
+  &__grid {
+    margin-top: 3rem;
+    margin-bottom: 6rem;
+    &__box {
+      @include grid(3, 3rem);
+    }
+  }
+}

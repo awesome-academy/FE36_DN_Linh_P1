@@ -5,14 +5,14 @@ $color-primary-light: #dfa949;
 $color-secondary: #000;
 
 $color-white: #fff;
+$color-grey: #e6e6e6;
 
 // FONT VARIABLES
 $font-primary: "Times New Roman", sans-serif;
 $font-display: "Josefin Sans", sans-serif;
 
 // RESPONSIVE BREAKPOINTS
-
-$bp-largest: 75em; //1200px / 16px
-$bp-large: 62.5em; //1000px
-$bp-medium: 50em; //800px
-$bp-small: 37.5em; //600px
+$sm: 576px;
+$md: 768px;
+$lg: 992px;
+$xl: 1200px;

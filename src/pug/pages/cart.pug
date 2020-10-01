@@ -1,0 +1,32 @@
+extends ../layouts/main-layout
+include ../mixins/_mixin
+block title
+    +title(cartTitle)
+block content
+    .cart
+        +directions(cartDirections)
+        .container
+            +product-title("Giỏ hàng")
+            .cart__table
+                table
+                    tr
+                        each item in cartName
+                            th= item
+                    each item in cartList
+                        tr
+                            td
+                                img(src= item.img, alt="product image")
+                            td= item.name
+                            td
+                                p= item.price
+                                    sup đ
+                            td= item.quantity
+                            td
+                                p= item.sum
+                                    sup đ
+                            td
+                                i(class= item.delete)
+            .cart__btn
+                a.btn Tiếp tục mua hàng
+                a.btn Xóa
+                a.btn Tự nhập

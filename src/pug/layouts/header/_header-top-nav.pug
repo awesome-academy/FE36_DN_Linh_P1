@@ -1,12 +1,19 @@
 include ../../base/_header-top-nav-var
+include ../../mixins/_mixin
 .header__top-nav
     .container
         .header__top-nav__wrapper
             .header__top-nav__menu
+                i.fa.fa-bars
                 ul
                     each item in headerTopNav
-                        li.header__top-nav__item
-                            a(href= item.link)= item.name
+                        if item.name == 'Danh sách ưa thích'
+                            li.header__top-nav__item
+                                a(onclick="document.querySelector('.popup').style.display='block'")= item.name
+                        else
+                            li.header__top-nav__item
+                                a(href= item.link)= item.name
+                +popup
             .header__top-nav__search
                 form
                     input(placeholder="Tìm kiếm ở đây ...")

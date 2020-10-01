@@ -1,6 +1,16 @@
 - let homePageTitle = "Wine house | since 1980, a moments of true enjoy";
 - let productDetailTitle = "Vang đỏ | since 1980, a moments of true enjoy";
 - let productsTitle = "Products | since 1980, a moments of true enjoy";
+- let blogTitle = "Blog | since 1980, a moments of true enjoy";
+- let blogDetailTitle = "Blog detail | since 1980, a moments of true enjoy";
+- let introTitle = "Introduction | since 1980, a moments of true enjoy";
+- let contactTitle = "Contact | since 1980, a moments of true enjoy";
+- let signUpTitle = "Sign up | since 1980, a moments of true enjoy";
+- let signInTitle = "Sign in | since 1980, a moments of true enjoy";
+- let cartTitle = "Cart | since 1980, a moments of true enjoy";
+- let orderTitle = "Order | since 1980, a moments of true enjoy";
+- let addressTitle = "Address | since 1980, a moments of true enjoy";
+- let errorTitle = "404 Not Found";
 - let homePageIntroText = "Mriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi.Nam liber tempor cum soluta nobis eleifend option congue nihil imperdiet doming id quod mazim placerat facer possim assum. Typi non habent claritatem insitam; est usus legentis in iis qui faciteorum claritatem. Investigtiones demonstraverunt lectores legere me lius quod ii legunt saepius.Claritas est etiam processus dynamicus, qui sequitur mutationem consuetudium lectorum. Mirum est notare quam littera gothica, quam nunc putam";
 - let homePageSaleText = "Một hợp chất có trong rượu vang được gọi là resveratro có khả năng làm tăng tối đa tuổi thọ. Resveratro còn có khả năng ngăn chặn mật độ ôxy hoá của protein béo.";
 - let detailContent1 = "Đừng nghĩ rằng chỉ vì đôi chân to mà bạn không thể mặc được món đồ nào khác ngoài quần dài. Sau đây là những item vừa trendy lại vừa có tác dụng rất hiệu quả trong việc điều chỉnh đôi chân to của bạn. Mùa hè là mùa của những bộ cánh thoải mái, thoáng mát và hẳn cô gái nào cũng muốn khoe chân tối đa. Tuy nhiên, điều này lại không hề dễ dàng đối với những cô nàng sở hữu đôi chân to. Đừng nghĩ rằng chỉ vì đôi chân to mà bạn không thể mặc được món đồ nào khác ngoài quần dài. Sau đây là những item vừa trendy lại vừa có tác dụng rất hiệu quả trong việc điều chỉnh đôi chân to của bạn.";
@@ -59,6 +69,42 @@
     {name: 'Trang chủ', link: './index.html'}, 
     {name: 'Sản phẩm', link: './products.html'}, 
     {name: 'Rượu vang đỏ', link: '#'}, 
+  ]
+-
+  let blogDirections = [
+    {name: 'Trang chủ', link: './index.html'}, 
+    {name: 'Blog', link: './blog.html'},  
+  ]
+-
+  let contactDirections = [
+    {name: 'Trang chủ', link: './index.html'}, 
+    {name: 'Liên hệ', link: './contact.html'},  
+  ]
+-
+  let signUpDirections = [
+    {name: 'Trang chủ', link: './index.html'}, 
+    {name: 'Đăng ký', link: './sign-up.html'},  
+  ]
+-
+  let signInDirections = [
+    {name: 'Trang chủ', link: './index.html'}, 
+    {name: 'Đăng nhập', link: './sign-in.html'},  
+  ]
+-
+  let orderDirections = [
+    {name: 'Trang chủ', link: './index.html'}, 
+    {name: 'Danh sách đơn hàng', link: './order.html'},  
+  ]
+-
+  let addressDirections = [
+    {name: 'Trang chủ', link: './index.html'}, 
+    {name: 'Địa chỉ', link: './address.html'},  
+  ]
+-
+  let cartDirections = [
+    {name: 'Trang chủ', link: './index.html'}, 
+    {name: 'Sản phẩm', link: './products.html'}, 
+    {name: 'Giỏ hàng', link: './cart.html'}, 
   ]
 
 -
@@ -160,4 +206,134 @@
     {link:'../img/products-list-2.png', title: 'RƯỢU NHO NĂM 1987', price: '330.000', content: 'Một hợp chất có trong rượu vang được gọi là resveratro có khả năng làm tăng tối đa tuổi thọ. Resveratro còn có khả năng ngăn chặn mật độ ôxy hoá của protein béo.'}, 
     {link:'../img/products-list-1.png', title: 'RƯỢU NHO NĂM 1987', price: '330.000', content: 'Một hợp chất có trong rượu vang được gọi là resveratro có khả năng làm tăng tối đa tuổi thọ. Resveratro còn có khả năng ngăn chặn mật độ ôxy hoá của protein béo.'}, 
     {link:'../img/products-list-2.png', title: 'RƯỢU NHO NĂM 1987', price: '330.000', content: 'Một hợp chất có trong rượu vang được gọi là resveratro có khả năng làm tăng tối đa tuổi thọ. Resveratro còn có khả năng ngăn chặn mật độ ôxy hoá của protein béo.'}
+  ]
+-
+  let blogList = [
+    {link:'../img/blog-1.png', title:'Vang Thăng Long Classic', author:'Đăng bởi Giangle | 30/06/2015 | 60 bình luận', desc:'Vang nổ Thăng Long có hương vị đặc trưng của sản phẩm lên men tự nhiên từ hoa quả với độ rượu nhẹ, bọt ga đầy trắng mịn. Vang Nổ thăng long tạo cảm giác hương phấn, êm dịu, vui tươi, sản phẩm được đóng chai dung tích 750ml...'}, 
+    {link:'../img/blog-2.png', title:'Vang Thăng Long Classic', author:'Đăng bởi Giangle | 30/06/2015 | 60 bình luận', desc:'Vang nổ Thăng Long có hương vị đặc trưng của sản phẩm lên men tự nhiên từ hoa quả với độ rượu nhẹ, bọt ga đầy trắng mịn. Vang Nổ thăng long ...'},
+    {link:'../img/blog-1.png', title:'Vang Thăng Long Classic', author:'Đăng bởi Giangle | 30/06/2015 | 60 bình luận', desc:'Vang nổ Thăng Long có hương vị đặc trưng của sản phẩm lên men tự nhiên từ hoa quả với độ rượu nhẹ, bọt ga đầy trắng mịn. Vang Nổ thăng long tạo cảm giác hương phấn, êm dịu, vui tươi, sản phẩm được đóng chai dung tích 750ml...'}, 
+    {link:'../img/blog-1.png', title:'Vang Thăng Long Classic', author:'Đăng bởi Giangle | 30/06/2015 | 60 bình luận', desc:'Vang nổ Thăng Long có hương vị đặc trưng của sản phẩm lên men tự nhiên từ hoa quả với độ rượu nhẹ, bọt ga đầy trắng mịn. Vang Nổ thăng long tạo cảm giác hương phấn, êm dịu, vui tươi, sản phẩm được đóng chai dung tích 750ml...'}, 
+    {link:'../img/blog-2.png', title:'Vang Thăng Long Classic', author:'Đăng bởi Giangle | 30/06/2015 | 60 bình luận', desc:'Vang nổ Thăng Long có hương vị đặc trưng của sản phẩm lên men tự nhiên từ hoa quả với độ rượu nhẹ, bọt ga đầy trắng mịn. Vang Nổ thăng long ...'},
+    {link:'../img/blog-1.png', title:'Vang Thăng Long Classic', author:'Đăng bởi Giangle | 30/06/2015 | 60 bình luận', desc:'Vang nổ Thăng Long có hương vị đặc trưng của sản phẩm lên men tự nhiên từ hoa quả với độ rượu nhẹ, bọt ga đầy trắng mịn. Vang Nổ thăng long tạo cảm giác hương phấn, êm dịu, vui tươi, sản phẩm được đóng chai dung tích 750ml...'}, 
+    {link:'../img/blog-1.png', title:'Vang Thăng Long Classic', author:'Đăng bởi Giangle | 30/06/2015 | 60 bình luận', desc:'Vang nổ Thăng Long có hương vị đặc trưng của sản phẩm lên men tự nhiên từ hoa quả với độ rượu nhẹ, bọt ga đầy trắng mịn. Vang Nổ thăng long tạo cảm giác hương phấn, êm dịu, vui tươi, sản phẩm được đóng chai dung tích 750ml...'}, 
+    {link:'../img/blog-2.png', title:'Vang Thăng Long Classic', author:'Đăng bởi Giangle | 30/06/2015 | 60 bình luận', desc:'Vang nổ Thăng Long có hương vị đặc trưng của sản phẩm lên men tự nhiên từ hoa quả với độ rượu nhẹ, bọt ga đầy trắng mịn. Vang Nổ thăng long ...'},
+    {link:'../img/blog-1.png', title:'Vang Thăng Long Classic', author:'Đăng bởi Giangle | 30/06/2015 | 60 bình luận', desc:'Vang nổ Thăng Long có hương vị đặc trưng của sản phẩm lên men tự nhiên từ hoa quả với độ rượu nhẹ, bọt ga đầy trắng mịn. Vang Nổ thăng long tạo cảm giác hương phấn, êm dịu, vui tươi, sản phẩm được đóng chai dung tích 750ml...'}, 
+  
+  ]
+
+- introText = "Vang nổ Thăng Long có hương vị đặc trưng của sản phẩm lên men tự nhiên từ hoa quả với độ rượu nhẹ, bọt ga đầy trắng mịn. Vang Nổ thăng long tạo cảm giác hương phấn, êm dịu, vui tươi, sản phẩm được đóng chai dung tích 750ml.Vang nổ Thăng Long có hương vị đặc trưng của sản phẩm lên men tự nhiên từ hoa quả với độ rượu nhẹ, bọt ga đầy trắng mịn. Vang Nổ thăng long tạo cảm giác hương phấn, êm dịu, vui tươi, sản phẩm được đóng chai dung tích 750ml.Vang nổ Thăng Long có hương vị đặc trưng của sản phẩm lên men tự nhiên từ hoa quả với độ rượu nhẹ, bọt ga đầy trắng mịn. Vang Nổ thăng long tạo cảm giác hương phấn, êm dịu, vui tươi, sản phẩm được đóng chai dung tích 750ml...";
+
+-
+  let contactAddress = [
+    {icon: 'fa fa-map-marker', content: 'Tầng 4, Tòa nhà Hà Nội Group 442 Đội Cấn, P. Cống Vị, Q. Ba Đình, Hà Nội'},
+    {icon: 'fa fa-phone', content: '(04) 6674 2332'},
+    {icon: 'fa fa-envelope', content: 'support@milano.com'}
+  ]
+-
+  let contactSocial = [
+    'fa fa-facebook',
+    'fa fa-google-plus',
+    'fa fa-twitter',
+    'fa fa-youtube-play',
+    'fa fa-pinterest',
+  ]
+-
+  let blogDetailNewests = [
+    {img: '../img/blog-detail-newest-1.png', title: 'Cách sắp xếp nội thất trong nhà', time: '12/06/2015'},
+    {img: '../img/blog-detail-newest-2.png', title: 'Cách sắp xếp nội thất trong nhà', time: '12/06/2015'},
+    {img: '../img/blog-detail-newest-3.png', title: 'Cách sắp xếp nội thất trong nhà', time: '12/06/2015'},
+  ]
+-
+  let blogDetailTags = [
+    'Đồng hồ', 
+    'Túi', 
+    'Phụ Kiện', 
+    'Giày', 
+    'Sandal', 
+    'Áo sơ mi', 
+    'Nước hoa', 
+    'Trẻ em', 
+    'Thời trang nữ'
+  ]
+-
+  let comments = [
+    {author: 'Bình luận bởi Giangle', time: 'Cách đây 4 giờ', content: 'Có lẽ bởi tính chất "ăn gian" vóc dáng và vô cùng thoải mái, gợi cảm mà cả 2 dạng trang phục này được áp dụng nhiều nhất trong street style tuần qua ,chọn cho mình bộ trang phục đơn sắc với thiết kế cổ yếm, ống rộng - vừa thoải mái tối đa lại không kém phần gợi cảm, kết hợp cùng đôi giày quai chữ T tôn dáng'},
+    {author: 'Bình luận bởi Giangle', time: 'Cách đây 4 giờ', content: 'Có lẽ bởi tính chất "ăn gian" vóc dáng và vô cùng thoải mái, gợi cảm mà cả 2 dạng trang phục này được áp dụng nhiều nhất trong street style tuần qua ,chọn cho mình bộ trang phục đơn sắc với thiết kế cổ yếm, ống rộng - vừa thoải mái tối đa lại không kém phần gợi cảm, kết hợp cùng đôi giày quai chữ T tôn dáng'},
+    {author: 'Bình luận bởi Giangle', time: 'Cách đây 4 giờ', content: 'Có lẽ bởi tính chất "ăn gian" vóc dáng và vô cùng thoải mái, gợi cảm mà cả 2 dạng trang phục này được áp dụng nhiều nhất trong street style tuần qua ,chọn cho mình bộ trang phục đơn sắc với thiết kế cổ yếm, ống rộng - vừa thoải mái tối đa lại không kém phần gợi cảm, kết hợp cùng đôi giày quai chữ T tôn dáng'},
+  ]
+-
+  let commentPag = [
+    '<',
+    '1',
+    '2',
+    '3',
+    '>'
+  ]
+-
+  let errorDirections = [
+    {name: 'Trang chủ', link: './index.html'},
+    {name: 'Liên hệ', link: './contact.html'},
+  ]
+-
+  let cartName = [
+    'ẢNH',
+    'TÊN SẢN PHẨM',
+    'GIÁ',
+    'SỐ LƯỢNG',
+    'TỔNG SỐ',
+    'XÓA'
+  ]
+-
+  let cartList = [
+    {img: '../img/cart-1.png', name: 'RƯỢU VANG ĐỎ', price: '345.000', quantity: '1', sum: '345.000', delete: 'fas fa-trash-alt'},
+    {img: '../img/cart-1.png', name: 'RƯỢU VANG ĐỎ', price: '345.000', quantity: '1', sum: '345.000', delete: 'fas fa-trash-alt'},
+    {img: '../img/cart-1.png', name: 'RƯỢU VANG ĐỎ', price: '345.000', quantity: '1', sum: '345.000', delete: 'fas fa-trash-alt'},
+    {img: '../img/cart-1.png', name: 'RƯỢU VANG ĐỎ', price: '345.000', quantity: '1', sum: '345.000', delete: 'fas fa-trash-alt'}
+  ]
+-
+  let orderStatus = [
+    'Trạng thái tất cả (16)',
+    'Đã hủy (10)',
+    'Chưa duyệt (0)',
+    'Đã duyệt (0)',
+    'Đã thanh toán-chờ mua hàng (0)',
+    'Đã mua hàng (0)',
+    'Hàng đã về-chờ giao hàng (0)',
+    'Đã kết thúc (6)',
+  ]
+-
+  let orderMenu = [
+    'STT',
+    'MÃ HÓA ĐƠN/NGÀY MUA HÀNG',
+    'KHO NHẬN HÀNG',
+    'SỐ SP',
+    'TỔNG TIỀN',
+    'TÌNH TRẠNG',
+    'THAO TÁC',
+  ]
+-
+  let orderList = [
+    {num: '01', name: 'LEANHGIANG89 - 17/06/2015', time: '01:36 14/03/2015', store: 'HÀ ĐÔNG', quantity: '7', sum: '350.000đ', status: 'Đã thanh toán', action: 'Chi tiết'},
+    {num: '02', name: 'LEANHGIANG89 - 17/06/2015', time: '01:36 14/03/2015', store: 'HÀ ĐÔNG', quantity: '7', sum: '350.000đ', status: 'Đã thanh toán', action: 'Chi tiết'},
+    {num: '03', name: 'LEANHGIANG89 - 17/06/2015', time: '01:36 14/03/2015', store: 'HÀ ĐÔNG', quantity: '7', sum: '350.000đ', status: 'Đã thanh toán', action: 'Chi tiết'},
+    {num: '04', name: 'LEANHGIANG89 - 17/06/2015', time: '01:36 14/03/2015', store: 'HÀ ĐÔNG', quantity: '7', sum: '350.000đ', status: 'Đã thanh toán', action: 'Chi tiết'},
+    {num: '05', name: 'LEANHGIANG89 - 17/06/2015', time: '01:36 14/03/2015', store: 'HÀ ĐÔNG', quantity: '7', sum: '350.000đ', status: 'Đã thanh toán', action: 'Chi tiết'},
+    {num: '06', name: 'LEANHGIANG89 - 17/06/2015', time: '01:36 14/03/2015', store: 'HÀ ĐÔNG', quantity: '7', sum: '350.000đ', status: 'Đã thanh toán', action: 'Chi tiết'}
+  ]
+-
+  let orderInfo = [
+    {class: 'fa fa-user', content: 'GiangLe Leanhgiang89@gmail.com'},
+    {class: 'fa fa-map-marker', content: 'Tòa nhà Hà Nội group 442 Đội Cấn, Ba Đình Hà Nội'},
+    {class: 'fa fa-phone', content: '(04) 3786 8904'},
+  ]
+-
+   let address = [
+    {name: 'Tên', value: 'Giang'},
+    {name: 'Họ & tên đệm', value: 'Lê Anh'},
+    {name: 'Công ty', value: 'Cổ phần công nghệ DKT'},
+    {name: 'Địa chỉ', value: 'Tòa nhà Hà Nội Group, 442 Đội Cấn, Ba Đình, Hà Nội'},
+    {name: 'Thành phố', value: 'Hà Nội'},
+    {name: 'Quốc tịch', value: 'Việt Nam'},
+    {name: 'Postal/Zip Code', value: '2300089'},
+    {name: 'Phone', value: '0974554928'},
   ]

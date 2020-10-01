@@ -1,0 +1,23 @@
+.input-text {
+  display: flex;
+  font-size: 1.4rem;
+  align-items: center;
+  &:not(:first-child) {
+    margin-top: 2rem;
+  }
+  & > label {
+    display: flex;
+    flex-basis: 16%;
+  }
+  & > input {
+    flex-grow: 1;
+    padding: 0.8rem;
+    border: 0.1rem solid $color-grey;
+    background-color: #fafafa;
+    font-family: inherit;
+    font-size: 1.4rem;
+  }
+}
+.input-checkbox {
+  font-size: 1.4rem;
+}

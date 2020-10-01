@@ -103,6 +103,10 @@ mixin gallery-item(number)
             p.home-page__gallery__item__hover__year 1987
             p.home-page__gallery__item__hover__text Rượu
             a(href="#")
+            .line-top
+            .line-left
+            .line-bottom
+            .line-right
 
 mixin blog-item(blog)
     .blog-item
@@ -112,15 +116,15 @@ mixin blog-item(blog)
                 .blog-item__img__hover__bg
                 .blog-item__img__hover__icon
                     i.fa.fa-link
-                a.blog-item__img__hover__link(href="#")
+                a.blog-item__img__hover__link(href="./blog-detail.html")
         .blog-item__title
-            a(href="#")= blog.title
+            a(href="./blog-detail.html")= blog.title
         .blog-item__author
             p= blog.author
         .blog-item__desc
             p= blog.desc
         .blog-item__read-more
-            a(href="#") Read more
+            a(href="./blog-detail.html") Read more
 mixin directions(items)
     .directions
         .container
@@ -176,16 +180,62 @@ mixin products-list-item(link, title, price, content)
                 a(href='#')
                     i.fa.fa-signal
                     p So sánh
-
-            
-            
-            
-
-
-
-
-
-
-
-
-
+mixin input-text(text, value, asterisk)
+    .input-text
+        label(for=text)= text
+            if asterisk == true
+                span *
+        input(type='text' name=text id=text value=value)
+mixin blog-detail-title-roboto(text)
+    .blog-detail__content__left__title
+        h5= text
+mixin blog-detail-newest-item(img, title, time)
+  .blog-detail__newest__item
+    .blog-detail__newest__item__img
+      img(src= img)
+    .blog-detail__newest__item__content
+      h6= title
+      i.fa.fa-calendar-o
+      span= time
+mixin comment(author,time,content)
+    .comment
+        .comment__header
+            .comment__header__main
+                p.comment__header__main__author= author
+                p.comment__header__main__time= time
+            .comment__header__reply
+                a(href="#") Trả lời
+        .comment__content
+            p= content
+mixin input-checkbox(text, value)
+    .input-checkbox
+        input(type='checkbox' id=text value=value)
+        label(for=text)= text
+mixin popup
+    .popup
+        .popup__content
+            img(src="../img/popup.png", alt="popup image")
+            i.fa.fa-times(onclick="document.querySelector('.popup').style.display='none'")
+            .popup__content__text
+                p Gửi Email
+                p Đăng ký Email ngay hôm nay để nhận được thông tin về các sự kiện, các chương trình giảm giá của chúng tôi sớm nhất!
+                form
+                    input(type="text")
+                    button GỬI EMAIL
+                +input-checkbox('Không hiển thị lại thông báo này', "")
+mixin form-title(text)
+    .form-title
+        h6= text
+mixin address-form
+    .address-form
+        each item in address
+            +input-text(item.name,item.value,false)
+        +input-checkbox('Đặt làm địa chỉ mặc định', "")
+        .address-form__btn
+            button(type="submit").btn Chỉnh sửa địa chỉ
+            button(type="button").btn Xóa
+mixin address-info
+    .address-info
+        each item in address
+            +input-text(item.name,item.value,false)
+        a(href='./error.html') Chỉnh sửa địa chỉ

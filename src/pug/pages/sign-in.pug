@@ -1,0 +1,22 @@
+extends ../layouts/main-layout
+include ../mixins/_mixin
+block title
+    +title(signInTitle)
+block content
+    .sign-up
+        +directions(signInDirections)
+        .container
+            .sign-up__header
+                +product-title("Đăng nhập")
+                a.btn Đăng ký
+            .sign-up__content
+                .sign-up__content__title
+                    +form-title("Thông tin cá nhân")
+                    p.sign-in__text Nếu bạn có một tài khoản, xin vui lòng đăng nhập.
+                form(action="#")
+                    .sign-up__content__sign-in
+                        +input-text("Email","",true)
+                        +input-text("Password","",true)
+                        +input-checkbox('Quên mật khẩu', "")
+                    .sign-in__btn
+                        button.btn(type="submit") Đăng nhập

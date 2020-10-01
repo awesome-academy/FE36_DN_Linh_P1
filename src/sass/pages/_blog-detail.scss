@@ -1,0 +1,266 @@
+.blog-detail {
+  &__content {
+    margin: 3rem 0 10rem;
+    &__box {
+      @include grid(12, 3rem);
+    }
+    &__left {
+      grid-column: 1/4;
+      @include lg {
+        grid-column: 1/-1;
+      }
+      @include grid(1, 0);
+      grid-template-rows: repeat(3, min-content);
+      grid-row-gap: 3.5rem;
+      &__tag {
+        & > ul {
+          margin-top: 2.5rem;
+          display: flex;
+          flex-wrap: wrap;
+          & > li {
+            border: 0.1rem solid $color-grey;
+            border-radius: 0.5rem;
+            padding: 0.3rem 1rem;
+            font-size: 1.2rem;
+            font-family: "Roboto";
+            margin-top: 1rem;
+            margin-right: 0.5rem;
+            cursor: pointer;
+            @extend %transition;
+            @extend %hover-bg;
+          }
+        }
+      }
+      &__video {
+        &__item {
+          margin-top: 2.5rem;
+          position: relative;
+          & > i {
+            @include p-absolute(50%, 50%);
+            transform: translate(-50%, -50%);
+            color: $color-white;
+            font-size: 1.6rem;
+            background-color: rgba(0, 0, 0, 0.5);
+            padding: 1.3rem 1.5rem;
+            border-radius: 50%;
+            cursor: pointer;
+          }
+        }
+      }
+      &__title {
+        color: $color-secondary;
+        font-size: 2rem;
+        font-family: "Roboto";
+        font-weight: normal;
+      }
+    }
+    &__right {
+      grid-column: 4/13;
+      @include lg {
+        grid-column: 1/-1;
+      }
+      @include grid(1, 0);
+      grid-template-rows: repeat(3, min-content);
+      grid-row-gap: 5rem;
+      &__item {
+        @include grid(1, 0);
+        grid-template-rows: repeat(3, min-content);
+        grid-row-gap: 2.2rem;
+        &__img {
+          & > img {
+            width: 100%;
+            height: auto;
+          }
+        }
+        &__title {
+          & > h6 {
+            font-size: 3rem;
+            font-weight: normal;
+            text-transform: uppercase;
+            color: $color-secondary;
+            cursor: pointer;
+            @extend %hover-text;
+            @extend %transition;
+          }
+        }
+        &__author {
+          font-size: 2.1rem;
+        }
+        &__desc {
+          font-size: 1.9rem;
+          font-style: italic;
+          line-height: 1.6;
+        }
+      }
+      &__opinion {
+        &__title {
+          & > h6 {
+            color: $color-secondary;
+            font-size: 1.8rem;
+            font-style: italic;
+            text-transform: uppercase;
+            font-weight: normal;
+          }
+        }
+        &__form {
+          margin-top: 3rem;
+          & > form {
+            @include grid(1, 0);
+            grid-template-rows: repeat(3, min-content);
+            grid-row-gap: 3rem;
+          }
+          .input-text {
+            margin-top: 0;
+            & > label {
+              color: $color-secondary;
+              font-style: italic;
+              flex-basis: 10%;
+              & > span {
+                color: #ff0000;
+              }
+            }
+            & > input {
+              background-color: $color-white;
+            }
+          }
+          .textarea-text {
+            display: flex;
+
+            & > label {
+              flex-basis: 10%;
+              font-style: italic;
+              font-size: 1.4rem;
+              color: $color-secondary;
+              & > span {
+                color: #ff0000;
+              }
+            }
+            & > textarea {
+              padding: 1rem;
+              height: 27rem;
+              flex-grow: 1;
+              border: 0.1rem solid $color-grey;
+            }
+          }
+          .form__btn {
+            font-size: 1.6rem;
+            text-transform: uppercase;
+            color: $color-secondary;
+            padding: 1rem 2rem;
+            background-color: $color-grey;
+            margin-left: 10%;
+            width: 16%;
+            display: inline-block;
+            border-radius: 0.8rem;
+            @extend %hover-bg;
+            @extend %transition;
+            cursor: pointer;
+            @include lg {
+              font-size: 1.4rem;
+              width: 35%;
+            }
+          }
+        }
+      }
+      &__comment {
+        @include grid(1, 0);
+        grid-template-rows: repeat(3, min-content);
+        grid-row-gap: 2rem;
+        &__title {
+          & > h6 {
+            font-size: 1.8rem;
+            color: $color-secondary;
+            font-weight: 300;
+          }
+        }
+        &__item {
+          @include grid(1, 0);
+          grid-template-rows: repeat(3, min-content);
+          grid-row-gap: 3rem;
+          .comment {
+            &__header {
+              display: flex;
+              justify-content: space-between;
+              align-items: center;
+              padding: 1.4rem 2rem;
+              font-size: 1.4rem;
+              font-style: italic;
+              background-color: $color-grey;
+              border-radius: 0.6rem;
+              &__main {
+                display: flex;
+                cursor: pointer;
+                &__author {
+                  padding-right: 2rem;
+                  border-right: 0.1rem solid $color-primary;
+                }
+                &__time {
+                  padding-left: 1.5rem;
+                }
+              }
+              &__reply {
+                & > a {
+                  color: $color-primary;
+                  text-decoration: underline;
+                }
+              }
+            }
+
+            &__content {
+              padding: 1.8rem;
+              & > p {
+                font-size: 1.4rem;
+              }
+            }
+          }
+        }
+        &__pag {
+          display: flex;
+          justify-content: flex-end;
+          & > a {
+            padding: 0.8rem 1.2rem;
+            border: 0.1rem solid $color-grey;
+            margin-left: 1rem;
+            font-size: 1.4rem;
+            color: $color-secondary;
+            &:first-child,
+            &:last-child {
+              background-color: $color-secondary;
+              color: $color-white;
+            }
+          }
+          & > .active {
+            background-color: $color-primary;
+          }
+        }
+      }
+    }
+  }
+  &__newest__item {
+    display: flex;
+
+    &__content {
+      margin-left: 1.5rem;
+      & > h6 {
+        font-size: 1.2rem;
+        text-transform: uppercase;
+        font-weight: normal;
+        font-family: "Roboto";
+        color: $color-secondary;
+      }
+      & > i {
+        font-size: 1.3rem;
+        margin-top: 1.2rem;
+      }
+      & > span {
+        margin-left: 0.9rem;
+        font-size: 1.3rem;
+        font-family: "Roboto";
+        font-weight: 300;
+      }
+    }
+    &:not(:first-child) {
+      margin-top: 2.2rem;
+    }
+  }
+}

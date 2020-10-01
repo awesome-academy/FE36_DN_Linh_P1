@@ -1,4 +1,5 @@
 @import "../utilities/variables";
+@import "../utilities/mixins";
 *,
 *::after,
 *::before {
@@ -21,6 +22,12 @@ body {
 .container {
   max-width: 110rem;
   margin: 0 auto;
+  @include lg {
+    margin: 0 2rem;
+  }
+  @include xl {
+    margin: 0 2rem;
+  }
 }
 
 ul {

@@ -1,0 +1,91 @@
+.order {
+  &__content {
+    margin: 5rem 0;
+    &__box {
+      @include grid(12, 3rem);
+    }
+    &__left {
+      grid-column: 1/10;
+      @include lg {
+        grid-column: 1/-1;
+      }
+      &__header {
+        padding: 3rem;
+        border-bottom: 0.1rem solid $color-grey;
+        background-color: #fafafa;
+        & > ul {
+          display: flex;
+          flex-wrap: wrap;
+          margin-top: 2rem;
+          & > li {
+            font-size: 1.4rem;
+            border-right: 0.1rem solid $color-grey;
+            padding-top: 1rem;
+            padding-right: 2rem;
+            margin-right: 1rem;
+            & > a {
+              color: $color-secondary;
+              @extend %hover-text;
+              @extend %transition;
+            }
+          }
+        }
+      }
+      &__table {
+        overflow-x: auto;
+        & > table {
+          width: 100%;
+          border-collapse: collapse;
+          text-align: center;
+          & tr {
+            & > th {
+              font-size: 1.2rem;
+              padding: 1.5rem;
+              color: $color-secondary;
+              border-bottom: 0.1rem solid $color-grey;
+            }
+            & > th:not(:last-child) {
+              border-right: 0.1rem solid $color-grey;
+            }
+            & > td {
+              border-right: 0.1rem solid $color-grey;
+              font-size: 1.4rem;
+              padding: 1rem 0;
+              @include lg {
+                font-size: 1rem;
+              }
+            }
+          }
+        }
+      }
+      border: 0.1rem solid $color-grey;
+    }
+    &__right {
+      grid-column: 10/13;
+      border: 0.1rem solid $color-grey;
+      height: min-content;
+      background-color: #fafafa;
+      padding: 3rem;
+      & > ul {
+        & > li {
+          display: flex;
+          font-size: 1.6rem;
+          margin-top: 2rem;
+          color: $color-secondary;
+          & > i {
+            margin-right: 1rem;
+          }
+        }
+      }
+      & > a {
+        font-size: 1.6rem;
+        color: $color-secondary;
+        display: inline-block;
+        margin-top: 2rem;
+      }
+      @include lg {
+        grid-column: 1/-1;
+      }
+    }
+  }
+}

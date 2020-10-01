@@ -1,0 +1,27 @@
+extends ../layouts/main-layout
+include ../mixins/_mixin
+block title
+    +title(signUpTitle)
+block content
+    .sign-up
+        +directions(signUpDirections)
+        .container
+            .sign-up__header
+                +product-title("Đăng ký")
+                a.btn Đăng nhập
+            form.sign-up__content
+                .sign-up__content__info
+                    +form-title("Thông tin cá nhân")
+                    +input-text("Tên trước","",true)
+                    +input-text("Tên sau","",true)
+                    +input-text("Email","",true)
+                    +input-text("Password","",true)
+                    +input-checkbox('Đăng ký nhận bản tin', "")
+                .sign-up__content__sign-in
+                    +form-title("Thông tin đăng nhập")
+                    +input-text("Mật khẩu","",true)
+                    +input-text("Xác nhận mật khẩu","",true)
+                .sign-up__content__btn
+                    button.btn(type="submit") Gửi
+                    button.btn Quay lại
+                

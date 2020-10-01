@@ -28,12 +28,18 @@
   &__arrow {
     &__left {
       @include p-absolute(47%, -1.5rem);
+      @include xl {
+        @include p-absolute(47%, -0.5rem);
+      }
       @extend %arrow;
     }
     &__right {
       position: absolute;
       top: 47%;
       right: -1.5rem;
+      @include xl {
+        right: -0.5rem;
+      }
       @extend %arrow;
     }
   }

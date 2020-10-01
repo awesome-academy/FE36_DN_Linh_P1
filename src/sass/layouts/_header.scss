@@ -13,11 +13,39 @@
       @extend %flex-space-bw;
       height: 3.4rem;
     }
+    &__menu:hover ul {
+      @include lg {
+        position: absolute;
+        display: block;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        text-align: center;
+        background-color: $color-grey;
+        box-shadow: 0 0.8rem 0.8rem rgba(0, 0, 0, 0.6);
+
+        li {
+          float: none;
+        }
+      }
+    }
     &__menu > ul {
       display: flex;
       flex-direction: row;
+      @include lg {
+        display: none;
+      }
     }
-
+    &__menu > i {
+      cursor: pointer;
+      margin-left: 2rem;
+      color: $color-primary;
+      font-size: 1.8rem;
+      display: none;
+      @include lg {
+        display: block;
+      }
+    }
     &__item {
       & > a {
         font-size: 1.3rem;
@@ -32,6 +60,12 @@
         content: "-";
         margin: 0 1.2rem;
       }
+      @include lg {
+        &:not(:last-child)::after {
+          content: "";
+          margin: 0;
+        }
+      }
     }
     &__item.all-page {
       & > a {
@@ -40,7 +74,7 @@
     }
     &__search {
       color: $color-primary;
-      border-left: 1px solid $color-white;
+      border-left: 0.1rem solid $color-white;
       input {
         border: none;
         outline: none;
@@ -117,6 +151,13 @@
       @extend %flex-space-bw;
       padding: 1.2rem 0;
     }
+    &__brand {
+      & > img {
+        @include lg {
+          height: 8rem;
+        }
+      }
+    }
 
     &__menu {
       width: 80%;
@@ -124,6 +165,36 @@
         @extend %flex-space-bw;
         flex-wrap: wrap;
         justify-content: space-around;
+      }
+      &__icon {
+        display: none;
+        @include lg {
+          display: flex;
+          justify-content: flex-end;
+          font-size: 2rem;
+          margin-right: 1rem;
+          color: $color-white;
+        }
+      }
+    }
+    &__menu:hover ul {
+      @include lg {
+        position: absolute;
+        display: block;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        background-color: $color-secondary;
+        box-shadow: 0px 8px 8px rgba(0, 0, 0, 0.2);
+        z-index: 998;
+      }
+    }
+    &__menu:hover ul li {
+      @include lg {
+        display: block;
+        float: none;
+        padding: 0.5rem 0;
+        text-align: center;
       }
     }
 
@@ -135,6 +206,11 @@
       letter-spacing: 0.12rem;
       @extend %hover-text;
       @extend %transition;
+    }
+    &__item {
+      @include lg {
+        display: none;
+      }
     }
   }
 }

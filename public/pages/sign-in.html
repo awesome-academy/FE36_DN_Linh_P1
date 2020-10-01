@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="keywords" content="">
+    <meta name="description" content="">
+    <link rel="shortcut icon" href="img/favicon.png" type="image/png">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&amp;family=Roboto:wght@100;400&amp;display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../css/style.css">
+    <title>Sign in | since 1980, a moments of true enjoy</title>
+  </head>
+  <body class="wrapper">
+    <header class="header">
+      <div class="header__top-nav all-page">
+        <div class="container">
+          <div class="header__top-nav__wrapper">
+            <div class="header__top-nav__menu"><i class="fa fa-bars"></i>
+              <ul>
+                <li class="header__top-nav__item all-page"><a href="./address.html">Tài khoản của tôi</a></li>
+                <li class="header__top-nav__item all-page"><a href="./order.html">Trạng thái đơn hàng</a></li>
+                <li class="header__top-nav__item all-page"><a onclick="document.querySelector('.popup').style.display='block'">Danh sách ưa thích</a></li>
+                <li class="header__top-nav__item all-page"><a href="./cart.html">Giỏ hàng</a></li>
+                <li class="header__top-nav__item all-page"><a href="./sign-in.html">Đặng nhập</a></li>
+                <li class="header__top-nav__item all-page"><a href="./sign-up.html">Đăng ký</a></li>
+              </ul>
+                    <div class="popup">
+                      <div class="popup__content"><img src="../img/popup.png" alt="popup image"><i class="fa fa-times" onclick="document.querySelector('.popup').style.display='none'"></i>
+                        <div class="popup__content__text">
+                          <p>Gửi Email</p>
+                          <p>Đăng ký Email ngay hôm nay để nhận được thông tin về các sự kiện, các chương trình giảm giá của chúng tôi sớm nhất!</p>
+                          <form>
+                            <input type="text">
+                            <button>GỬI EMAIL</button>
+                          </form>
+                                <div class="input-checkbox">
+                                  <input type="checkbox" id="Không hiển thị lại thông báo này" value="">
+                                  <label for="Không hiển thị lại thông báo này">Không hiển thị lại thông báo này</label>
+                                </div>
+                        </div>
+                      </div>
+                    </div>
+            </div>
+            <div class="header__top-nav__search">
+              <form>
+                <input placeholder="Tìm kiếm ở đây ...">
+                <button class="header__top-nav__icon all-page"><i class="fa fa-search"></i></button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="header__main-nav">
+        <div class="container">
+          <div class="header__main-nav__wrapper">
+            <div class="header__main-nav__brand"><img src="../img/brand.png" alt="brand"></div>
+            <div class="header__main-nav__menu">
+              <ul>
+                <li class="header__main-nav__item"><a href="/public/pages/">Trang chủ</a></li>
+                <li class="header__main-nav__item drop-down"><a href="/public/pages/error.html">Rượu vang đỏ</a>
+                  <div class="drop-down__wrapper">
+                    <div class="drop-down__col">
+                      <h3 class="drop-down__title">Rượu ngoại</h3>
+                      <ul class="drop-down__menu">
+                        <li class="drop-down__menu__item"><a href="#">Rượu Chivas</a></li>
+                        <li class="drop-down__menu__item"><a href="#">Hàng độc - Rượu độc đáo</a></li>
+                        <li class="drop-down__menu__item"><a href="#">Johnnie Walker</a></li>
+                        <li class="drop-down__menu__item"><a href="#">Rượu Whisky</a></li>
+                        <li class="drop-down__menu__item"><a href="#">Rượu Remy Martin</a></li>
+                        <li class="drop-down__menu__item"><a href="#">Rượu Glenmorangie</a></li>
+                      </ul>
+                    </div>
+                    <div class="drop-down__col">
+                      <h3 class="drop-down__title">Rượu vang</h3>
+                      <ul class="drop-down__menu">
+                        <li class="drop-down__menu__item"><a href="#">Rượu Chivas</a></li>
+                        <li class="drop-down__menu__item"><a href="#">Hàng độc - Rượu độc đáo</a></li>
+                        <li class="drop-down__menu__item"><a href="#">Johnnie Walker</a></li>
+                        <li class="drop-down__menu__item"><a href="#">Rượu Whisky</a></li>
+                        <li class="drop-down__menu__item"><a href="#">Rượu Remy Martin</a></li>
+                        <li class="drop-down__menu__item"><a href="#">Rượu Glenmorangie</a></li>
+                      </ul>
+                    </div>
+                    <div class="drop-down__col">
+                      <h3 class="drop-down__title">Rượu ngoại</h3>
+                      <ul class="drop-down__menu">
+                        <li class="drop-down__menu__item"><a href="#">Rượu Chivas</a></li>
+                        <li class="drop-down__menu__item"><a href="#">Hàng độc - Rượu độc đáo</a></li>
+                        <li class="drop-down__menu__item"><a href="#">Johnnie Walker</a></li>
+                        <li class="drop-down__menu__item"><a href="#">Rượu Whisky</a></li>
+                        <li class="drop-down__menu__item"><a href="#">Rượu Remy Martin</a></li>
+                        <li class="drop-down__menu__item"><a href="#">Rượu Glenmorangie</a></li>
+                      </ul>
+                    </div><img class="drop-down__img" src="../img/header-drop-down-img.png" alt="drop-down-img">
+                  </div>
+                </li>
+                <li class="header__main-nav__item"><a href="/public/pages/product-detail.html">Rượu vang trắng</a></li>
+                <li class="header__main-nav__item"><a href="/public/pages/products.html">Champagne</a></li>
+                <li class="header__main-nav__item"><a href="/public/pages/intro.html">Thông tin</a></li>
+                <li class="header__main-nav__item"><a href="/public/pages/blog.html">Blog</a></li>
+                <li class="header__main-nav__item"><a href="/public/pages/contact.html">Liên hệ</a></li>
+              </ul><i class="fa fa-bars header__main-nav__menu__icon"></i>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+    <div class="sign-up">
+            <div class="directions">
+              <div class="container">
+                <ul class="directions__list">
+                  <li class="directions__item"><a href="./index.html">Trang chủ</a></li>
+                  <li class="directions__item"><a href="./sign-in.html">Đăng nhập</a></li>
+                </ul>
+              </div>
+            </div>
+      <div class="container">
+        <div class="sign-up__header">
+                <div class="product-title">
+                  <h2 class="product-title__text">Đăng nhập</h2><img class="product-title__icon" src="../img/arrow.png" alt="product title">
+                </div><a class="btn">Đăng ký</a>
+        </div>
+        <div class="sign-up__content">
+          <div class="sign-up__content__title">
+                  <div class="form-title">
+                    <h6>Thông tin cá nhân</h6>
+                  </div>
+            <p class="sign-in__text">Nếu bạn có một tài khoản, xin vui lòng đăng nhập.</p>
+          </div>
+          <form action="#">
+            <div class="sign-up__content__sign-in">
+                    <div class="input-text">
+                      <label for="Email">Email<span>*</span>
+                      </label>
+                      <input type="text" name="Email" id="Email" value="">
+                    </div>
+                    <div class="input-text">
+                      <label for="Password">Password<span>*</span>
+                      </label>
+                      <input type="text" name="Password" id="Password" value="">
+                    </div>
+                    <div class="input-checkbox">
+                      <input type="checkbox" id="Quên mật khẩu" value="">
+                      <label for="Quên mật khẩu">Quên mật khẩu</label>
+                    </div>
+            </div>
+            <div class="sign-in__btn">
+              <button class="btn" type="submit">Đăng nhập</button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+    <footer class="footer">
+      <div class="footer__img">
+        <div class="container"><img src="../img/footer-img.png" alt="footer image"></div>
+      </div>
+      <div class="footer__content">
+        <div class="container">
+          <div class="footer__content__box">
+            <div class="footer__content__info">
+              <h6 class="footer-title">Thông tin</h6>
+              <ul>
+                <li>Về chúng tôi</li>
+                <li>Giao hàng</li>
+                <li>Cảm nghĩ</li>
+                <li>Lưu trữ</li>
+                <li>Chính sách riêng tư</li>
+              </ul>
+            </div>
+            <div class="footer__content__buy">
+              <h6 class="footer-title">Mua hàng</h6>
+              <ul>
+                <li>Vận chuyển và trả hàng</li>
+                <li>Mua hàng an toàn</li>
+                <li>Vận quốc tế</li>
+                <li>Liên kết</li>
+                <li>Dịch vụ giảm giá</li>
+              </ul>
+            </div>
+            <div class="footer__content__email">
+              <h6 class="footer-title">Gửi email</h6>
+              <p>Gửi email cho chúng tôi để được hỗ trợ</p>
+              <form>
+                <input placeholder="Enter your email">
+                <div class="footer__content__email__btn">
+                  <button>GỬI</button>
+                  <div class="footer__content__email__btn--triangle"></div>
+                </div>
+              </form>
+              <div class="footer__content__email__social">
+                <ul>
+                  <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                  <li><a href="#"><i class="fa fa-google-plus"></i></a></li>
+                  <li><a href="#"><i class="fa fa-dribbble"></i></a></li>
+                  <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+                  <li><a href="#"><i class="fa fa-rss"></i></a></li>
+                </ul>
+              </div>
+            </div>
+            <div class="footer__content__contact">
+              <h6 class="footer-title">Liên hệ</h6>
+              <ul>
+                <li><i class="fa fa-map-marker"></i><a href="#">Tầng 4, Tòa nhà Hanoi Group Số 442 Đội Cấn, P.Cống Vị, Q. Ba Đình, Hà Nội</a></li>
+                <li><i class="fa fa-phone"></i><a href="#">(04) 6674 2332 -</a></li>
+                <li><i class="fa fa-phone"></i><a href="#">(04) 3786 8904</a></li>
+                <li><i class="fa fa-phone"></i><a href="#">(08) 6680 9686</a></li>
+                <li><i class="fa fa-envelope"></i><a href="#">Support@bizweb.vn</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+      <hr>
+      <div class="footer__copyright">
+        <div class="container">
+          <div class="footer__copyright__box">
+            <div class="footer__copyright__text">
+              <p>© Copyright 2008-2014 DKT Technology JSC</p>
+            </div>
+            <div class="footer__copyright__logo"><img src="../img/footer-payment.png" alt="footer payment"></div>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
